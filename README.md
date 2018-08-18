@@ -15,6 +15,7 @@ vi .bash_profile
 ZILKIE_USERNAME=${username}
 ```
 Eg: ZILKIE_USERNAME=sampleuser
+
 4. Save the file and source it.
 ```sh
 source .bash_profile

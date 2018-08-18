@@ -12,7 +12,7 @@ vi .bash_profile
 ```
 3. Add the following line substituting `${username}` with your folder name. (All lower case and single word)
 ```sh
-ZILKIE_USERNAME=${username}
+export ZILKIE_USERNAME=${username}
 ```
 Eg: ZILKIE_USERNAME=sampleuser
 

@@ -1,18 +1,37 @@
-# Zilkies 18 - RWD
+# Zilkies 19 - FE
+
+## Username Setup
+
+1. Navigate to your root directory using.
+```sh
+cd ~
+```
+2. Create .bash_profile file using the command.
+```sh
+vi .bash_profile
+```
+3. Add the following line substituting ${username} with your folder name. (All lower case and single word)
+```sh
+ZILKIE_USERNAME=${username}
+```
+4. Save the file and source it.
+```sh
+source .bash_profile
+```
+5. Make sure the system variable is set. This should display the username you gave in step  3.
+```sh
+echo $ZILKIE_USERNAME
+```
+
+## Folder Setup
+1. Copy and Paste the sampleuser folder at the root level to create a new folder. The name of this new folder should the same username you gave  while setting up the ZILKIE_USERNAME variable
 
 ## Steps to run the Server
-    1. npm install - To install the required dependencies
-    2. npm run start - To start the Server
-    3. Navigate to your respective folder in the browser tab that appears
+1. `npm install` - To install the required dependencies
+2. `npm run start` - To start the Server. You should now see your base HTML page.
 
 ## To submit an exercise
-    1. Create a separate folder with your name
-    2. Create a css folder, a pages folder and an index.html file inside it
-    3. For each exercise, create an HTML file in the pages folder with the same name as the exercise
-    4. For each exercise, create a CSS file in the css folder with the same name as the exercise
-    5. Add a link to the CSS file in the corresponding HTML file and link the HTML file in index.html
+1. Create a separate folder with your exercise name inside your ${username} folder
+2. Create a `css` folder, a `js` folder, a `pages` folder and an `index.html` file inside it
 
-Once you have completed your exercise and when you commit your code, a linter will run during commit to check for code styling errors. Clear all the errors to commit the code.
-
-
-
+Once you have completed your exercise and when you commit your code, a linter will run during commit to check for code styling errors. Clear all the errors to commit the code. Happy Coding..Peace.. :)

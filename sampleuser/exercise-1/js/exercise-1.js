@@ -1,3 +1,1 @@
-function myFunction() {
-    document.getElementById("name").innerText = 'Hello.. 😀';
-}
+document.getElementById("name").innerText = 'Hello.. 😀';

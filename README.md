@@ -26,7 +26,12 @@ echo $ZILKIE_USERNAME
 ```
 
 ## Folder Setup
-1. Copy and Paste the sampleuser folder at the root level to create a new folder. The name of this new folder should the same username you gave  while setting up the ZILKIE_USERNAME variable
+1. Use the following command to create a folder for yourself.
+```sh
+cp -r sampleuser/ ${username} 
+```
+
+The name of this new folder should the same username you gave while setting up the ZILKIE_USERNAME variable
 
 ## Steps to run the Server
 1. `npm install` - To install the required dependencies

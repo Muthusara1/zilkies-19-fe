@@ -10,10 +10,11 @@ cd ~
 ```sh
 vi .bash_profile
 ```
-3. Add the following line substituting ${username} with your folder name. (All lower case and single word)
+3. Add the following line substituting `${username}` with your folder name. (All lower case and single word)
 ```sh
 ZILKIE_USERNAME=${username}
 ```
+Eg: ZILKIE_USERNAME=sampleuser
 4. Save the file and source it.
 ```sh
 source .bash_profile

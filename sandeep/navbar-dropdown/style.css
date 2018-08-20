@@ -1,0 +1,33 @@
+nav {
+    background-color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 16px;
+    color: white;
+}
+
+#dropdown {
+    background-color: black;
+    position: absolute;
+    top: 63px;
+    z-index: 0;
+}
+
+#dropdown li {
+    display: block;
+}
+
+#dropdown li a {
+    display: block;
+}

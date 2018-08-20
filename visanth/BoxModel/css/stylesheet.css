@@ -1,0 +1,24 @@
+header {
+    color: blue;
+    border: 5px solid black;
+    padding: 5px;
+    margin: 50px;
+}
+
+footer {
+    border: 5px solid black;
+    padding: 5px;
+    margin: 50px;
+}
+
+section {
+    border: 5px solid black;
+    padding: 5px;
+    margin: 50px;
+}
+
+.main-box {
+    border: 10px solid black;
+    padding: 10px;
+    margin: 50px 10px;
+}

@@ -1,0 +1,37 @@
+header {
+    padding: 10px;
+    text-align: center;
+    font-size: 40px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    margin: 50px;
+}
+
+p {
+    padding: 10px;
+    text-align: center;
+    font-size: 40px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    margin: 50px;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
+    font-size: 40px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    margin: 50px;
+}
+
+.outer-border {
+    padding: 60px;
+    margin: 50px;
+    border-style: solid;
+    border-width: 10px;
+    border-color: black;
+}

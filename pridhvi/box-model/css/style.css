@@ -1,0 +1,18 @@
+.container{
+    height: 100%;
+    width:80%;
+    margin:auto;
+    border: 5px solid black;
+}
+.header{
+    margin:2em;
+    border: 2px solid black;
+}
+.content{
+    margin:2em;
+    border: 2px solid black;
+}
+.footer{
+    margin:2em;
+    border: 2px solid black;
+}

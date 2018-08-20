@@ -1,0 +1,33 @@
+li {
+    display: inline-block;
+    padding: 20px;
+}
+ul {
+    list-style: none;
+}
+
+.outer-nav {
+    background-color: black;
+    color: white;
+    position: relative;
+}
+.inner{
+    position: absolute;
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+    display: inline-block;
+    margin-right: 20px;
+    top: 0px;
+    left: 0px;
+}
+
+.drop {
+    display: block;
+}
+.dropdown{
+    display: block;
+}
+.outer-drop {
+    position: relative;
+}

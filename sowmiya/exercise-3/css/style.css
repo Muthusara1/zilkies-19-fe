@@ -1,0 +1,36 @@
+nav {
+    color: white;
+    padding: 15px;
+    text-align: center;
+    background-color: black;
+    width: 100%;
+    height: 10%;
+}
+
+a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.service {
+    display: inline-block;
+    top: 10px;
+    height: 50%;
+    width: 15%;
+    vertical-align: text-top;
+    text-align: center;
+}
+
+.service-menu {
+    color: white;
+    position: absolute;
+    display: block;
+    top: 80px;
+    background-color: black;
+    padding: 14px 16px;
+}
+
+ul {
+    list-style: none;
+}

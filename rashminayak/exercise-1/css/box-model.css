@@ -1,0 +1,13 @@
+.innerbox {
+    border: solid 2px;
+    border-color: black;
+    margin: 30px;
+    padding: 10px;
+}
+
+.outerbox {
+    border: solid 5px;
+    padding: 40px;
+    margin: 100px;
+}
+

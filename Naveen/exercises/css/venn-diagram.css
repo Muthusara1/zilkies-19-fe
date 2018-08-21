@@ -5,16 +5,19 @@ svg {
 
 .first-circle {
     margin: 8%;
-    position: relative;
+    position: absolute;
+    right: 26%; 
 }
 
 .second-circle {
+    margin: 8%;
     position: absolute;
-    right: 500px;
+    right: 18%;
 }
 
 .third-circle {
+    margin: 8%;
     position: absolute;
-    right: 560px;
-    top: 120px;
+    right: 22%;
+    top: 14%;
 }

@@ -1,0 +1,33 @@
+#outer-list {
+    list-style-type: none;
+    color: white;
+}
+
+li {
+    display: inline-block;
+    padding: 20px;
+}
+
+ul {
+    display: inline-block;
+}
+
+.navigator {
+    display: block;
+    background-color: rgb(60, 75, 35);
+    list-style-type: none;
+    padding: 1px;
+}
+
+.navigator-inner li {
+    display: block;
+}
+
+.navigator-inner {
+    position: absolute;
+    display: block;
+    left: 200px;
+    background-color: rgb(60, 75, 35);
+    margin: 1px;
+    list-style-type: none;
+}

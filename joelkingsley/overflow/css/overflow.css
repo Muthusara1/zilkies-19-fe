@@ -1,0 +1,47 @@
+.fits-bold {
+    font-weight: bold;
+}
+
+header {
+    margin: 10px;
+    border: 5px;
+    border-color: black;
+    border-style: solid;
+    padding: 10px;
+}
+
+.fits {
+    margin: 10px;
+    border: 5px;
+    border-color: black;
+    border-style: solid;
+    padding: 10px;
+}
+
+.overflow-hidden {
+    margin: 10px;
+    border: 5px;
+    border-color: black;
+    border-style: solid;
+    overflow: hidden;
+    height: 20px;
+    padding: 10px;
+}
+
+.overflow-scroll {
+    margin: 10px;
+    border: 5px;
+    border-color: black;
+    overflow: scroll;
+    height: 20px;
+    border-style: solid;
+    padding: 10px;
+}
+
+footer {
+    margin: 10px;
+    border: 5px;
+    border-color: black;
+    border-style: solid;
+    padding: 10px;
+}

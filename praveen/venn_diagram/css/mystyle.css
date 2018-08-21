@@ -1,0 +1,27 @@
+.circle {
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.green {
+    top: 25%;
+    left: 28%;
+    background-color: lightgreen;
+    position: absolute;
+}
+
+.yellow {
+    top: 25%;
+    left: 42%;
+    background-color: yellow;
+    position: absolute;
+}
+
+.purple {
+    top: 45%;
+    left: 35%;
+    background-color: purple;
+    position: absolute;
+}

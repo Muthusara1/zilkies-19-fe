@@ -1,0 +1,24 @@
+.sample {
+    border: 5px solid black;
+    padding: 10px;
+    margin: 100px;
+}
+
+.sample1 {
+    border: 2px solid;
+    padding: 20px 10px 20px 10px;
+    width: 1000px;
+    height: 30px;
+}
+
+#hidden {
+    overflow: hidden;
+}
+
+#scroll {
+    overflow: scroll;
+}
+
+#fit {
+    height: auto;
+}

@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.header {
+    clear: left;
+    width: 100%;
+}
+
+.section {
+    border: 2px solid black;
+    float: left;
+}
+
+article {
+    width: 87%;
+}

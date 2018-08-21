@@ -21,7 +21,6 @@ li a {
     background-color: black;
     position: absolute;
     top: 63px;
-    z-index: 0;
 }
 
 #dropdown li {

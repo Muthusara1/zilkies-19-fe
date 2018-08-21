@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "live-server --open=./${ZILKIE_USERNAME}",
-    "css-lint": "stylelint ./visanth/**/*.css",
-    "js-lint": "eslint ./visanth/**/*.js"
+    "start": "live-server --open=./${ZILKIE_USERNAME} --port=7777",
+    "css-lint": "stylelint ./${ZILKIE_USERNAME}/**/*.css",
+    "js-lint": "eslint ./${ZILKIE_USERNAME}/**/*.js"
   },
   "pre-commit": [
     "css-lint",

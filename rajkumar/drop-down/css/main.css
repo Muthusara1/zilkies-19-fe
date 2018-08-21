@@ -22,6 +22,7 @@ ul {
     margin-right: 20px;
     top: 0;
     left: 0;
+    padding-left: 0;
 }
 
 .drop {
@@ -30,6 +31,8 @@ ul {
 
 .dropdown {
     display: block;
+    width: 150px;
+    padding-left: 13px;
 }
 
 .outer-drop {

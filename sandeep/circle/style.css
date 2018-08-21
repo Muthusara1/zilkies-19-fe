@@ -1,0 +1,34 @@
+#outline {
+    margin-left: 33%;
+    margin-top: 15%;
+    position: absolute;
+}
+
+#circle-1 {
+    background-color: greenyellow;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    display: inline-block;
+}
+
+#circle-2 {
+    display: inline-block;
+    background-color: yellow;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    left: -80px;
+}
+
+#circle-3 {
+    background-color: pink;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: -100px;
+    left: 60px;
+}

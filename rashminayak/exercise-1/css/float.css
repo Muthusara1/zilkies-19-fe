@@ -1,0 +1,26 @@
+.header,
+.sidebar,
+.article,
+.footer {
+    background-color: grey;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 10px;
+    border: solid 2px white;
+    height: 70px;
+    float: left;
+}
+
+.header,
+.footer {
+    width: 100%;
+}
+
+.sidebar,
+.article {
+    width: 25%;
+}
+
+.article {
+    width: 50%;
+}

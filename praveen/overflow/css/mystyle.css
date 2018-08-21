@@ -1,0 +1,26 @@
+body {
+    margin: 5em 5em;
+    border: 5px solid black;
+    padding: 50px 50px;
+}
+
+.box {
+    margin: 30px 30px 30px;
+    padding: 30px 30px;
+    border: 2px solid black;
+}
+
+.fit-content {
+    height: 50px;
+    width: 897px;
+}
+
+.overflow-hidden {
+    height: 10px;
+    overflow: hidden;
+}
+
+.overflow-scroll {
+    height: 10px;
+    overflow: scroll;
+}

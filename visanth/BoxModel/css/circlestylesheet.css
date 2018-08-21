@@ -1,27 +1,25 @@
 .circle {
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
 }
 
 .one {
     background-color: rebeccapurple;
-    display: block;
-    left: 500px;
-    top: 200px;
-    position: absolute;
+    position: relative;
+    left:450px;
+    top:100px;
 }
 
 .two {
     position: absolute;
-    left: 570px;
-    top: 200px;
+    left:120px;
     background-color: gold;
 }
 
 .three {
     position: absolute;
-    left: 530px;
-    top: 270px;
     background-color: red;
+    left:70px;
+    top:100px;
 }

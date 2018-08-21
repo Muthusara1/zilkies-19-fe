@@ -1,0 +1,37 @@
+.green {
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+}
+
+.yellow {
+    height: 100px;
+    width: 100px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 60px;
+}
+
+.pink {
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+
+.outer-div {
+    margin-top: 190px;
+    position: relative;
+    text-align: center;
+}

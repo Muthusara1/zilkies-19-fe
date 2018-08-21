@@ -1,0 +1,28 @@
+span {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    margin: 100px;
+}
+
+.black {
+    background-color: yellow;
+    left: 250px;
+}
+
+.blue {
+    background-color: #0c0;
+}
+
+.red {
+    background-color: #f06;
+    top: 200px;
+    left: 130px;
+}
+
+.container {
+    position: relative;
+    left: 250px;
+}

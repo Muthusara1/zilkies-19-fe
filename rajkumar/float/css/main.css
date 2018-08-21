@@ -1,11 +1,11 @@
 .header {
     width: 100%;
-    padding: 20px 0px;
+    padding: 20px 0;
 }
 
 .middle {
     width: 33.14%;
-    padding: 100px 0px;
+    padding: 100px 0;
     border: 1px solid red;
 }
 

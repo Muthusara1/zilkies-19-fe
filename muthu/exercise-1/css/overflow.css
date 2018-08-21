@@ -1,0 +1,32 @@
+.container{
+    margin: auto;
+    border : 5px;
+    border-style: solid;
+    padding: 20px; 
+    height: 50%;
+    width: 50%;          
+}
+.header-footer{
+    border: 2px;
+    border-style: double;
+    margin: 20px;
+    padding: 10px;
+}
+.overflow-fits{
+    height: auto;
+}
+.overflow-class{
+    border: 2px;
+    border-style: double;
+    margin: 20px;
+    padding: 20px;    
+}
+
+.overflow-hidden{
+    overflow: hidden;
+    height: 20px;
+}
+.overflow-scroll{
+    overflow: scroll;
+    height: 20px;
+}

@@ -1,0 +1,36 @@
+.circle1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: red;
+    left: 40%;
+}
+
+.circle2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: green;
+    left: 75px;
+}
+
+.circle3 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background: yellow;
+    top: 70px;
+    left: 35px;
+}
+
+.circle1position {
+    position: relative;
+}
+
+.circle2position {
+    position: absolute;
+}
+
+.circle3position {
+    position: absolute;
+}

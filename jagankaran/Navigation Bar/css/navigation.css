@@ -15,7 +15,7 @@ ul {
 }
 
 .inner {
-    padding: 30px;
+    padding: 10px;
     position: absolute;
     top: 50px;
     left: 1px;
@@ -24,4 +24,9 @@ ul {
 
 .service {
     position: relative;
+}
+
+.innerli {
+    padding: 10px;
+    width: 150px;
 }

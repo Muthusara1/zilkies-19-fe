@@ -1,0 +1,23 @@
+svg {
+    height: 600px;
+    width: 600px;
+}
+
+.first-circle {
+    margin: 8%;
+    position: absolute;
+    right: 26%; 
+}
+
+.second-circle {
+    margin: 8%;
+    position: absolute;
+    right: 18%;
+}
+
+.third-circle {
+    margin: 8%;
+    position: absolute;
+    right: 22%;
+    top: 14%;
+}

@@ -1,0 +1,15 @@
+.header-footer, .middle-box {
+    border: 1px solid gray;
+    float: left;
+}
+
+body {
+    margin: 0px;
+}
+.header-footer {
+    width: 100%;
+}
+
+.middle-box {
+    width: 33.19%;
+}

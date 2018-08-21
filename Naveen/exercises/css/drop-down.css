@@ -1,0 +1,30 @@
+.outer-list {
+    background-color: black;
+    padding: 15px;
+    color: white;
+    list-style: none;
+}
+
+.outer-list-elements {
+    font-weight: bold;
+    display: inline;
+    padding: 15px;
+    position: relative;
+}
+
+.inner-list {
+    position: absolute;
+    display: inline-block;
+    padding: 0px;
+    top: 48px;
+    left: 0px;
+    background-color: black;
+    color: white;
+    list-style: none;
+}
+
+.inner-list-elements {
+    font-weight: bold;
+    padding: 15px 15px 15px 15px;
+    background-color: black;
+}

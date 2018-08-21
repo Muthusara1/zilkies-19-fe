@@ -1,0 +1,30 @@
+span {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+}
+
+.circle-1 {
+    background-color: green;
+}
+
+.circle-2 {
+    left: 200px;
+    background-color: yellow;
+}
+
+.circle-3 {
+    left: 100px;
+    top: 200px;
+    background-color: pink;
+}
+
+div {
+    position: relative;
+    height: 1000px;
+    width: 1000px;
+    left: 25%;
+    margin: 100px;
+}

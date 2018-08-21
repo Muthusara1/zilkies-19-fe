@@ -35,8 +35,8 @@ a:hover {
 .services-dropdown {
     position: absolute;
     display: block;
-    margin-left: 33%;
-    margin-top: 0.5em;
+    left: 33%;
+    top: 3em;
     float: center;
     color: white;
     background-color: #262626;

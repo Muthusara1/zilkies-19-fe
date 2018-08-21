@@ -1,0 +1,12 @@
+.box-model {   
+    margin: 20px;
+    border-color: black;
+    border: 5px solid;
+    padding: 25px;
+}
+.content {
+    margin: 20px;
+    padding: 25px;
+    border: 2px solid;
+}
+

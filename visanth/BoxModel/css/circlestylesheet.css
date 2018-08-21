@@ -1,0 +1,25 @@
+.circle {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.one {
+    background-color: rebeccapurple;
+    position: relative;
+    left: 450px;
+    top: 100px;
+}
+
+.two {
+    position: absolute;
+    left: 120px;
+    background-color: gold;
+}
+
+.three {
+    position: absolute;
+    background-color: red;
+    left: 70px;
+    top: 100px;
+}

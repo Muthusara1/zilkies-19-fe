@@ -1,0 +1,39 @@
+#one,
+#five {
+    border: 3px solid black;
+    padding: 10px;
+    margin: 25px;
+    font-size: 25px;
+    height: 30px;
+}
+
+#two {
+    border: 3px solid black;
+    padding: auto;
+    margin: 25px;
+    font-size: 25px;
+}
+
+#three {
+    border: 3px solid black;
+    padding: 5px;
+    margin: 25px;
+    font-size: 25px;
+    overflow: hidden;
+    height: 30px;
+}
+
+#four {
+    border: 3px solid black;
+    padding: 5px;
+    margin: 25px;
+    font-size: 25px;
+    overflow: scroll;
+    height: 30px;
+}
+
+section {
+    border: 7px solid black;
+    padding: 25px;
+    margin: 25px;
+}

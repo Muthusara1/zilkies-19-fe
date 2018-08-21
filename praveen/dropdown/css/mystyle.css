@@ -1,14 +1,14 @@
 .parentUl {
-    margin: 10px 0;
+    margin: 10px 0px;
     background-color: black;
     padding: 20px 20px;
 }
 
 .parent {
-    position: relative;
+    position: relative; 
     color: white;
     display: inline;
-    margin: 0;
+    margin: 0px;
     padding: 30px 30px 30px;
     text-align: center;
 }
@@ -16,14 +16,14 @@
 .child {
     color: white;
     margin: 10px 10px;
-    margin-left: 0;
+    margin-left: 0px;
     padding: 10px 10px 10px;
 }
 
 .childUl {
     position: absolute;
     top: 45px;
-    left: 0;
+    left: 0px;
     list-style: none;
     display: inline-block;
     background-color: black;

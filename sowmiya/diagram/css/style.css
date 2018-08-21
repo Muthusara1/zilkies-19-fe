@@ -1,0 +1,30 @@
+.outer {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    border: 2px solid;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#circle1 {
+    border: 1px solid;
+    display: inline-block;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: relative;
+}
+
+#circle2 {
+    border: 1px solid;
+    display: inline-block;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    left: -100px;
+    position: absolute;
+}

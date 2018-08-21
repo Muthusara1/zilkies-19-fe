@@ -11,13 +11,13 @@ ul {
 
 .list {
     display: inline;
-    padding: 10px;
+    padding: 20px;
 }
 
 .inner {
     padding: 10px;
     position: absolute;
-    top: 50px;
+    top: 60px;
     left: 1px;
     background-color: black;
 }
@@ -27,6 +27,6 @@ ul {
 }
 
 .innerli {
-    padding: 10px;
+    padding: 5px;
     width: 150px;
 }

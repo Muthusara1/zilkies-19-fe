@@ -3,7 +3,8 @@
     height: 100px;
     border-radius: 50px;
     background: red;
-    left: 40%;
+    text-align: center;
+    display: inline-block;
 }
 
 .circle2 {
@@ -12,6 +13,7 @@
     border-radius: 50px;
     background: green;
     left: 75px;
+    display: inline-block;
 }
 
 .circle3 {
@@ -21,6 +23,7 @@
     background: yellow;
     top: 70px;
     left: 35px;
+    display: block;
 }
 
 .circle1position {
@@ -33,4 +36,15 @@
 
 .circle3position {
     position: absolute;
+}
+
+.container {
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    margin: auto;
+    height: 100px;
 }

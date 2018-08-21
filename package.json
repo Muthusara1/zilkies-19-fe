@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "live-server --open=./${ZILKIE_USERNAME}",
-    "css-lint": "stylelint ./${ZILKIE_USERNAME}/**/*.css",
-    "js-lint": "eslint ./${ZILKIE_USERNAME}/**/*.js"
+    "css-lint": "stylelint ./visanth/**/*.css",
+    "js-lint": "eslint ./visanth/**/*.js"
   },
   "pre-commit": [
     "css-lint",

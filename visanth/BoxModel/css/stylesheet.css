@@ -1,20 +1,33 @@
 header {
     color: blue;
     border: 5px solid black;
-    padding: 5px;
-    margin: 50px;
+    padding: 10px;
+    margin: 10px;
 }
 
 footer {
     border: 5px solid black;
-    padding: 5px;
-    margin: 50px;
+    padding: 10px;
+    margin: 10px;
 }
 
 section {
+    padding: 10px;
+    height: 50px;
     border: 5px solid black;
-    padding: 5px;
-    margin: 50px;
+    margin: 10px;
+}
+
+#section-one {
+    height: auto;
+}
+
+#section-two {
+    overflow: hidden;
+}
+
+#section-three {
+    overflow: scroll;
 }
 
 .main-box {

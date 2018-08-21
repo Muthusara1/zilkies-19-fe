@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+    vertical-align: middle;
+}
+
+header,
+footer {
+    border: 2px solid;
+    box-sizing: border-box;
+}
+
+#article {
+    width: 80%;
+}
+
+aside {
+    width: 10%;
+}
+
+footer {
+    clear: left;
+}
+
+.content {
+    float: left;
+    border: 2px solid;
+    padding: 10px;
+    box-sizing: border-box;
+    height: 450px;
+}

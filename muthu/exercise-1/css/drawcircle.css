@@ -1,36 +1,37 @@
-.container {
-    margin: auto;    
-    padding: 50px;            
-}
-
 .sizes {
     width: 200px;
-    height: 200px;    
+    height: 200px;
     border-radius: 100px;
 }
 
 .green {
-    background-color:green;    
+    background-color: green;
     position: relative;
+    display: inline-block;
 }
 
 .yellow {
-    background-color:yellow;   
+    background-color: yellow;
     position: absolute;
-    left: 100px;    
+    display: inline-block;
+    left: 100px;
 }
 
 .pink {
-    background-color:pink;
-    position: absolute;    
+    background-color: pink;
+    position: absolute;
+    display: block;
     top: 100px;
     left: 50px;
 }
 
 .align-pos {
-    position: relative;
-    padding: 50px;
-    left: 0px;
-    top: 0px;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    margin:auto;
+    height: 50%;
 }
-

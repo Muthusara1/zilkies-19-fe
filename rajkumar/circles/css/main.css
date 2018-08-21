@@ -1,17 +1,11 @@
 .green {
-    height: 100px;
-    width: 100px;
     background-color: green;
-    border-radius: 50%;
     display: inline-block;
     position: relative;
 }
 
 .yellow {
-    height: 100px;
-    width: 100px;
     background-color: yellow;
-    border-radius: 50%;
     display: inline-block;
     position: absolute;
     top: 0;
@@ -20,18 +14,26 @@
 }
 
 .pink {
-    height: 100px;
-    width: 100px;
     background-color: pink;
-    border-radius: 50%;
     display: block;
     position: absolute;
     top: 50px;
     left: 30px;
 }
 
+.circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
 .outer-div {
-    margin-top: 190px;
-    position: relative;
     text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+    height: 200px;
 }

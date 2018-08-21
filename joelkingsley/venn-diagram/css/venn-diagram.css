@@ -1,0 +1,30 @@
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+}
+
+#circle-red {
+    top: 100px;
+    left: 0;
+    right: 100px;
+    bottom: 0;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    background: red;
+}
+
+#circle-blue {
+    left: 100px;
+    position: absolute;
+    background: blue;
+}
+
+#circle-green {
+    top: 100px;
+    left: 50px;
+    display: block;
+    position: absolute;
+    background: green;
+}

@@ -4,13 +4,16 @@
     text-align: center;
 }
 
-.header, .footer {
+.header,
+.footer {
     float: left;
     width: 99.3%;
     height: 24%;
 }
 
-.sidebar-1, .sidebar-2, .article {
+.sidebar-1,
+.sidebar-2,
+.article {
     float: left;
     height: 50%;
     width: 20%;

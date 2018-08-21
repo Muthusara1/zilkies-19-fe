@@ -1,0 +1,29 @@
+.float-left {
+    box-sizing: border-box;
+    float: left;
+    width: 15%;
+    height: 100px;
+    border: 1px solid;
+    padding: 40px; 
+    box-sizing: border-box;
+}
+
+.header-footer {    
+    box-sizing: border-box;
+    text-align: center;    
+    border: 1px solid;
+    float: left;
+    border: 1px solid;
+    padding: 40px;
+    width: 100%;
+}
+
+.content {
+    box-sizing: border-box;
+    float: left;
+    width: 70%;
+    height: 100px;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid;
+}

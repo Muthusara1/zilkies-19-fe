@@ -1,0 +1,30 @@
+.header,
+.footer,
+.overflow-hidden,
+.overflow-scroll,
+.fit-content {
+    border: solid 2px;
+    border-color: black;
+    margin: 30px;
+    padding: 10px;
+}
+
+.outerbox {
+    border: solid 5px;
+    padding: 40px;
+    margin: 20px;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+    height: 30px;
+}
+
+.overflow-scroll {
+    overflow: scroll;
+    height: 30px;
+}
+
+.fit-content {
+    width: fit-content;
+}

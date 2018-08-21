@@ -1,24 +1,31 @@
-body {
-    margin: 5em 5em;
-    border: 5px solid black;
-    padding: 50px 50px;
+.parentUl {
+    margin: 10px 0px;
+    background-color: black;
+    padding: 20px 20px;
 }
 
-.header {
-    margin: 30px 30px 30px;
-    padding: 30px 30px;
-    border: 2px solid black;
+.parent {
+    position: relative; 
+    color: white;
+    display: inline;
+    margin: 0px;
+    padding: 30px 30px 30px;
+    text-align: center;
 }
 
-.content {
-    margin: 30px 30px 30px;
-    padding: 30px 30px;
-    border: 2px solid black;
+.child {
+    color: white;
+    margin: 10px 10px;
+    margin-left: 0px;
+    padding: 10px 10px 10px;
 }
 
-.footer {
-    margin: 30px 30px 30px;
-    padding: 30px 30px;
-    border: 2px solid black;
+.childUl {
+    position: absolute;
+    top: 45px;
+    left: 0px;
+    list-style: none;
+    display: inline-block;
+    background-color: black;
+    padding: 10px;
 }
-

@@ -1,0 +1,132 @@
+.container {
+    height: 100vh;
+}
+
+@media only screen and (min-width: 200px) {
+    .purple {
+        background-color: purple;
+        height: 30%;
+    }
+
+    .blue {
+        background-color: blue;
+        height: 30%;
+    }
+
+    .green {
+        background-color: green;
+        height: 30%;
+    }
+
+    .red {
+        background-color: red;
+        height: 30%;
+    }
+
+    .orange {
+        background-color: orange;
+        height: 30%;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .purple {
+        float: left;
+        height: 30%;
+        width: 100%;
+    }
+
+    .blue {
+        float: left;
+        height: 30%;
+        width: 50%;
+    }
+
+    .green {
+        float: left;
+        height: 30%;
+        width: 50%;
+    }
+
+    .red {
+        float: left;
+        height: 30%;
+        width: 100%;
+    }
+
+    .orange {
+        float: left;
+        height: 30%;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .purple {
+        float: left;
+        height: 30%;
+        width: 50%;
+    }
+
+    .blue {
+        float: left;
+        height: 30%;
+        width: 50%;
+    }
+
+    .green {
+        float: left;
+        height: 30%;
+        width: 33.33%;
+    }
+
+    .red {
+        float: left;
+        height: 30%;
+        width: 33.33%;
+    }
+
+    .orange {
+        float: left;
+        height: 30%;
+        width: 33.33%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .purple {
+        float: left;
+        height: 30%;
+        width: 440px;
+    }
+
+    .blue {
+        float: left;
+        height: 30%;
+        width: 440px;
+    }
+
+    .green {
+        float: left;
+        height: 30%;
+        width: 290px;
+    }
+
+    .red {
+        float: left;
+        height: 30%;
+        width: 300px;
+    }
+
+    .orange {
+        float: left;
+        height: 30%;
+        width: 290px;
+    }
+
+    .container {
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,16 +1,86 @@
-.outer{
+.outer {
     border: 2px solid black;
     height: 667px;
-    width: 373px;
+    width: 375px;
     position: absolute;
-    margin-left:30%;
+    margin-left: 30%;
+    margin-top: 0;
+}
+h1 {
+    color: white;
+    font-size: 20px;
+    background-color: blue;
+    height: 30px;
+    text-align: center;
+    margin-top: 0;
+    padding:10px;
+
+}
+.message{
+    width:370px;
+}
+.message p
+{
+    background-color: darkgray;
+    height: 50px;
+    width: 250px;
+    margin-left: 10px;
+    border-radius: 5px;
+    display:inline-block;
+    position:relative;
+    
+}
+.message img{
+     border-radius: 50%;
+     height: 40px;
+     width: 40px;
+     display: inline-block;
+     margin-top: 30px;
+     margin-left: 15px;
 }
 
-.title{
- color:white;
- font-size:10px;
- background-color: blue;
- height: 30px;
-top:0;
- text-align: center;
+
+.forms{
+    background-color: darkturquoise;
+    border: 2px solid black;
+    clear:both;
+}
+
+.message div{
+    display: inline-block;
+}
+
+.location{
+     height: 100px;
+     width: 60px;
+     display:block;
+     clear:both;
+     margin:auto;
+     top:0px;
+     bottom:0px;
+     left:0px;
+     right: 0px;
+}
+
+.image-div{
+    border: 2px;
+
+}
+
+.button-div{
+    margin-left:30px;
+    position: absolute;
+   }
+
+.button-div button{
+    margin: 10px;
+}
+
+.image-scroller{
+    overflow-x: scroll;
+    height: 200px;
+    width:300px;
+    margin-left:  20px;
+    white-space: nowrap;
+
 }

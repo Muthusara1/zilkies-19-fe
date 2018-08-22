@@ -1,0 +1,49 @@
+div {
+    height: 200px;
+}
+
+.violet-box {
+    background-color: blueviolet;
+}
+
+.blue-box {
+    background-color: aquamarine;
+}
+
+.green-box {
+    background-color: green;
+}
+
+@media only screen and (min-width: 400px)and (max-width: 600px) {
+    .violet-box {
+        width: 30%;
+        float: left;
+    }
+
+    .blue-box {
+        width: 70%;
+        float: left;
+    }
+
+    .green-box {
+        clear: both;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 601px) {
+    .violet-box {
+        width: 30%;
+        float: left;
+    }
+
+    .blue-box {
+        width: 30%;
+        float: left;
+    }
+
+    .green-box {
+        width: 40%;
+        float: left;
+    }
+}

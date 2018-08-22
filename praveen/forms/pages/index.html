@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms Exercise</title>
+        <link rel="stylesheet" href="../css/mystyle.css"/>
+    </head>
+    <body>
+        <div class="heading">
+            <h1>Let's craft your product.</h1>
+        </div>
+        <div class="input">
+            <form method="GET" action="">
+                <div class="preferences">
+                    <div class="timeframe">
+                        <h3>Timeframe</h3>
+                        <div class="timeframe-input">
+                            <div class="time-field"><input type="checkbox" name="timeframe" value="one" checked/><span>1 month</span></div>
+                            <div class="time-field"><input type="checkbox" name="timeframe" value="two"/><span>2-3 months</span></div>
+                            <div class="time-field"><input type="checkbox" name="timeframe" value="four"/><span>4+ months</span></div>
+                        </div>
+                    </div>
+                    <div class="project-type">
+                        <h3>Project Type</h3>
+                        <div class="project-type-input">
+                            <div class="project-type-field"><input type="radio" name="project_type" value="desktop"/><span>Desktop</span></div>
+                            <div class="project-type-field"><input type="radio" name="project_type" value="web"/><span>Web</span></div>
+                            <div class="project-type-field"><input type="radio" name="project_type" value="mobile"/><span>Mobile</span></div>
+                            <div class="project-type-field"><input type="radio" name="project_type" value="other"/><span>Other</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="personal-details">
+                    <h3>Personal Details</h3>
+                    <div class="personal-details-input">
+                        <input type="text" name="name" placeholder="Name"/>
+                        <input type="text" name="company" placeholder="Company"/>
+                        <input type="email" name="email" placeholder="Email"/>
+                        <input type="text" name="budget" placeholder="Budget"/>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <textarea name="project-info-input" cols="30" rows="10" placeholder="Tell us about your project..."></textarea>
+                    <input type="submit" name="submit-button" value="Send Inquiry"/><br>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

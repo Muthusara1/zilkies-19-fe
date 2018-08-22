@@ -1,0 +1,79 @@
+body {
+    height: 100vh;
+    background-color: silver;
+}
+
+@media only screen and (min-width: 200px) {
+    .purple {
+        background-color: purple;
+        height: 30%;
+    }
+
+    .blue {
+        background-color: blue;
+        height: 30%;
+    }
+
+    .green {
+        background-color: green;
+        height: 30%;
+    }
+
+    .red {
+        background-color: red;
+        height: 30%;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .purple {
+        float: left;
+        height: 60%;
+        width: 50%;
+    }
+
+    .blue {
+        float: left;
+        height: 30%;
+        width: 50%;
+    }
+
+    .green {
+        float: left;
+        height: 30%;
+        width: 50%;
+    }
+
+    .red {
+        float: left;
+        height: 30%;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .purple {
+        float: right;
+        height: 60%;
+        width: 20%;
+    }
+
+    .blue {
+        float: right;
+        height: 30%;
+        width: 60%;
+    }
+
+    .green {
+        float: right;
+        height: 30%;
+        width: 60%;
+    }
+
+    .red {
+        clear: left;
+        float: none;
+        height: 60%;
+        width: 20%;
+    }
+}

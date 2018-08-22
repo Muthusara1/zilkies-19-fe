@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+    <link rel="stylesheet" href="../css/forms.css">
+</head>
+<body>
+    <!--<div class="banner"></div>-->
+    <div class="header">
+        <h1>Let's craft your product.</h1>
+    </div>
+    <form name="product-form" action="#">
+        <div class="container">
+            <div class="innerbox1">
+                <h2>Timeframe</h2>
+                <div>
+                    <input type="radio" name="timeframe" value="1" checked>1 Month</br>
+                    <input type="radio" name="timeframe" value="2">2-3 Months</br>
+                    <input type="radio" name="timeframe" value="4">4+ Months</br>
+                </div>
+            </div>
+            <div class="innerbox1">
+                <h2>Project Type</h2>
+                <div>
+                    <input type="checkbox" name="project-type" value="desktop">Desktop</br>
+                    <input type="checkbox" name="project-type" value="web">Web</br>
+                    <input type="checkbox" name="project-type" value="mobile">Mobile</br>
+                    <input type="checkbox" name="project-type" value="other">Other</br>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="innerbox2">
+                <h2>Personal Details</h2>
+                <input type="text" name="name" placeholder="Name"/>
+                <input type="text" name="company" placeholder="Company"/>
+                <input type="email" name="email" placeholder="Email"/>
+                <input type="text" name="budget" placeholder="Budget"/>
+                
+            </div>
+        </div>
+        <div class="container">
+            <div class="innerbox3">
+                <textarea name="about" placeholder="Tell us about your project.." form="product-form"></textarea>
+                <input type="submit" value="Send Inquiry" class="submit-button">
+            </div>
+        </div>
+    </form>
+</body>
+</html>

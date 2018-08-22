@@ -1,0 +1,67 @@
+* {
+    color: white;
+}
+
+body {
+    padding: 20px;
+}
+
+aside {
+    float: left;
+    width: 30%;
+}
+
+section {
+    float: left;
+    width: 70%;
+}
+
+section div {
+    float: left;
+    padding: 20px;
+}
+
+input[type=text],input[type=email] {
+    background-color: #2980b9;
+    width: 350px;
+    padding: 12px;
+    border-width: 0px;
+    outline: none;
+}
+
+textarea {
+    width: 240px;
+    height: 250px;
+    padding: 12px;
+    background-color: #2980b9;
+    border-width: 0px;
+}
+
+#container{
+    padding: 40px;
+    border:1px solid;
+    overflow: auto;
+    background: rgb(102,91,235);
+    background: linear-gradient(175deg, rgba(102,91,235,1) 22%, rgba(52,152,219,1) 38%, rgba(0,212,255,1) 100%);
+
+}
+
+h1 {
+    font-size: 70px;
+}
+
+button {
+    border-radius: 40px;
+    border: 1px white solid;   
+    padding: 12px;
+    width: 150px;
+    background-color: #2980b9;
+    float: right;
+}
+
+.fas {
+    float: right;
+    width: 50px;
+    height: 50px;
+}
+

@@ -31,7 +31,8 @@ input::placeholder {
 
 html {
     height: 100%;
-    background: linear-gradient(174deg, rgba(106, 219, 224, 1) 30%, rgba(66, 207, 210, 1) 31%);
+    background: rgb(106, 219, 224);
+    background: linear-gradient(174deg, rgba(106, 219, 224, 1) 30%, rgba(66, 207, 210, 1) 31%) fixed center;
     background-repeat: no-repeat;
     background-size: cover;
 }

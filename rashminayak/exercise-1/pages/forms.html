@@ -6,16 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Forms</title>
     <link rel="stylesheet" href="../css/forms.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
-    <!--<div class="banner"></div>-->
+    <!-- <div class="banner"></div> -->
+    <i class="fas fa-times-circle close"></i>
     <div class="header">
         <h1>Let's craft your product.</h1>
     </div>
     <form name="product-form" action="#">
         <div class="container">
             <div class="innerbox1">
-                <h2>Timeframe</h2>
+                <span><i class="fa fa-clock"></i><h2>Timeframe</h2></span>
                 <div>
                     <input type="radio" name="timeframe" value="1" checked>1 Month</br>
                     <input type="radio" name="timeframe" value="2">2-3 Months</br>
@@ -23,7 +25,7 @@
                 </div>
             </div>
             <div class="innerbox1">
-                <h2>Project Type</h2>
+                <span><i class="fas fa-desktop"></i><h2>Project Type</h2></span>
                 <div>
                     <input type="checkbox" name="project-type" value="desktop">Desktop</br>
                     <input type="checkbox" name="project-type" value="web">Web</br>
@@ -34,7 +36,7 @@
         </div>
         <div class="container">
             <div class="innerbox2">
-                <h2>Personal Details</h2>
+                <span><i class="fas fa-user-tie"></i><h2>Personal Details</h2></span>
                 <input type="text" name="name" placeholder="Name"/>
                 <input type="text" name="company" placeholder="Company"/>
                 <input type="email" name="email" placeholder="Email"/>

@@ -17,7 +17,7 @@
 .first-message {
     border-radius: 12px;
     padding: 9px 12px;
-    margin: 15px 19px;
+    margin: 10px 19px;
     position: relative;
     width: 60%;
     float: left;
@@ -51,7 +51,7 @@
 .second-message {
     border-radius: 12px;
     padding: 9px 12px;
-    margin: 15px 19px;
+    margin: 10px 19px;
     position: relative;
     width: 60%;
     float: right;
@@ -99,4 +99,24 @@
 
 .fa-location-arrow {
     color: white;
+}
+
+.item-list {
+    clear: left;
+    background: transparent;
+    overflow: auto;
+    text-align: center;
+    width: 50%;
+    margin: 0 100px;
+    white-space: nowrap;
+}
+
+.inner-item {
+    display: inline-block;
+    color: grey;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+    height: 15px;
+    width: 15px;
 }

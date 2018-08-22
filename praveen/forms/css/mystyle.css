@@ -14,7 +14,6 @@ body {
 
 .preferences {
     display: inline-block;
-    /*  float: left; */
     margin-bottom: 10px;
     margin-left: 30px;
     width: 25%;
@@ -52,7 +51,8 @@ textarea {
     height: 250px;
 }
 
-.time-field, .project-field {
+.time-field,
+.project-field {
     display: block;
     margin-bottom: 10px;
 }
@@ -69,7 +69,8 @@ textarea {
     color: white;
 }
 
-.personal-details-input input:focus, textarea:focus {
+.personal-details-input input:focus,
+textarea:focus {
     border: 3px solid #555;
     transition: 0.5s;
 }

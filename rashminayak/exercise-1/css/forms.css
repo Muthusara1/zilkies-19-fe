@@ -1,0 +1,106 @@
+* {
+    font-family: "Arial Black", Gadget, sans-serif;
+    color: white;
+    margin: none;
+    border: none;
+    box-sizing: border-box;
+    background-color: #3cb3ff;
+}
+
+.container {
+    float: left;
+    height: 500px;
+}
+
+.container:nth-child(1) {
+    width: 30%;
+}
+
+.container:nth-child(2) {
+    width: 35%;
+}
+
+.container:nth-child(3) {
+    width: 35%;
+}
+
+.header {
+    float: left;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.innerbox1,
+.innerbox2,
+.innerbox3 {
+    padding: 20px;
+}
+
+.innerbox2 input {
+    margin: 10px;
+    height: 50px;
+    background-color: #2fa8fa;
+    padding: 10px;
+    width: 100%;
+}
+
+.innerbox1 input {
+    margin: 10px;
+}
+
+.submit-button {
+    background-color: #2fa8fa;
+    height: 50px;
+    width: 150px;
+    border: 2px solid white;
+    border-radius: 500px;
+    float: right;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 57%;
+    float: right;
+    margin-top: 14%;
+    background-color: #2fa8fa;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.innerbox3 {
+    height: 500px;
+}
+
+.banner {
+    position: absolute;
+    left: 10%;
+    height: 200%;
+    width: 100%;
+    background-color: pink;
+    opacity: 0.3;
+    transform: rotate(-10deg);
+}
+
+i {
+    font-size: 30px;
+    color: white;
+    margin: 10px;
+}
+
+h2 {
+    display: inline;
+    margin: 10px;
+}
+
+h1 {
+    display: inline;
+    font-size: 40px;
+}
+
+.close {
+    float: right;
+}
+

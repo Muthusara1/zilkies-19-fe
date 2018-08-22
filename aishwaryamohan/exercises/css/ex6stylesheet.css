@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
+h3 {
+    margin-left: 10px;
+}
+
+.wrapper {
+    background-color: rgb(13, 186, 230);
+    color: white;
+    width: 80%;
+    height: 95%;
+    border: 10px solid white;
+    outline: 2px solid black;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+h1 {
+    padding: 10px;
+    font-size: 60px;
+    margin-left: 3%;
+}
+
+fieldset {
+    border: none;
+}
+
+.form-wrapper {
+    clear: both;
+}
+
+.left {
+    width: 25%;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.right {
+    width: 70%;
+    float: right;
+    box-sizing: border-box;
+}
+
+.form-left,
+.form-right {
+    width: 50%;
+    float: left;
+}
+
+.left input {
+    margin: 5%;
+}
+
+.right form input {
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid rgb(77, 158, 196);
+    background-color: rgb(77, 158, 196);
+    padding: 5px;
+    height: 50px;
+    box-sizing: border-box;
+    color: white;
+    margin: 4%;
+}
+
+textarea {
+    font-size: 15px;
+    background-color: rgb(77, 158, 196);
+    box-sizing: border-box;
+    color: white;
+    width: 90%;
+    float: right;
+    border: 0;
+}
+
+div input[type="submit"] {
+    border-radius: 12px;
+    border: 1px solid white;
+    background-color: rgb(13, 186, 230);
+    color: white;
+    width: 160px;
+    height: 45px;
+    float: right;
+}
+
+div {
+    padding: 1%;
+}
+
+i {
+    float: right;
+}

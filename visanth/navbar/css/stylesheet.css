@@ -25,7 +25,7 @@ ul {
 
 .navigator-inner {
     position: absolute;
-    display: block;
+    display: none;
     left: 200px;
     background-color: rgb(60, 75, 35);
     margin: 1px;

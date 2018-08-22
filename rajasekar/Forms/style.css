@@ -1,9 +1,9 @@
 body {
-background-color: aqua;
+    background-color: aqua;
 }
 
 .outline i {
-    float:right;
+    float: right;
     color: white;
 }
 
@@ -14,7 +14,7 @@ h1 {
 
 h2 {
     color: white;
-    margin-left:20%;
+    margin-left: 20%;
 }
 
 .header {
@@ -26,8 +26,8 @@ h2 {
     width: 30%;
     height: 538px;
     color: white;
-    float:left;
-    display:relative;
+    float: left;
+    display: relative;
     margin-top: 1%;
 }
 
@@ -35,15 +35,15 @@ h2 {
     width: 40%;
     height: 538px;
     color: white;
-    display:relative;
-    float:right;
+    display: relative;
+    float: right;
 }
 
 .centermenu {
     width: 30%;
     height: 538px;
     color: white;
-    margin-left:520px;
+    margin-left: 520px;
     display: relative;
 }
 
@@ -53,31 +53,31 @@ form {
 
 .centermenu input {
     background-color: #2fa8fa;
-    border:1px solid #2fa8fa;
+    border: 1px solid #2fa8fa;
     margin-bottom: 30px;
     padding: 7px;
-    margin-left:20%;
+    margin-left: 20%;
 }
 
 .leftmenu input {
-    margin-left:20%;
+    margin-left: 20%;
     font-size: 300px;
     margin-bottom: 25px;
 }
 
 .rightmenu textarea {
     background-color: #2fa8fa;
-    border:1px solid #2fa8fa; 
+    border: 1px solid #2fa8fa;
     margin-top: 10%;
-    margin-left:20%;
-    color:white;
-    font-size:20px;
+    margin-left: 20%;
+    color: white;
+    font-size: 20px;
 }
 
 .rightmenu .button {
     border-radius: 20px;
     background-color: #2fa8fa;
-    border:1px solid #2fa8fa; 
-    margin-left:55%;
-    padding:20px;
+    border: 1px solid #2fa8fa;
+    margin-left: 55%;
+    padding: 20px;
 }

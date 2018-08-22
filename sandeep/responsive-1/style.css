@@ -1,0 +1,51 @@
+.div-1 {
+    width: 100%;
+    height: 200px;
+    background-color: darkblue;
+}
+
+.div-2 {
+    width: 100%;
+    height: 200px;
+    background-color: lightblue;
+}
+
+.div-3 {
+    width: 100%;
+    height: 200px;
+    background-color: green;
+}
+
+@media screen and (min-width: 480px) and (max-width: 600px) {
+    .div-1 {
+        width: 30%;
+        float: left;
+    }
+
+    .div-2 {
+        width: 70%;
+        float: left;
+    }
+
+    .div-3 {
+        clear: both;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    .div-1 {
+        width: 20%;
+        float: left;
+    }
+
+    .div-2 {
+        width: 60%;
+        float: left;
+    }
+
+    .div-3 {
+        width: 20%;
+        height: 200px;
+        float: left;
+    }
+}

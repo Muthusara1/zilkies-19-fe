@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+.blue {
+    background-color: darkblue;
+    width: 20%;
+    float: left;
+}
+
+.lightblue {
+    background-color: lightblue;
+    width: 60%;
+    float: left;
+}
+
+.green {
+    background-color: green;
+    width: 20%;
+    float: left;
+}
+
+@media screen and (max-width: 500px) {
+    .blue,
+    .lightblue,
+    .green
+    {
+    width: 100%;
+    float: none;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 900px) {
+    .blue,
+    {
+    width: 20%;
+    }
+
+    .lightblue {
+        width: 80%;
+    }
+
+    .green {
+        width: 100%;
+    }
+}

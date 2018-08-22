@@ -30,6 +30,11 @@ a {
     background-color: black;
     padding: 14px 16px;
     text-align: left;
+    display: none;
+}
+
+#list-item1:hover .service-menu {
+   display: block;
 }
 
 ul {

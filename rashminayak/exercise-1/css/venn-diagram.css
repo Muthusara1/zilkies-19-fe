@@ -1,10 +1,11 @@
-span {
+.black,
+.blue,
+.red {
     height: 300px;
     width: 300px;
     border-radius: 50%;
-    display: inline-block;
     position: absolute;
-    margin: 100px;
+    margin: auto;
 }
 
 .black {
@@ -24,5 +25,7 @@ span {
 
 .container {
     position: relative;
-    left: 250px;
+    border: solid 2px black;
+    height: 500px;
+    width: 550px;
 }

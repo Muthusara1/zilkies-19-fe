@@ -1,0 +1,64 @@
+div {
+    box-sizing: border-box;
+}
+
+.blue {
+    float: left;
+    background-color: blue;
+    width: 25%;
+    height: 600px;
+}
+
+.light-blue {
+    float: left;
+    background-color: lightblue;
+    width: 50%;
+    height: 300px;
+}
+
+.yellow {
+    float: left;
+    background-color: yellow;
+    width: 50%;
+    height: 300px;
+}
+
+.green {
+    display: inline-block;
+    clear: right;
+    background-color: green;
+    width: 25%;
+    height: 600px;
+}
+
+@media screen and (max-width: 800px) and (min-width: 600px) {
+    .blue {
+        width: 50%;
+    }
+    .light-blue {
+        width: 50%;
+    }
+    .green {
+        width: 100%;
+    }
+    .yellow {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .blue {
+        width: 100%;
+        height: 300px;
+    }
+    .light-blue {
+        width: 100%;
+    }
+    .green {
+        width: 100%;
+        height: 300px;
+    }
+    .yellow {
+        width: 100%;
+    }
+}

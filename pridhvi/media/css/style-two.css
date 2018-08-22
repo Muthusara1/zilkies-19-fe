@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+.darkblue {
+    background-color: darkblue;
+    width: 50%;
+    float: left;
+}
+
+.lightblue {
+    background-color: lightblue;
+    width: 50%;
+    float: left;
+}
+
+.green {
+    background-color: green;
+    width: 35%;
+    float: left;
+}
+
+.red {
+    background-color: red;
+    width: 35%;
+    float: left;
+}
+
+.yellow {
+    background-color: yellow;
+    width: 30%;
+    float: left;
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    .darkblue,
+    .red,
+    .yellow
+    {
+        width: 100%;
+    }
+
+    .green {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .darkblue,
+    .lightblue,
+    .red,
+    .yellow,
+    .green
+    {
+        width: 100%;
+    }
+}

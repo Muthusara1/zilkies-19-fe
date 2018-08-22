@@ -3,9 +3,39 @@
     margin: 0;
 }
 
+.box {
+    position: absolute;
+    margin-left: 40%;
+    margin-top: 15%;
+}
+
 .circle {
     border-radius: 50%;
-    border: 2px solid red;
-    width: 200px;
-    height: 200px;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    display: inline-block;
 }
+
+.one {
+    background: rgb(17, 238, 17);
+}
+
+.two {
+    background: rgb(226, 226, 11);
+    left: -25px;
+}
+
+.three {
+    background: rgb(218, 28, 161);
+    left: -170px;
+    top: 60px;
+}
+
+/*
+div {
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+} */

@@ -1,0 +1,86 @@
+* {
+    margin: none;
+    padding: 6px;
+    border: none;
+    background-color: #3cd3ff;
+    color: white;
+    box-sizing: border-box;
+}
+
+.header {
+    font-family: 'Droid serif', serif;;
+    font-size: 180%;
+}
+
+.header h1 {
+    width: 80%;
+    display: inline;
+}
+
+.header .close {
+    width: 20%;
+    float: right;
+    text-align: right;
+}
+
+.sidebar,
+.personal-details
+{
+    width: 30%;
+}
+
+.text {
+    width: 40%;
+}
+
+.personal-details,
+.sidebar,
+.text
+{
+    float: left;
+}
+
+.text textarea {
+    width: 100%;  
+    display: block; 
+    height: 260px; 
+    resize: none;
+}
+
+input,
+.text textarea
+{
+    background-color: #2fa8fa;
+    margin-bottom: 4%;
+}
+
+.personal-details input,
+.text textarea
+{
+    opacity: 0.6;
+}
+
+.personal-details input:focus,
+.text textarea:focus,
+.text button:focus
+{
+    opacity: 1;
+    box-shadow: 2px 2px black;
+}
+
+.input input {
+    margin-bottom: 10%;
+    height: 40px;
+}
+
+.text {
+    margin-top: 7%;
+}
+
+.text button {
+    border: 2px solid;
+    border-radius: 20px;
+    border-color: white;
+    height: 50px;
+    float: right;
+}

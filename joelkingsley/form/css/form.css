@@ -1,0 +1,91 @@
+html {
+    background: linear-gradient(165deg, rgba(0, 188, 212, 1) 35%, rgba(3, 169, 244, 1) 35%) no-repeat fixed center;
+    background-size: cover;
+}
+
+.white {
+    color: white;
+}
+
+#quote h1 {
+    font-family: 'Roboto:900', sans-serif;
+    font-size: 50px;
+    margin: 30px;
+}
+
+#options {
+    margin: 20px;
+    float: left;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#options h2 {
+    font-family: 'Roboto:500', sans-serif;
+}
+
+#options input {
+    font-family: 'Roboto:100', sans-serif;
+    margin-right: 20px;
+}
+
+#personal-details {
+    margin: 20px;
+    float: left;
+    padding: 10px;
+    font-family: 'Roboto:500', sans-serif;
+}
+
+#personal-details input{
+    margin: 5px;
+    background-color: #2196f3;
+    border: none;
+    padding: 0 10px;
+    height: 40px;
+    color: white;
+    font-family: 'Roboto:100', sans-serif;
+}
+
+#feedback {
+    margin: 20px;
+    float:left;
+    padding: 10px;
+    position: relative;
+    top: 5px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#feedback h2 {
+    visibility: hidden;
+}
+
+#feedback textarea {
+    background-color: #2196F3;
+    border: none;
+    padding: 10px 10px;
+    color: white;
+    font-family: 'Roboto:100',sans-serif;
+}
+
+#close-button {
+    float: right;
+    margin: 10px;
+}
+
+.fa-times-circle {
+    color: white;
+}
+
+.dummy {
+    clear: both;
+}
+
+.send-enquiry {
+    float: right;
+    border: 3px solid white;
+    box-shadow: none !important;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 15px;
+    background-color: transparent;
+}

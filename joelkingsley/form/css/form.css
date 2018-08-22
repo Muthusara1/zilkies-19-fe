@@ -36,7 +36,7 @@ html {
     font-family: 'Roboto:500', sans-serif;
 }
 
-#personal-details input{
+#personal-details input {
     margin: 5px;
     background-color: #2196f3;
     border: none;
@@ -48,7 +48,7 @@ html {
 
 #feedback {
     margin: 20px;
-    float:left;
+    float: left;
     padding: 10px;
     position: relative;
     top: 5px;
@@ -60,11 +60,11 @@ html {
 }
 
 #feedback textarea {
-    background-color: #2196F3;
+    background-color: #2196f3;
     border: none;
     padding: 10px 10px;
     color: white;
-    font-family: 'Roboto:100',sans-serif;
+    font-family: 'Roboto:100', sans-serif;
 }
 
 #close-button {

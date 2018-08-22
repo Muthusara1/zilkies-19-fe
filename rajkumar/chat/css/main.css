@@ -104,7 +104,6 @@
 .item-list {
     clear: left;
     background: transparent;
-    /* background-color: #333; */
     overflow: auto;
     text-align: center;
     width: 50%;

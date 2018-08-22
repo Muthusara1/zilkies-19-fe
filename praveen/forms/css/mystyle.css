@@ -1,0 +1,85 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+body {
+    background-color: cadetblue;
+}
+
+.heading {
+    font-size: 35px;
+    margin: 40px;
+}
+
+.preferences {
+    display: inline-block;
+    /*  float: left; */
+    margin-bottom: 10px;
+    margin-left: 30px;
+    width: 25%;
+}
+
+.project-type {
+    margin-top: 20%;
+}
+
+.personal-details {
+    display: inline-block;
+    vertical-align: top;
+    width: 35%;
+}
+
+.project-info {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 60px;
+    width: 30%;
+}
+
+.project-info input {
+    position: relative;
+    left: 215px;
+    top: 50px;
+}
+
+textarea {
+    border: none;
+    resize: none;
+    background-color: rgb(60, 130, 133);
+    color: white;
+    padding: 12px 20px;
+    height: 250px;
+}
+
+.time-field, .project-field {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.personal-details-input input {
+    display: block;
+    box-sizing: border-box;
+    padding: 12px 12px;
+    border: none;
+    width: 300px;
+    height: 45px;
+    margin-bottom: 30px;
+    background-color: rgb(60, 130, 133);
+    color: white;
+}
+
+.personal-details-input input:focus, textarea:focus {
+    border: 3px solid #555;
+    transition: 0.5s;
+}
+
+input[type=submit] {
+    background-color: cadetblue;
+    border: 2px solid white;
+    border-radius: 30px;
+    color: white;
+    padding: 16px 32px;
+    margin: 4px 2px;
+    cursor: pointer;
+}

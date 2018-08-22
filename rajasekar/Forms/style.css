@@ -1,0 +1,83 @@
+body {
+    background-color: aqua;
+}
+
+.outline i {
+    float: right;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    color: white;
+    margin-left: 20%;
+}
+
+.header {
+    width: 4096px;
+    height: 100px;
+}
+
+.leftmenu {
+    width: 30%;
+    height: 538px;
+    color: white;
+    float: left;
+    display: relative;
+    margin-top: 1%;
+}
+
+.rightmenu {
+    width: 40%;
+    height: 538px;
+    color: white;
+    display: relative;
+    float: right;
+}
+
+.centermenu {
+    width: 30%;
+    height: 538px;
+    color: white;
+    margin-left: 520px;
+    display: relative;
+}
+
+form {
+    color: aqua;
+}
+
+.centermenu input {
+    background-color: #2fa8fa;
+    border: 1px solid #2fa8fa;
+    margin-bottom: 30px;
+    padding: 7px;
+    margin-left: 20%;
+}
+
+.leftmenu input {
+    margin-left: 20%;
+    font-size: 300px;
+    margin-bottom: 25px;
+}
+
+.rightmenu textarea {
+    background-color: #2fa8fa;
+    border: 1px solid #2fa8fa;
+    margin-top: 10%;
+    margin-left: 20%;
+    color: white;
+    font-size: 20px;
+}
+
+.rightmenu .button {
+    border-radius: 20px;
+    background-color: #2fa8fa;
+    border: 1px solid #2fa8fa;
+    margin-left: 55%;
+    padding: 20px;
+}

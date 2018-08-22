@@ -1,15 +1,30 @@
 #outer-layout {
-    padding: 70px;
+    padding: 40px;
     border: 10px solid;
 }
 
 #header,
-#content,
+#content1,
+#content2,
+#content3,
 #footer {
     padding: 10px;
     border: 3px solid;
+    height: 100px;
 }
 
 body {
     padding: 50px 30px;
+}
+
+#content1 {
+    height: auto;
+}
+
+#content2 {
+    overflow: hidden;
+}
+
+#content3 {
+    overflow: scroll;
 }

@@ -1,6 +1,7 @@
-html{
-    font-family: Open Sans;
+html {
+    font-family: "Open Sans", sans-serif;
 }
+
 .outer {
     border: 2px solid black;
     margin: 10px;
@@ -8,16 +9,17 @@ html{
     width: 1250px;
     padding: 40px;
 }
-.form-layout{
+
+.form-layout {
     height: 600px;
     width: 1200px;
-    background: rgb(106,219,224);
-    background: linear-gradient(174deg, rgba(106,219,224,1) 30%, rgba(66,207,210,1) 31%);
+    background: rgb(106, 219, 224);
+    background: linear-gradient(174deg, rgba(106, 219, 224, 1) 30%, rgba(66, 207, 210, 1) 31%);
     background-size: cover;
-   
 }
 
-header,.time-frame {
+header,
+.time-frame {
     color: white;
     text-decoration: bold;
     padding: 20px;
@@ -26,39 +28,35 @@ header,.time-frame {
     box-sizing: border-box;
 }
 
-.time-frame{
- display:inline-block;
- width: 300px;
- float:left;
+.time-frame {
+    display: inline-block;
+    width: 300px;
+    float: left;
 }
 
-.personal-detail,.comment{
-    color:white;
-    float:left;
-    width:350px;
-    height:400px;
+.personal-detail,
+.comment {
+    color: white;
+    float: left;
+    width: 350px;
+    height: 400px;
     margin: 35px;
     align-content: center;
     display: block;
 }
-.personal-detail input{
+
+.personal-detail input {
     border: 1px solid #008000;
     width: 300px;
     padding: 15px;
-    margin-top:10px;
+    margin-top: 10px;
     margin-right: 10px;
     margin-left: 0;
     margin-bottom: 5px;
     background-color: blue;
     box-sizing: border-box;
-    color:white;
-    opacity:0.3;
-    
-}
-.personal-detail input[type=text]:focus,input[type=email]:focus,.comment textarea:focus{
-   background-color: aliceblue;
-   color: black;
-   opacity:1;
+    color: white;
+    opacity: 0.3;
 }
 
 .comment textarea {
@@ -68,41 +66,44 @@ header,.time-frame {
     margin-bottom: 40px;
     margin-top: 55px;
     background-color: blue;
-    color:white;
-    opacity:0.3;
+    color: white;
+    opacity: 0.3;
 }
 
-.comment input{
-    border:2px solid white;
+.personal-detail input[type=text]:focus,
+.personal-detail input[type=email]:focus,
+.comment textarea:focus {
+    background-color: aliceblue;
+    color: black;
+    opacity: 1;
+}
+
+.comment input {
+    border: 2px solid white;
     border-radius: 40px;
     color: white;
-    bottom: 0px;
+    bottom: 0;
     left: 50%;
     padding: 10px;
     box-sizing: border-box;
     margin-bottom: 0;
-    float:right;
+    float: right;
     background-color: inherit;
 }
 
-.project-type{
-    border:2px solid black;
+.project-type {
+    border: 2px solid black;
     height: 100px;
-    weight:100px;
+    width: 100px;
     display: inline-block;
 }
-#icon{
-    font-size:24px;
-    color:white;
-    float: right;
-    border: 2px solid white;
-    border-radius:90%;
-    padding: 5px;
-}
 
-.image,img{
-    float:right;
-    height:50px;
-    width:50px;
-    background-image: url("../image/close.png");
+img {
+    font-size: 24px;
+    color: white;
+    float: right;
+    border-radius: 90%;
+    padding: 5px;
+    height:30px;
+    width:30px;
 }

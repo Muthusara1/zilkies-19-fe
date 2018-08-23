@@ -1,0 +1,87 @@
+div {
+    height: 150px;
+}
+
+.violet {
+    background-color: blueviolet;
+}
+
+.blue {
+    background-color: aquamarine;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 599px) {
+    .blue,
+    .green {
+        width: 50%;
+        float: left;
+    }
+
+    .red {
+        clear: both;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 899px) {
+    .violet,
+    .blue {
+        width: 50%;
+        float: left;
+    }
+
+    .green {
+        width: 33.3%;
+        float: left;
+    }
+
+    .red {
+        width: 33.3%;
+        float: left;
+    }
+
+    .yellow {
+        width: 33.3%;
+        float: left;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    body {
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 10%;
+    }
+
+    .violet,
+    .blue {
+        width: 50%;
+        float: left;
+    }
+
+    .green {
+        width: 33.3%;
+        float: left;
+    }
+
+    .red {
+        width: 33.3%;
+        float: left;
+    }
+
+    .yellow {
+        width: 33.3%;
+        float: left;
+    }
+}

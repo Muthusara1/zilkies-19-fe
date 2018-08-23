@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Page 1</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+
+            <style>
+                .firstbar{
+                    width: 25%;
+                    height: 100px;
+                    float: left;
+                    background-color:blue;
+                }
+                .secondbar{
+                    width: 50%;
+                    float: left;
+                    height: 100px;
+                    background-color:red;
+                }
+                .thirdbar{
+                    width: 25%;
+                    float: left;
+                    height: 100px;
+                    background-color:green;
+                }
+                @media only screen and (min-width: 600px) and (max-width: 800px){
+                    .secondbar{
+                        width: 75%;
+
+                    }
+                    .thirdbar{
+                        width: 100%;
+                    }                    
+                }
+                @media only screen and (max-width: 600px){
+                    .firstbar{
+                        width: 100%;
+                    }
+                    .secondbar{
+                        width: 100%;
+                    }
+                    .thirdbar{
+                        width: 100%;
+                    }                    
+                }
+
+            </style>
+
+    </head>
+    <body>
+    
+    <div class="firstbar">
+
+    </div>
+    <div class="secondbar">
+
+    </div>
+    <div class="thirdbar">
+
+    </div>
+</body>
+</html>

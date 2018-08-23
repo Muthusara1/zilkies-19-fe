@@ -1,0 +1,63 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.violet {
+    background-color: blue;
+    height: 100px;
+    width: 100%;
+}
+
+.blue {
+    background-color: lightblue;
+    height: 100px;
+    width: 100%;
+}
+
+.green {
+    background-color: green;
+    height: 100px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 340px) and (max-width: 719px) {
+    .container {
+        flex-direction: row;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-self: flex-end;
+    }
+
+    .violet {
+        width: 25%;
+    }
+
+    .blue {
+        width: 75%;
+    }
+
+    .green {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 720px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .blue {
+        width: 50%;
+    }
+
+    .violet {
+        width: 25%;
+    }
+
+    .green {
+        width: 25%;
+    }
+}

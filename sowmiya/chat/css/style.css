@@ -6,6 +6,7 @@
     margin-left: 30%;
     margin-top: 0;
 }
+
 h1 {
     color: white;
     font-size: 20px;
@@ -13,74 +14,72 @@ h1 {
     height: 30px;
     text-align: center;
     margin-top: 0;
-    padding:10px;
+    padding: 10px;
+}
 
+.message {
+    width: 370px;
 }
-.message{
-    width:370px;
-}
-.message p
-{
+
+.message p {
     background-color: darkgray;
     height: 50px;
     width: 250px;
     margin-left: 10px;
     border-radius: 5px;
-    display:inline-block;
-    position:relative;
-    
-}
-.message img{
-     border-radius: 50%;
-     height: 40px;
-     width: 40px;
-     display: inline-block;
-     margin-top: 30px;
-     margin-left: 15px;
+    display: inline-block;
+    position: relative;
 }
 
+.message img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 15px;
+}
 
-.forms{
+.forms {
     background-color: darkturquoise;
     border: 2px solid black;
-    clear:both;
+    clear: both;
 }
 
-.message div{
+.message div {
     display: inline-block;
 }
 
-.location{
-     height: 100px;
-     width: 60px;
-     display:block;
-     clear:both;
-     margin:auto;
-     top:0px;
-     bottom:0px;
-     left:0px;
-     right: 0px;
+.location {
+    height: 100px;
+    width: 60px;
+    display: block;
+    clear: both;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
 
-.image-div{
+.image-div {
     border: 2px;
-
 }
 
-.button-div{
-    margin-left:30px;
+.button-div {
+    margin-left: 30px;
     position: absolute;
-   }
+}
 
-.button-div button{
+.button-div button {
     margin: 10px;
 }
 
-.image-scroller{
+.image-scroller {
     overflow-x: scroll;
     height: 200px;
-    width:300px;
-    margin-left:  20px;
+    width: 300px;
+    margin-left: 20px;
     white-space: nowrap;
-
 }
+

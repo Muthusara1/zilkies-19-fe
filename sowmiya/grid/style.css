@@ -68,7 +68,7 @@ div[class^="col"] {
     width: 100%;
 }
 
-@media screen and (min-width: 420px) {
+@media only screen and (min-width: 600px) and (max-width: 900px) {
     .col-md-1 {
         width: 8.33%;
     }
@@ -118,7 +118,7 @@ div[class^="col"] {
     }
 }
 
-@media screen and (min-width: 600px) {
+@media only screen and (min-width: 901px) {
     .col-lg-1 {
         width: 8.33%;
     }

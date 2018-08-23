@@ -1,0 +1,89 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.violet {
+    background-color: blue;
+    height: 100px;
+    width: 100%;
+}
+
+.blue {
+    background-color: lightblue;
+    height: 100px;
+    width: 100%;
+}
+
+.red {
+    background-color: red;
+    height: 100px;
+    width: 100%;
+}
+
+.green {
+    background-color: green;
+    height: 100px;
+    width: 100%;
+}
+
+.orange {
+    background-color: orange;
+    height: 100px;
+    width: 100%;
+}
+
+@media only screen and (min-width: 340px) and (max-width: 719px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .blue,
+    .green {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 720px) and (max-width: 1080px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .violet,
+    .blue {
+        width: 50%;
+    }
+
+    .green,
+    .orange {
+        width: 33%;
+    }
+
+    .red {
+        width: 34%;
+    }
+}
+
+@media only screen and (min-width: 1080px) {
+    .container {
+        flex-direction: row;
+    }
+
+    body {
+        padding: 0 50px;
+    }
+
+    .blue,
+    .violet {
+        width: 50%;
+    }
+
+    .green,
+    .red {
+        width: 33%;
+    }
+
+    .orange {
+        width: 34%;
+    }
+}

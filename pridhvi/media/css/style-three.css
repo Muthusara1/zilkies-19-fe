@@ -12,40 +12,42 @@
   flex-wrap: wrap;
 }
 
-.darkblue {
+.container-1 {
   background-color: darkblue;
 }
 
-.red {
+.container-2 {
+  height: 200px;
+}
+
+.container-3 {
   background-color: red;
 }
 
 .lightblue {
   background-color: lightblue;
+  height: 50%;
 }
 
 .green {
   background-color: green;
+  height: 50%;
 }
 
 @media screen and (min-width: 400px) and (max-width: 700px) {
-  .container {
-    justify-content: flex-end;
-    align-items: flex-start;
-  }
-
-  .darkblue {
+  .container-1 {
     width: 50%;
     height: 200px;
   }
 
-  .lightblue,
-  .green {
+  .container-2 {
     width: 50%;
+    height: 200px;
   }
 
-  .red {
+  .container-3 {
     width: 100%;
+    height: 100px;
   }
 }
 
@@ -54,14 +56,18 @@
     flex-direction: row-reverse;
   }
 
-  .darkblue,
-  .red {
-    height: 200px;
+  .container-1 {
     width: 10%;
+    height: 200px;
   }
 
-  .green,
-  .lightblue {
+  .container-2 {
     width: 80%;
+    height: 200px;
+  }
+
+  .container-3 {
+    width: 10%;
+    height: 200px;
   }
 }

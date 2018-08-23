@@ -17,35 +17,44 @@
 }
 
 @media screen and (min-width: 500px) and (max-width: 750px) {
+    .outer-container {
+        display: flex;
+        flex-wrap: wrap;
+        height: 200px;
+        align-content: space between;
+    }
+
     .container1 {
         width: 10%;
-        float: left;
     }
 
     .container2 {
         width: 90%;
-        float: left;
     }
 
     .container3 {
         width: 100%;
-        clear: both;
     }
 }
 
 @media only screen and (min-width: 800px) {
+    .outer-container {
+        display: flex;
+        flex-wrap: wrap;
+        height: 200px;
+        align-content: space between;
+    }
+
     .container1 {
-        width: 10%;
-        float: left;
+        width: 33%;
     }
 
     .container2 {
-        width: 80%;
-        float: left;
+        width: 33%;
     }
 
     .container3 {
-        width: 10%;
-        float: left;
+        width: 33%;
+        flex-grow: 1;
     }
 }

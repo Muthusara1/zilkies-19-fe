@@ -5,37 +5,38 @@
 
 .box {
     position: absolute;
-    margin-left: 40%;
-    margin-top: 15%;
+    height: 200px;
+    width: 200px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
 }
 
 .circle {
     border-radius: 50%;
     height: 100px;
     width: 100px;
-    position: relative;
-    display: inline-block;
 }
 
 .one {
     background: rgb(17, 238, 17);
+    position: relative;
+    display: inline-block;
 }
 
 .two {
+    position: relative;
+    display: inline-block;
     background: rgb(226, 226, 11);
-    left: -25px;
+    margin-left: -50px;
 }
 
 .three {
+    position: absolute;
+    display: block;
     background: rgb(218, 28, 161);
-    left: -170px;
+    left: 20px;
     top: 60px;
 }
-
-/*
-div {
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-} */

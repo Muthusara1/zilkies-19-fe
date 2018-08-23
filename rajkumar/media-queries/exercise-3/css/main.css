@@ -1,0 +1,89 @@
+.top-left {
+    height: 600px;
+    width: 20%;
+    clear: left;
+}
+
+.top-right {
+    width: 60%;
+    height: 300px;
+    float: right;
+}
+
+.three {
+    width: 60%;
+    height: 300px;
+    float: right;
+}
+
+.four {
+    width: 20%;
+    height: 600px;
+    float: right;
+}
+
+.dark-blue {
+    background-color: darkblue;
+}
+
+.blue {
+    background-color: #3949ab;
+}
+
+.green {
+    background-color: #558b2f;
+}
+
+.red {
+    background-color: #e53935;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 700px) {
+    .four {
+        color: darkblue;
+        float: left;
+        width: 50%;
+    }
+
+    .top-right {
+        float: left;
+        width: 50%;
+    }
+
+    .three {
+        float: left;
+        width: 50%;
+    }
+
+    .top-left {
+        float: left;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    .four {
+        height: 300px;
+        width: 100%;
+    }
+
+    .top-right {
+        height: 300px;
+        width: 100%;
+    }
+
+    .three {
+        width: 100%;
+        height: 300px;
+    }
+
+    .top-left {
+        height: 300px;
+        width: 100%;
+        float: left;
+    }
+}

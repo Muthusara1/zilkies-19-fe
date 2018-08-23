@@ -15,7 +15,9 @@ body {
     background-color: rgb(28, 187, 226);
 }
 
-i {
+img {
+    height: 30px;
+    width: 30px;
     float: right;
 }
 

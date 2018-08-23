@@ -1,63 +1,67 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100px;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .darkblue {
-    background-color: darkblue;
-    height: 200px;
-    float: right;
-    width: 10%; 
+  background-color: darkblue;
 }
 
 .red {
-    background-color: red;
-    height: 200px;
-    clear: left;
-    width: 10%;
+  background-color: red;
 }
 
 .lightblue {
-    background-color: lightblue;
-    height: 100px;
-    width: 80%;
-    float: right;
+  background-color: lightblue;
 }
 
 .green {
-    background-color: green;
-    height: 100px;
-    width: 80%;
-    float: right;
+  background-color: green;
 }
 
 @media screen and (min-width: 400px) and (max-width: 700px) {
-    .darkblue {
-        width: 50%;
-        float: left;
-    }
+  .container {
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
 
-    .lightblue,
-    .green
-    {
-        width: 50%;
-        float: left;
-    }
+  .darkblue {
+    width: 50%;
+    height: 200px;
+  }
 
-    .red {
-        width: 100%;
-    }
+  .lightblue,
+  .green {
+    width: 50%;
+  }
+
+  .red {
+    width: 100%;
+  }
 }
 
-@media screen and (max-width: 400px) {
-    .darkblue,
-    .green,
-    .lightblue,
-    .red
-    {
-        height: 100px;
-        width: 100%;
-        float: left;
-    }
+@media screen and (min-width: 700px) {
+  .container {
+    flex-direction: row-reverse;
+  }
+
+  .darkblue,
+  .red {
+    height: 200px;
+    width: 10%;
+  }
+
+  .green,
+  .lightblue {
+    width: 80%;
+  }
 }

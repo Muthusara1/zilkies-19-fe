@@ -1,34 +1,27 @@
-nav {
-    height: 100%;
-    display: block;
-    width: 50%;
+.outer-list {
+    padding: 20px;
     background-color: black;
-    color: white;
-    position: relative;
 }
 
-ul {
+.outer-list__child {
+    position: relative;
+    display: inline;
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+.inner-list {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    list-style: none;
+    display: inline-block;
+    background-color: black;
     padding: 10px;
 }
 
-li {
-    display: inline;
-    margin: 10px;
-    margin-left: 40px;
-}
-
-.dropdown {
-    position: absolute;
-    display: block;
-    margin-left: 25%;
-    margin-top: 0.7em;
-    float: center;
+.inner-list__child {
     color: white;
-    background-color: black;
-}
-
-.dropdown li {
-    display: block;
-    margin: auto;
     padding: 10px;
 }

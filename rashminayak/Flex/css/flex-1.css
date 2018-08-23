@@ -1,0 +1,53 @@
+html,
+body {
+    width: 100%;
+    height: 200px;
+}
+
+.outer-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+}
+
+.indigo-container {
+    background: darkblue;
+    width: 100%;
+}
+
+.blue-container {
+    background: skyblue;
+    width: 100%;
+}
+
+.green-container {
+    background: green;
+    width: 100%;
+}
+
+@media only screen and (min-width: 500px) {
+    .indigo-container {
+        width: 25%;
+    }
+
+    .blue-container {
+        width: 75%;
+    }
+
+    .green-container {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .indigo-container,
+    .green-container {
+        width: 25%;
+    }
+
+    .blue-container {
+        width: 50%;
+    }
+}

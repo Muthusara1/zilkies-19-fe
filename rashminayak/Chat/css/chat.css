@@ -1,0 +1,12 @@
+div {
+    background-color: blue;
+    width: 100%;
+}
+
+p {
+    display: inline;
+}
+
+menu {
+    float: right;
+}

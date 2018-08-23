@@ -1,0 +1,41 @@
+.header {
+    border: 1px solid red;
+    height: 10%;
+    background-color: #00bfff;
+}
+
+.chatbox {
+    border: 1px solid red;
+    height: 80%;
+}
+
+.footer {
+    border: 1px solid red;
+    height: 10%;
+}
+
+.i-left {
+    float: left;
+}
+
+i {
+    padding: 2%;
+    font-size: 250%;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+.float-left {
+    border: 1px solid red;
+    float: left;
+    padding: 1%;
+    text-align: center;
+    width: 74%;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+body {
+    height: 667px;
+    width: 375px;
+}

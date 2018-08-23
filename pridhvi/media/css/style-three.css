@@ -1,63 +1,73 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100px;
+  width: 100%;
 }
 
-.darkblue {
-    background-color: darkblue;
-    height: 200px;
-    float: right;
-    width: 10%; 
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.red {
-    background-color: red;
-    height: 200px;
-    clear: left;
-    width: 10%;
+.container-1 {
+  background-color: darkblue;
+}
+
+.container-2 {
+  height: 200px;
+}
+
+.container-3 {
+  background-color: red;
 }
 
 .lightblue {
-    background-color: lightblue;
-    height: 100px;
-    width: 80%;
-    float: right;
+  background-color: lightblue;
+  height: 50%;
 }
 
 .green {
-    background-color: green;
-    height: 100px;
-    width: 80%;
-    float: right;
+  background-color: green;
+  height: 50%;
 }
 
 @media screen and (min-width: 400px) and (max-width: 700px) {
-    .darkblue {
-        width: 50%;
-        float: left;
-    }
+  .container-1 {
+    width: 50%;
+    height: 200px;
+  }
 
-    .lightblue,
-    .green
-    {
-        width: 50%;
-        float: left;
-    }
+  .container-2 {
+    width: 50%;
+    height: 200px;
+  }
 
-    .red {
-        width: 100%;
-    }
+  .container-3 {
+    width: 100%;
+    height: 100px;
+  }
 }
 
-@media screen and (max-width: 400px) {
-    .darkblue,
-    .green,
-    .lightblue,
-    .red
-    {
-        height: 100px;
-        width: 100%;
-        float: left;
-    }
+@media screen and (min-width: 700px) {
+  .container {
+    flex-direction: row-reverse;
+  }
+
+  .container-1 {
+    width: 10%;
+    height: 200px;
+  }
+
+  .container-2 {
+    width: 80%;
+    height: 200px;
+  }
+
+  .container-3 {
+    width: 10%;
+    height: 200px;
+  }
 }

@@ -1,5 +1,5 @@
 body {
-    background-color: aqua;
+    background-color: rgb(17, 0, 255);
 }
 
 .outline i {
@@ -43,7 +43,7 @@ h2 {
     width: 30%;
     height: 538px;
     color: white;
-    margin-left: 520px;
+    margin-left: 30%;
     display: relative;
 }
 

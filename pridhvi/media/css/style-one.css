@@ -5,45 +5,49 @@
     box-sizing: border-box;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
 .blue {
     background-color: darkblue;
-    width: 20%;
-    float: left;
+    flex-grow: 1;
 }
 
 .lightblue {
     background-color: lightblue;
-    width: 60%;
-    float: left;
+    flex-grow: 1;
 }
 
 .green {
     background-color: green;
-    width: 20%;
-    float: left;
+    flex-grow: 1;
 }
 
-@media screen and (max-width: 500px) {
-    .blue,
-    .lightblue,
-    .green
-    {
-    width: 100%;
-    float: none;
+@media screen and (min-width: 900px) {
+
+    .container {
+        flex-direction: row;
     }
 }
 
 @media screen and (min-width: 500px) and (max-width: 900px) {
-    .blue,
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap; 
+    }
+
+    .blue
     {
-    width: 20%;
+        flex-grow: 1;
     }
 
     .lightblue {
-        width: 80%;
+        flex-grow: 3;
     }
 
     .green {
-        width: 100%;
+        flex-grow: 0;
     }
 }

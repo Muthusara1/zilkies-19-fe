@@ -1,0 +1,82 @@
+.outer-div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blue {
+    width: 50%;
+    height: 300px;
+    background-color: blue;
+}
+
+.light-blue {
+    width: 50%;
+    height: 300px;
+    background-color: lightblue;
+}
+
+.green {
+    width: 33.33334%;
+    height: 300px;
+    background-color: green;
+}
+
+.red {
+    width: 33.33334%;
+    height: 300px;
+    background-color: red;
+}
+
+.yellow {
+    width: 33.33334%;
+    height: 300px;
+    background-color: yellow;
+}
+
+@media screen and (max-width: 700px) {
+
+    .blue {
+        width: 100%;
+    }
+
+    .light-blue {
+        width: 50%;
+    }
+
+    .green {
+        width: 50%;
+    }
+
+    .red {
+        width: 100%;
+    }
+
+    .yellow {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .blue {
+        width: 100%;
+    }
+
+    .light-blue {
+        width: 100%;
+    }
+
+    .green {
+        width: 100%;
+    }
+
+    .red {
+        width: 100%;
+    }
+
+    .yellow {
+        width: 100%;
+    }
+
+}

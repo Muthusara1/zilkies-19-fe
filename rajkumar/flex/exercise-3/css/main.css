@@ -1,0 +1,28 @@
+.parent-div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.dark-blue {
+    background-color: darkblue;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+.parent-div__div-one, .parent-div__div-two, .parent-div__div-three, .parent-div__div-four, .parent-div__div-five {
+    flex: 1 100%;
+}

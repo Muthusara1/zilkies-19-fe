@@ -1,0 +1,46 @@
+.indigo-container,
+.blue-container,
+.green-container {
+    height: 33%;
+    width: 33%;
+    float: left;
+}
+
+.indigo-container {
+    background: darkblue;
+}
+
+.blue-container {
+    background: skyblue;
+}
+
+.green-container {
+    background: green;
+}
+
+.outer-container {
+    height: 500px;
+    width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+    .indigo-container {
+        width: 35%;
+    }
+
+    .blue-container {
+        width: 65%;
+    }
+
+    .green-container {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+    .indigo-container,
+    .blue-container,
+    .green-container {
+        width: 100%;
+    }
+}

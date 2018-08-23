@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Page 1</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+
+            <style>
+                .container{
+                    margin-left: 10%;
+                    margin-right: 10%;
+                }
+                .firstbar{
+                    width: 50%;
+                    height: 100px;
+                    float: left;
+                    background-color:blue;
+                }
+                .secondbar{
+                    width: 50%;
+                    float: left;
+                    height: 100px;
+                    background-color:red;
+                }
+                .thirdbar{
+                    width: 25%;
+                    float: left;
+                    height: 100px;
+                    background-color:green;
+                }
+                .fourthbar{
+                    background-color:black;
+                    width: 50%;
+                    float: left;
+                    height: 100px;
+
+                }
+                .fifthbar{
+                    background-color:pink;
+                    width: 25%;
+                    float: left;
+                    height: 100px;
+                }
+                @media only screen and (min-width: 600px) and (max-width: 800px){
+                    .container{
+                        margin:0;
+                    }                
+                }
+                @media only screen and (min-width: 300px) and (max-width: 600px){
+                    .container{
+                        margin: 0;
+                    }
+                    .firstbar{
+                        width: 100%;
+                    }
+                    .secondbar{
+                        width: 50%;
+                    }
+                    .thirdbar{
+                        width: 50%;
+                    }
+                    .fourthbar{
+                        width: 100%;
+                    }
+                    .fifthbar{
+                        width: 100%;
+                    }     
+                }
+                @media only screen and (max-width: 300px){
+                    .container{
+                        margin: 0;
+                    }
+                    .firstbar{
+                        width: 100%;
+                    }
+                    .secondbar{
+                        width: 100%;
+                    }
+                    .thirdbar{
+                        width: 100%;
+                    }
+                    .fourthbar{
+                        width: 100%;
+                    }
+                    .fifthbar{
+                        width: 100%;
+                    }     
+                }
+
+            </style>
+
+    </head>
+    <body>
+    <div class="container">
+    <div class="firstbar">
+
+    </div>
+    <div class="secondbar">
+
+    </div>
+    <div class="thirdbar">
+
+    </div>
+    <div class="fourthbar">
+
+    </div>
+    <div class="fifthbar">
+
+    </div>
+    </div>
+</body>
+</html>

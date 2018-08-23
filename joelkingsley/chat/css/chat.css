@@ -1,18 +1,16 @@
-/* * {
-    border: 1px solid black;
-} */
-
 header {
     text-align: center;
 }
 
 .sender {
+    clear: both;
     float: left;
     display: block;
     margin: 15px 0;
 }
 
 .receiver {
+    clear: both;
     float: right;
     display: block;
 }
@@ -23,25 +21,25 @@ header {
 
 .sender .profile {
     float: left;
-} 
-
-.talk-bubble {
-	margin: 0 40px;
-    position: relative;
-    padding: 10px;
-	width: 250px;
-    height: auto;
-    float: right;
-	background-color: darkgray;
 }
 
-.talktext{
+.talk-bubble {
+    margin: 0 40px;
+    position: relative;
+    padding: 10px;
+    width: 250px;
+    height: auto;
+    float: right;
+    background-color: darkgray;
+}
+
+.talktext {
     padding: 1em;
     text-align: left;
     line-height: 1.5em;
 }
 
-.talktext p{
+.talktext p {
     -webkit-margin-before: 0em;
     -webkit-margin-after: 0em;
 }

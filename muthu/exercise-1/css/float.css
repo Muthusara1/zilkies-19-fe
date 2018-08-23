@@ -4,16 +4,14 @@
     width: 15%;
     height: 100px;
     border: 1px solid;
-    padding: 40px; 
-    box-sizing: border-box;
+    padding: 40px;
 }
 
-.header-footer {    
+.header-footer {
     box-sizing: border-box;
-    text-align: center;    
+    text-align: center;
     border: 1px solid;
     float: left;
-    border: 1px solid;
     padding: 40px;
     width: 100%;
 }

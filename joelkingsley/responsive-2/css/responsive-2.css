@@ -40,28 +40,28 @@
         background: navy;
         float: left;
     }
-    
+
     #box-2 {
         width: 50%;
         height: 60px;
         background: blue;
         float: left;
     }
-    
+
     #box-3 {
         width: 50%;
         height: 60px;
         background: green;
         float: left;
     }
-    
+
     #box-4 {
         width: 100%;
         height: 60px;
         background: red;
         float: left;
     }
-    
+
     #box-5 {
         width: 100%;
         height: 60px;
@@ -77,28 +77,28 @@
         background: navy;
         float: left;
     }
-    
+
     #box-2 {
         width: 50%;
         height: 60px;
         background: blue;
         float: left;
     }
-    
+
     #box-3 {
         width: 33%;
         height: 60px;
         background: green;
         float: left;
     }
-    
+
     #box-4 {
         width: 34%;
         height: 60px;
         background: red;
         float: left;
     }
-    
+
     #box-5 {
         width: 33%;
         height: 60px;
@@ -115,7 +115,7 @@
         background: navy;
         float: left;
     }
-    
+
     #box-2 {
         margin-right: 5%;
         width: 45%;
@@ -123,7 +123,7 @@
         background: blue;
         float: left;
     }
-    
+
     #box-3 {
         margin-left: 5%;
         width: 30%;
@@ -132,14 +132,14 @@
         clear: left;
         float: left;
     }
-    
+
     #box-4 {
         width: 30%;
         height: 60px;
         background: red;
         float: left;
     }
-    
+
     #box-5 {
         margin-right: 5%;
         width: 30%;

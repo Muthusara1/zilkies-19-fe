@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>Page 1</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            
+
+            <style>
+                .container{
+                    
+                }
+                .firstbar{
+                    width: 20%;
+                    height: 500px;
+                    float: left;                    
+                    background-color:red;
+                }
+                .secondbar{
+                    width: 60%;
+                    float: left;
+                    height: 250px;
+                    background-color:skyblue;
+                }
+                .thirdbar{
+                    width: 20%;
+                    float: right;
+                    height: 500px;
+                    background-color:navy;
+                }
+                .fourthbar{
+                    background-color:green;
+                    float: left;
+                    width: 60%;
+                    height: 250px;
+                }
+                                
+                @media only screen and (min-width: 600px) and (max-width: 800px){
+                    .container{
+                        margin: 0;
+                    }                    
+                    .firstbar{
+                        width: 50%;
+                        float: left;
+                        background-color:navy;
+                    }
+                    .secondbar{
+                        width: 50%;
+                        float: right;
+                        background-color: skyblue;
+                    }
+                    .thirdbar{
+                        width: 50%;
+                        float: right;
+                        height: 250px;
+                        background-color: green;
+                    }
+                    .fourthbar{
+                        width: 100%;
+                        float: left;
+                        background-color: red;
+                    }
+                         
+                }
+                @media only screen and (min-width: 300px) and (max-width: 600px){
+                                     
+                    .firstbar{
+                        width: 100%;
+                        float: left;                        
+                        height: 250px;
+                        background-color:navy;
+                    }
+                    .secondbar{
+                        width: 100%;
+                        float: right;
+                        background-color: skyblue;
+                    }
+                    .thirdbar{
+                        width: 100%;
+                        float: right;
+                        height: 250px;
+                        background-color: green;
+                    }
+                    .fourthbar{
+                        width: 100%;
+                        float: left;
+                        background-color: red;
+                    }
+                         
+                }
+               
+
+            </style>
+
+    </head>
+    <body>
+    <div class="container">
+    <div class="firstbar">
+
+    </div>
+    <div class="secondbar">
+
+    </div>
+    <div class="thirdbar">
+
+    </div>    
+    <div class="fourthbar">
+
+    </div>
+    </div>
+</body>
+</html>

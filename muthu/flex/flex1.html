@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Flex</title>
+        <style>
+           body{
+               
+           }
+           .container {
+               display: flex;
+               flex-direction: row;
+               flex-wrap: wrap;
+               align-content: flex-start;
+               height: 100%;
+               width: 100%;
+               border: 1px solid red;
+           }
+
+            .firstbar__division {
+                flex: 1;                
+                height: 25%;
+                background-color: blue;
+            }
+            .secondbar__division {
+                flex: 2;                
+                height: 25%;
+                background-color: skyblue;
+            }
+            .thirdbar__division {
+                flex: 1;                
+                height: 25%;
+                background-color: green;
+            }
+
+             @media only screen and (min-width: 600px) and (max-width: 800px){
+            .firstbar__division {
+                flex: 1 25%;                               
+            }
+            .secondbar__division {
+                flex: 1 50%;                
+            }
+            .thirdbar__division {
+                flex: 1 100%;                                
+            }
+            }
+
+            @media only screen and (max-width: 600px){
+                .firstbar__division {
+                flex: 1 100%;
+            }
+            .secondbar__division {
+                flex: 1 100%;               
+            }
+            .thirdbar__division {
+                flex: 1 100%;                                
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <div class="firstbar__division">
+
+        </div>                
+        <div class="secondbar__division">            
+
+        </div>
+        <div class="thirdbar__division">            
+
+        </div>
+        </div>
+    </body>
+</html>

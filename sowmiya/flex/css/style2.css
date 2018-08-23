@@ -1,0 +1,112 @@
+.container1 {
+    background-color: blue;
+    width: 100%;
+    height: 100px;
+}
+
+.container2 {
+    background-color: skyblue;
+    width: 100%;
+    height: 100px;
+}
+
+.container3 {
+    background-color: green;
+    width: 100%;
+    height: 100px;
+}
+
+.container4 {
+    background-color: red;
+    width: 100%;
+    height: 100px;
+}
+
+.container5 {
+    background-color: orange;
+    width: 100%;
+    height: 100px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 750px) {
+    .outer-container {
+        display: flex;
+        flex-wrap: wrap;
+        height: 200px;
+        align-content: space between;
+    }
+
+    .container1 {
+        flex: 0 0 100%;
+    }
+
+    .container2 {
+        flex: 0 0 50%;
+    }
+
+    .container3 {
+        flex: 0 0 50%;
+    }
+
+    .container4 {
+        flex: 0 0 100%;
+    }
+
+    .container5 {
+        flex: 0 0 100%;
+    }
+}
+
+@media only screen and (min-width: 751px) and (max-width: 900px) {
+    .outer-container {
+        display: flex;
+        flex-wrap: wrap;
+        height: 200px;
+    }
+
+    .container1,
+    .container2 {
+        flex: 0 0 50%;
+    }
+
+    .container3 {
+        flex: 0 0 35%;
+    }
+
+    .container4 {
+        flex: 0 0 30%;
+    }
+
+    .container5 {
+        flex: 0 0 35%;
+    }
+}
+
+@media only screen and (min-width: 901px) {
+    body {
+        padding: 20px;
+    }
+
+    .outer-container {
+        display: flex;
+        flex-wrap: wrap;
+        height: 200px;
+    }
+
+    .container1,
+    .container2 {
+        flex: 0 0 50%;
+    }
+
+    .container3 {
+        flex: 0 0 35%;
+    }
+
+    .container4 {
+        flex: 0 0 30%;
+    }
+
+    .container5 {
+        flex: 0 0 35%;
+    }
+}

@@ -1,10 +1,10 @@
 .header {
     position: relative;
     width: 100%;
-    height:90px;
+    height: 90px;
     padding: 10px;
-    box-sizing: border-box;  
-    font-size: 60px;  
+    box-sizing: border-box;
+    font-size: 60px;
     font-weight: bold;
     color: white;
 }
@@ -22,7 +22,7 @@
     height: 500px;
     text-align: center;
     padding: 15px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .personal {
@@ -34,7 +34,7 @@
     box-sizing: border-box;
 }
 
-.project-details{
+.project-details {
     position: relative;
     display: inline-block;
     width: 25%;
@@ -58,7 +58,7 @@
 .container {
     padding: 30px;
     text-align: left;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .container1 {
@@ -68,7 +68,7 @@
 }
 
 [type="checkbox"] {
-    padding:30px;
+    padding: 30px;
     width: 20px;
     height: 20px;
     border-radius: 50px;
@@ -77,9 +77,9 @@
 }
 
 [type="text"] {
-    padding:15px;
+    padding: 15px;
     margin: 10px;
-    width:75%;
+    width: 75%;
     background-color: skyblue;
 }
 
@@ -91,7 +91,6 @@ textarea {
     width: 250px;
     height: 300px;
     box-sizing: border-box;
-   
 }
 
 label {
@@ -103,20 +102,19 @@ label {
 body {
     height: 100%;
     font-family: 'Open Sans', sans-serif;
-    background-repeat:no-repeat;
-    background: rgb(48,255,211);
-    background: linear-gradient(175deg, rgba(48,255,211,0.9707864482751053) 23%, rgba(46,223,244,1) 24%, rgba(47,226,247,1) 24%, rgba(24,167,192,1) 29%, rgba(16,145,171,1) 100%); 
+    background: linear-gradient(175deg, rgba(48, 255, 211, 0.9707864482751053) 23%, rgba(46, 223, 244, 1) 24%, rgba(47, 226, 247, 1) 24%, rgba(24, 167, 192, 1) 29%, rgba(16, 145, 171, 1) 100%);
     background-size: cover;
+    background-repeat: no-repeat;
     color: white;
 }
 
-.button{
+.button {
     position: relative;
     clear: both;
    
 }
 
-button{
+button {
     border-radius: 50px;
     height: 30px;
     width: 150px;

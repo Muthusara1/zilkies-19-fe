@@ -4,19 +4,17 @@
         <title>Exercise 6</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="../css/ex6stylesheet.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
     <body>
         <div class="wrapper">
-            <i class="fa fa-close" style="font-size:24px"></i>
+            <img src="../asserts/times-circle-solid.svg">
             <h1>Let's craft your product</h1>
             
             <div class="form-wrapper">
-                
-                <div class="left">
-                    <div>
-                        <form>
+                <form>
+                    <div class="options-wrapper">
+                        <div>
                             <fieldset>
                                 <h3>Timeframe</br></h3>
                                 <input type="radio" name="1month" id="1month">
@@ -26,42 +24,41 @@
                                 <input type="radio" name="1month" id="morethan4month">
                                 <label for="morethan4month">4+ months</label></br>
                             </fieldset>
-                        </form>
+                        </div>
+                        
+                        <div>
+                            <fieldset>
+                                <h3>Project type</br></h3>
+                                <input type="checkbox" name="Desktop" id="desktop">
+                                <label for="desktop">Desktop</label></br>
+                                <input type="checkbox" name="Web" id="web">
+                                <label for="web">Web</label></br>
+                                <input type="checkbox" name="Mobile" id="mobile">
+                                <label for="mobile">Mobile</label></br>
+                                <input type="checkbox" name="Other" id="other">
+                                <label for="other">Other</label></br>
+                            </fieldset>
+                        </div>
                     </div>
-                    </br></br>
-                    <form>
-                        <fieldset>
-                            <h3>Project type</br></h3>
-                            <input type="checkbox" name="Desktop" id="desktop">
-                            <label for="desktop">Desktop</label></br>
-                            <input type="checkbox" name="Web" id="web">
-                            <label for="web">Web</label></br>
-                            <input type="checkbox" name="Mobile" id="mobile">
-                            <label for="mobile">Mobile</label></br>
-                            <input type="checkbox" name="Other" id="other">
-                            <label for="other">Other</label></br>
-                        </fieldset>
-                    </form>
-                </div>
             
-                <div class="right">   
-                    <form>
-                        <fieldset>
+                    <div class="details-wrapper">   
+                         <fieldset>
                             <h3>Personal details</br></h3>
-                            <div class="form-left">
+                            <div class="details">
                                 <input type="text" name="Name" placeholder="Name"></br>
                                 <input type="text" name="Company" placeholder="Company"></br>
                                 <input type="email" name="Email" placeholder="Email"></br>
                                 <input type="number" name="Budget" placeholder="Budget" min="1" step="any"></br>
                             </div>
-                            <div class="form-left">
-                                <textarea name="Description" placeholder="Tell us about your project.." rows=15 cols="30"></textarea>
-                                <input type="submit" name="Enquiry" value="Send enquiry">
+                            
+                            <div class="desc">
+                            <textarea name="Description" placeholder="Tell us about your project.."></textarea>
+                            </br><input type="submit" name="Enquiry" value="Send enquiry">
                             </div>
                         </fieldset>
-                    </form>
-                    
-                </div>
+                    </div>
+                </form>
+                
             </div>
         </div>
     </body>

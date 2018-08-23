@@ -1,0 +1,66 @@
+.outer-container {
+    height: 500px;
+}
+
+.red-container,
+.indigo-container {
+    height: 100%;
+    width: 25%;
+}
+
+.blue-container,
+.green-container {
+    height: 50%;
+    width: 50%;
+}
+
+.red-container {
+    background: red;
+    float: left;
+}
+
+.blue-container {
+    background: skyblue;
+    float: right;
+}
+
+.green-container {
+    background: green;
+    float: right;
+}
+
+.indigo-container {
+    background: darkblue;
+    float: right;
+}
+
+@media only screen and (max-width: 600px) {
+    .blue-container,
+    .green-container,
+    .red-container {
+        height: 33%;
+    }
+
+    .indigo-container,
+    .blue-container,
+    .green-container {
+        width: 50%;
+    }
+
+    .indigo-container {
+        float: left;
+        height: 66%;
+    }
+
+    .red-container {
+        float: left;
+        width: 100%;
+    }
+
+    .blue-container,
+    .green-container {
+        display: inline-block;
+        clear: right;
+        float: none;
+    }
+}

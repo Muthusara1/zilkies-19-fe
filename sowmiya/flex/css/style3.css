@@ -1,0 +1,90 @@
+.container1 {
+    background-color: blue;
+    height: 100px;
+}
+
+.container2 {
+    background-color: violet;
+    height: 100px;
+}
+
+.container3 {
+    background-color: red;
+    height: 100px;
+}
+
+.container4 {
+    background-color: orange;
+    height: 100px;
+}
+
+@media screen and (min-width: 500px) and (max-width: 750px) {
+    .outer-container {
+        display: flex;
+        flex-wrap: wrap;
+        height: 200px;
+    }
+
+    .inner-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 150px;
+        width: 200px;
+        flex-grow: 1;
+    }
+
+    .container1 {
+        width: 50%;
+        height: 150px;
+        align-self: stretch;
+    }
+
+    .container2 {
+        flex: 1 0 50%;
+    }
+
+    .container3 {
+        flex: 1 0 50%;
+    }
+
+    .container4 {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .outer-container {
+        display: flex;
+        flex-wrap: wrap;
+        height: 200px;
+        align-content: space between;
+    }
+
+    .inner-container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 150px;
+        width: 200px;
+        flex-grow: 1;
+    }
+
+    .container1 {
+        width: 10%;
+        height: 150px;
+    }
+
+    .container2 {
+        flex: 1 0 50%;
+    }
+
+    .container3 {
+        flex: 1 0 50%;
+    }
+
+    .container4 {
+        height: 150px;
+        flex: 0 0 10%;
+    }
+}

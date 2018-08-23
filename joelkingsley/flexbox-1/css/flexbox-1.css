@@ -1,0 +1,59 @@
+.container {
+    flex: wrap;
+    display: flex;
+    flex-direction: column;
+}
+
+#box1, #box2, #box3 {
+    height: 60px;
+    width: 100%;
+}
+
+#box1 {
+    background-color: navy;
+}
+
+#box2 {
+    background-color: lightseagreen;
+}
+
+#box3 {
+    background-color: green;
+}
+
+@media screen and (min-width: 420px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #box1 {
+        width: 20%;
+    }
+
+    #box2 {
+        width: 80%;
+    }
+
+    #box3 {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .container {
+        flex-direction: row;
+    }
+
+    #box1 {
+        width: 33%;
+    }
+
+    #box2 {
+        width: 34%;
+    }
+
+    #box3 {
+        width: 33%;
+    }
+}

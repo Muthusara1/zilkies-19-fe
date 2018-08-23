@@ -1,0 +1,61 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    height: 150px;
+}
+
+.violet {
+    background-color: blueviolet;
+}
+
+.blue {
+    background-color: aquamarine;
+}
+
+.green {
+    background-color: green;
+}
+
+.red {
+    background-color: red;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 699px) {
+    .violet {
+        width: 50%;
+        height: 300px;
+        float: left;
+    }
+
+    .blue,
+    .green {
+        width: 50%;
+        float: left;
+    }
+
+    .red {
+        clear: both;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .violet {
+        height: 300px;
+        width: 30%;
+        float: right;
+    }
+
+    .blue,
+    .green {
+        width: 40%;
+        float: right;
+    }
+
+    .red {
+        height: 300px;
+    }
+}

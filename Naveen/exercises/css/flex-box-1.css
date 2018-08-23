@@ -1,0 +1,56 @@
+.outer-div {
+    display: flex;
+    height: 300px;
+}
+
+.blue {
+    flex-grow: 1;
+    background-color: blue;
+}
+
+.light-blue {
+    flex-grow: 1;
+    background-color: lightblue;
+}
+
+.green {
+    flex-grow: 1;
+    background-color: green;
+}
+
+@media screen and (max-width: 700px) {
+    .outer-div {
+        flex-wrap: wrap;
+    }
+
+    .blue {
+        width: 20%;
+    }
+
+    .light-blue {
+        width: 80%;
+    }
+
+    .green {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .outer-div {
+        flex-wrap: wrap;
+    }
+
+    .blue {
+        width: 100%;
+    }
+
+    .light-blue {
+        width: 100%;
+    }
+
+    .green {
+        width: 100%;
+    }
+}

@@ -25,7 +25,6 @@ a {
 .service-menu {
     color: white;
     position: absolute;
-    display: block;
     top: 80px;
     background-color: black;
     padding: 14px 16px;
@@ -34,7 +33,7 @@ a {
 }
 
 #list-item1:hover .service-menu {
-   display: block;
+    display: block;
 }
 
 ul {

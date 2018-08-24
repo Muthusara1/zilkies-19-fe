@@ -12,10 +12,10 @@ header {
 }
 
 footer {
-    position: fixed; 
-    bottom:40px;
+    position: fixed;
+    bottom: 40px;
     height: 20px;
-    width:100%;
+    width: 100%;
 }
 
 footer i {
@@ -128,7 +128,7 @@ section {
         display: flex;
         width: 90%;
     }
-    
+
     .pink-background {
         background-color: pink;
         display: flex;
@@ -140,7 +140,7 @@ section {
     .white-background {
         width: 87%;
     }
-    
+
     .pink-background {
         width: 13%;
     }
@@ -150,7 +150,7 @@ section {
     .talk-bubble {
         width: 200px;
     }
-    
+
     footer input {
         width: 60%;
     }
@@ -158,7 +158,7 @@ section {
     .white-background {
         width: 85%;
     }
-    
+
     .pink-background {
         width: 15%;
     }
@@ -168,7 +168,7 @@ section {
     .talk-bubble {
         width: 200px;
     }
-    
+
     footer input {
         width: 50%;
     }
@@ -176,7 +176,7 @@ section {
     .white-background {
         width: 80%;
     }
-    
+
     .pink-background {
         width: 20%;
     }
@@ -186,7 +186,7 @@ section {
     .talk-bubble {
         width: 200px;
     }
-    
+
     footer input {
         width: 40%;
     }
@@ -194,7 +194,7 @@ section {
     .white-background {
         width: 80%;
     }
-    
+
     .pink-background {
         width: 20%;
     }

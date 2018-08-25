@@ -1,23 +1,29 @@
 svg {
-    height: 600px;
-    width: 600px;
+    height: 200px;
+    width: 200px;
+}
+
+.outer-div {
+    position: relative;
+    display: block;
+    width: 350px;
+    height: 100vh;
+    margin: auto;
+    top: 30vh;
 }
 
 .first-circle {
-    margin: 8%;
     position: absolute;
-    right: 26%; 
+    left: 4px;
 }
 
 .second-circle {
-    margin: 8%;
     position: absolute;
-    right: 18%;
+    left: 140px;
 }
 
 .third-circle {
-    margin: 8%;
     position: absolute;
-    right: 22%;
-    top: 14%;
+    left: 70px;
+    top: 140px;
 }

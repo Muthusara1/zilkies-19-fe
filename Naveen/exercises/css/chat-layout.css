@@ -1,20 +1,235 @@
 body {
     font-family: Arial;
+    text-align: center;
 }
 
 .outer-container {
+    box-sizing: border-box;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 36px;
+    margin-top: 24px;
     margin-bottom: 36px;
-    height: 900px;
-    width: 600px;
-    max-width: 600px;
+    height: 90vh;
     background-color: red;
+    max-width: 800px;
 }
 
 .notifications-container {
-    width: 100%;
-    height: 20px;
-    background-color: blue;
+    box-sizing: border-box;
+    height: 15px;
+    position: relative;
+    background-color: #4083ef;
+}
+
+.notifications-container__connectivity {
+    display: inline;
+    position: absolute;
+    left: 0;
+    padding-left: 14px;
+}
+
+.settings__setting-btn {
+    color: white;
+    font-size: 17px;
+}
+
+.notifications-container__time {
+    display: inline;
+    margin: auto;
+}
+
+.notifications-container__charge {
+    display: inline;
+    position: absolute;
+    right: 0;
+    padding-right: 14px;
+}
+
+.chatapp-container {
+    height: calc(100% - 15px);
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+}
+
+.chatapp-container__top-nav {
+    box-sizing: border-box;
+    height:40px;
+    position: relative;
+    background-color: #4083ef;
+}
+
+.top-nav__back {
+    box-sizing: border-box; 
+    height: 100%;
+    padding-top: 12px;
+    padding-left: 12px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.top-nav__settings {
+    position: absolute;
+    padding-top: 15px;
+    padding-right: 14px;
+    right: 0;
+    top: 0;
+}
+
+.top-nav__chat {
+    display: inline-block;
+    height: 100%;
+    padding-top: 12px;
+    margin: auto;
+}
+
+.messages-div__messages {    
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.chatapp-container__chat-window {
+    box-sizing: border-box;
+    overflow: scroll;
+    height: calc(100% - 100px);
+    padding-top: 12px;
+    background-color: #fcfcfc;
+}
+
+.location-div__location {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    border: 3px solid #4083ef;
+    border-radius: 50%;
+} 
+
+.messages-div__location-div {
+    padding-top: 14px;
+    padding-bottom: 44px;
+}
+
+.location__marker {
+    font-size: 100px;
+    color: #4083ef;
+}
+
+.back__back-btn {
+    color: white;
+    font-size: 20px;
+}
+
+.location-div__yes-no {
+    padding-top: 20px;
+}
+
+.yes-no__yes {
+    background-color: #f33146;
+    border: none;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right:40px;
+    margin-right: 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.yes-no__no {
+    background-color: #f33146;
+    border: none;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right:40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.chatapp-container__type-window {
+    box-sizing: border-box;
+    height: 60px;
+    background-color: hotpink;
+}
+
+.chat__text {
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.connectivity__text, .time__text, .charge__text {
+    font-size: 12px;
+    font-weight: medium;
+    color: white;
+}
+
+.connectivity__dots {
+    font-size: 6px;
+    color: white;
+}
+
+.connectivity__wifi {
+    font-size: 10px;
+    color: white;
+}
+
+.messages__message-pic-div {
+    flex: none;
+    padding: 10px;
+}
+
+.messages__message-text-div {
+    flex: 1;
+    padding-left: 20px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+    text-align: left;
+}
+
+.message-pic-div__pic {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.message-text-div__text {
+    font-size: 20px;
+    color: #232425;
+    padding: 7px;
+    background-color: #e8eaeb;
+    border-radius: 10px;
+}
+
+.messages-div__time {
+    text-align: left;
+    font-size: 10px;
+    color: #232425;
+    padding: 10px;
+}
+
+.type-window__outer-div {
+    
+}
+
+@media screen and (max-width: 800px) {
+    
+}
+
+@media screen and (max-width: 600px) {
+    
+}
+
+@media screen and (max-width: 400px) {
+    
 }

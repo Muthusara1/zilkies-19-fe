@@ -1,0 +1,132 @@
+body {
+    height: 100vh;
+}
+
+@media only screen and (min-width: 200px) {
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .purple {
+        background-color: purple;
+        height: 30%;
+    }
+
+    .blue {
+        background-color: blue;
+        height: 30%;
+    }
+
+    .green {
+        background-color: green;
+        height: 30%;
+    }
+
+    .red {
+        background-color: red;
+        height: 30%;
+    }
+
+    .orange {
+        background-color: orange;
+        height: 30%;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .purple {
+        height: 30%;
+        width: 100%;
+    }
+
+    .blue {
+        height: 30%;
+        width: 50%;
+    }
+
+    .green {
+        height: 30%;
+        width: 50%;
+    }
+
+    .red {
+        height: 30%;
+        width: 100%;
+    }
+
+    .orange {
+        height: 30%;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .purple {
+        height: 30%;
+        width: 50%;
+    }
+
+    .blue {
+        height: 30%;
+        width: 50%;
+    }
+
+    .green {
+        height: 30%;
+        width: 33.33%;
+    }
+
+    .red {
+        height: 30%;
+        width: 33.33%;
+    }
+
+    .orange {
+        height: 30%;
+        width: 33.33%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .purple {
+        height: 30%;
+        width: 440px;
+    }
+
+    .blue {
+        height: 30%;
+        width: 440px;
+    }
+
+    .green {
+        height: 30%;
+        width: 290px;
+    }
+
+    .red {
+        height: 30%;
+        width: 300px;
+    }
+
+    .orange {
+        height: 30%;
+        width: 290px;
+    }
+
+    .container {
+        height: 100%;
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

@@ -1,0 +1,93 @@
+body {
+    height: 100vh;
+    background-color: silver;
+}
+
+@media only screen and (min-width: 200px) {
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inner-container {
+        height: 60%;
+    }
+
+    .purple {
+        background-color: purple;
+        height: 30%;
+    }
+
+    .blue {
+        background-color: blue;
+        height: 50%;
+    }
+
+    .green {
+        background-color: green;
+        height: 50%;
+    }
+
+    .red {
+        background-color: red;
+        height: 30%;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .purple {
+        height: 60%;
+        width: 50%;
+    }
+
+    .inner-container {
+        height: 60%;
+        width: 50%;
+    }
+
+    .blue {
+        height: 50%;
+    }
+
+    .green {
+        height: 50%;
+    }
+
+    .red {
+        height: 30%;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .purple {
+        height: 60%;
+        width: 20%;
+    }
+
+    .inner-container {
+        width: 60%;
+    }
+
+    .blue {
+        height: 50%;
+    }
+
+    .green {
+        height: 50%;
+    }
+
+    .red {
+        height: 60%;
+        width: 20%;
+    }
+}

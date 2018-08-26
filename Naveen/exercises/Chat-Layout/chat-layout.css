@@ -10,7 +10,6 @@ body {
     margin-top: 24px;
     margin-bottom: 36px;
     height: 90vh;
-    background-color: red;
     max-width: 800px;
     min-width: 320px;
 }
@@ -50,7 +49,6 @@ body {
     height: calc(100% - 15px);
     display: flex;
     flex-direction: column;
-    background-color: yellow;
 }
 
 .chatapp-container__top-nav {
@@ -90,7 +88,7 @@ body {
     flex-direction: row-reverse;
 }
 
-.chatapp-container__chat-window {
+.chatapp-container__messages-div {
     box-sizing: border-box;
     overflow: scroll;
     height: calc(100% - 120px);
@@ -275,6 +273,98 @@ body {
     padding-top: 8px;
     padding-bottom: 8px;
     border: none;
+}
+
+.product-display__products {
+    box-sizing: border-box;
+    width: 350px;
+    height: 300px;
+}
+
+.products__products-heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin: auto;
+    box-sizing: border-box;
+    color: #232425;
+    padding-top: 4px;
+    padding-bottom: 12px;
+}
+
+.products__product-div {
+    display: flex;
+    overflow: scroll;
+    height: calc(100% - 20px);
+    background-color: #fcfcfc;
+}
+
+.messages__product-display {
+    box-sizing: border-box;
+    display: flex;
+    width: 410px;
+    height: 340px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.product-div__scroll {
+    padding-top: 160px;
+    width: 30px;
+    padding-right: 8px;
+    padding-left: 8px;
+    height: 340px;
+    font-size: 20px;
+    color: #b7b7b7;
+}
+
+.product-div__product {
+    height: 100%;
+    flex: 0 0 160px;
+    margin-right: 20px;
+    background-color: #dbdada;
+}
+
+.product__image {
+    width: 170px;
+    height: 180px;
+    z-index: 1;
+}
+
+.product__name {
+    font-size: 14px;
+    text-align: left;
+    font-weight: bold;
+    box-sizing: border-box;
+    color: #232425;
+    padding-bottom: 4px;
+    padding-left: 4px;
+}
+
+.product__price {
+    font-size: 12px;
+    box-sizing: border-box;
+    text-align: left;
+    color: #232425;
+    padding-bottom: 4px;
+    padding-left: 4px;
+}
+
+.product__compare {
+    background-color: #f33146;
+    border: none;
+    color: white;
+    margin: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 20px;
+    padding-right:20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
 }
 
 @media screen and (max-width: 800px) {

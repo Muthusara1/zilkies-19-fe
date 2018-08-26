@@ -13,8 +13,8 @@
 }
 
 .inner-list {
+    display: none;
     position: absolute;
-    display: inline-block;
     padding: 0px;
     top: 48px;
     left: 0px;
@@ -23,8 +23,13 @@
     list-style: none;
 }
 
+.hovermenu:hover .inner-list {
+    display: block;
+}
+
 .inner-list-elements {
     font-weight: bold;
+    display: block;
     padding: 15px 15px 15px 15px;
     background-color: black;
 }

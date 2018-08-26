@@ -4,12 +4,17 @@ svg {
 }
 
 .outer-div {
-    position: relative;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 350px;
     height: 100vh;
     margin: auto;
-    top: 30vh;
+}
+
+.circles {
+    position: relative;
+    height: 340px;
 }
 
 .first-circle {

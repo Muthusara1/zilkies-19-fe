@@ -23,6 +23,51 @@
 .yellow {
     background-color: yellow;
 }
-.parent-div__div-one, .parent-div__div-two, .parent-div__div-three, .parent-div__div-four, .parent-div__div-five {
+
+.parent-div__div-one,
+.parent-div__div-two,
+.parent-div__div-three,
+.parent-div__div-four {
     flex: 1 100%;
+    height: 100px;
+}
+
+.parent-div__child {
+    flex-direction: column;
+    width: 100%;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 899px) {
+    .parent-div__div-one {
+        flex: 1 50%;
+        height: 200px;
+    }
+
+    .parent-div__child {
+        flex: 1 50%;
+    }
+
+    .parent-div__div-four {
+        flex: 1 50%;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .parent-div {
+        flex-direction: row-reverse;
+    }
+
+    .parent-div__div-one {
+        flex: 1 33%;
+        height: 200px;
+    }
+
+    .parent-div__child {
+        flex: 1 33%;
+    }
+
+    .parent-div__div-four {
+        flex: 1 33%;
+        height: 200px;
+    }
 }

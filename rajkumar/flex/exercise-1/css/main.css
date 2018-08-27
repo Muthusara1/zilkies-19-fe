@@ -23,7 +23,9 @@
 }
 
 @media screen and (max-width: 499px) {
-    .parent-div__div-one, .parent-div__div-two, .parent-div__div-three {
+    .parent-div__div-one,
+    .parent-div__div-two,
+    .parent-div__div-three {
         flex: 1 100%;
     }
 }
@@ -33,19 +35,16 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
+
     .parent-div__div-one {
         flex: 1 30%;
     }
 
     .parent-div__div-two {
-        flex: 2 70%;
+        flex: 1 70%;
     }
 
     .parent-div__div-three {
         flex: 1 100%;
     }
-}
-
-@media screen and (min-width: 890px) {
-    padding: 10px 20px;
 }

@@ -1,0 +1,20 @@
+.loader {
+    margin: auto;
+    width: 60%;
+    top: 0;
+    border: 2px solid lightgreen;
+    height: 50px;
+}
+
+.loader-inner {
+    transition: width;
+    transition-duration: 10s;
+    transition-timing-function: linear;
+    background-color: aqua;
+    width: 0%;
+    height: 100%;
+}
+
+.loader:hover .loader-inner {
+    width: 100%;
+}

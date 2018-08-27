@@ -23,6 +23,6 @@
             "error",
             "always"
         ],
-        "unused": false
+        "no-unused-vars": [0, { "varsIgnorePattern": "^h$" }]
     }
 }

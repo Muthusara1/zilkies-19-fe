@@ -2,29 +2,146 @@
 
 <head>
     <title>
-        Chat
+        CHATBOX
     </title>
     <link rel="stylesheet" href="../css/chat.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+
 </head>
 
 <body>
-
-    <div class="header">
-        <i class="fas fa-angle-left i-left"></i>
-        <p class="float-left">CHAT BOX</p>
-        <i class="fas fa-sliders-h i-left"></i>
-
-    </div>
     <div class="chatbox">
-        <div>
-            HAI HELLO HOW ARE YOU?
+        <div class="chatbox-header col-12">
+            <div class="chatbox-header__backbutton icon_properties">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+            <div class="chatbox-header__textarea icon_properties">
+                CHAT
+            </div>
+            <div class="chatbox-header__setting icon_properties">
+                <i class="fas fa-sliders-h"></i>
+            </div>
+        </div>
+        <div class="chatbox-conversationarea col-12">
+            <div class="conversationarea_chat">
+                <div class="chatdivision">
+                    <div class="message"> I need access to your location to suggest stores near by.
+                    </div>
+                    <div class="time"> 01:45PM
+                    </div>
+                </div>
+                <div class="userimagedivision">
+                    <img src="https://cdn1.iconfinder.com/data/icons/freeline/32/account_friend_human_man_member_person_profile_user_users-512.png">
+                </div>
+            </div>
+            <div class="conversationarea_location">
+                <div class="location__suggestion">
+                    <div class="location__symbol">
+                        <img src="https://sealife.blob.core.windows.net/media/1909/location-icon.svg?quality\u003d90">
+                    </div>
+                    <div class="location__optioncontainer">
+                        <div class="option__button">
+                            <button>Yes</button>
+                        </div>
+                        <div class="option__button">
+                            <button>No</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="conversationarea_chat">
+                <div class="chatdivision">
+                    <div class="message">Here are some of the best selling Manga Series in the shops around you
+                    </div>
+                    <div class="time"> 01:46PM
+                    </div>
+                </div>
+                <div class="userimagedivision">
+                    <img src="https://cdn1.iconfinder.com/data/icons/freeline/32/account_friend_human_man_member_person_profile_user_users-512.png">
+                </div>
+            </div>
+
+            <div class="conversationarea_products">
+                <div class="products__container">
+                    <div class="products__container__heading">PRODUCTS</div>
+                    <div class="products__container__arrow icon_properties">
+                        <i class="fas fa-angle-left "></i>
+                    </div>
+                    <div class="products__container__products">
+                        <div class="products">
+                            <div class="products__image">
+                                <img src="https://images.gr-assets.com/books/1347082366l/3265291.jpg" alt="Code Geass">
+                            </div>
+                            <div class="products__description">CODE GEASS REBELLION
+                                <br>$25.00
+                            </div>
+                            <div class="products__compare">
+                                <button>COMPARE</button>
+                            </div>
+                        </div>
+                        <div class="products">
+                            <div class="products__image">
+                                <img src="https://vignette.wikia.nocookie.net/naruto/images/6/63/Artbook_2.png/revision/latest?cb=20150203192914" alt="Naruto">
+                            </div>
+                            <div class="products__description">NARUTO SHIPPUDEN
+                                <br>$35.00
+                            </div>
+                            <div class="products__compare">
+                                <button>COMPARE</button>
+                            </div>
+                        </div>
+                        <div class="products">
+                            <div class="products__image">
+                                <img src="https://pre00.deviantart.net/a59b/th/pre/i/2012/220/a/4/death_note_book_cover_by_metaknightmare1234-d5adawg.png"
+                                    alt="Death Note">
+                            </div>
+                            <div class="products__description"> DEATH NOTE
+                                <br>$30.00
+                            </div>
+                            <div class="products__compare">
+                                <button>COMPARE</button>
+                            </div>
+                        </div>
+                        <div class="products">
+                            <div class="products__image">
+                                <img src="https://images-na.ssl-images-amazon.com/images/I/61738NS4B3L.jpg" alt="Pokemon">
+                            </div>
+                            <div class="products__description">POKEMON
+                                <br>$15.00
+                            </div>
+                            <div class="products__compare">
+                                <button>COMPARE</button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="products__container__arrow icon_properties">
+                        <i class="fas fa-angle-right"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="chatbox-chatarea col-12">
+            <div class="row chatbox-chatarea__direction">
+                <div class=" col-1 chatbox-chatarea__camera icon_properties">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <div class="col-8 chatbox-chatarea__inputarea">
+                    <input type="text" name="message" placeholder="Type something...">
+                </div>
+                <div class="col-1 chatbox-chatarea__microphone icon_properties">
+                    <i class="fas fa-microphone"></i>
+                </div>
+                <div class="col-2 chatbox-chatarea__send icon_properties">
+                    <i class="fa fa-send-o"></i>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="footer">
-        textarea
     </div>
 </body>
 

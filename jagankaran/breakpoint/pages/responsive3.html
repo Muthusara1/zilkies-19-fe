@@ -5,94 +5,89 @@
         Third Image
     </title>
     <style>
-        .firstdivision {
-            width: 25%;
-            height: 50%;
-            background-color: red;
-            float: left;
+        .flex-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            height: 600px;
         }
 
-        .seconddivision {
+        .flex-container__division1 {
+            height: 100px;
+            flex: 1 100%;
             background-color: navy;
-            width: 25%;
-            height: 50%;
-            float: right;
-
         }
 
-        .thirddivision {
-            background-color: rgb(55, 169, 214);
-            width: 50%;
-            height: 25%;
-            float: right;
+        .flex-container__inner-container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            width: 100%;
+            height: 200px;
         }
 
-        .fourthdivision {
-            background-color: green;
-            width: 50%;
-            height: 25%;
-            float: left;
-
+        .inner-container__division2 {
+            flex: 1;
+            background-color: skyblue;
+            width: 100%;
+            /* height: 50%; */
         }
 
-        @media only screen and (min-width: 600px) and (max-width: 1000px) {
-            .firstdivision {
-                background-color: navy;
-                width: 50%;
-                height: 50%;
-                float: left;
+        .inner-container__division3 {
+            flex: 1;
+            background-color: lightgreen;
+        }
+
+        .flex-container__division4 {
+            flex: 1 100%;
+            height: 100px;
+            background-color: red;
+        }
+
+        @media only screen and (min-width: 600px) {
+            .flex-container__division1 {
+                flex: 1 25%;
+                height: 200px;
             }
-            .seconddivision {
-                background-color: skyblue;
-                width: 50%;
-                height: 25%;
-                float: left;
+            .flex-container__inner-container {
+                flex: 1 50%;
             }
-            .thirddivision {
-                background-color: green;
-                width: 50%;
-                height: 25%;
-                float: right;
-            }
-            .fourthdivision {
-                background-color: red;
-                width: 100%;
-                height: 25%;
-                float: right;
+            .flex-container__division4 {
+                flex: 1 100%;
             }
         }
 
-        @media only screen and (max-width: 600px) {
-            .firstdivision {
-                background-color: navy;
-                width: 100%;
-                height: 25%;
+        @media only screen and (min-width: 900px) {
+            .flex-container {
+                flex-direction: row-reverse;
             }
-            .seconddivision {
-                background-color: skyblue;
+            .flex-container__division1 {
+                flex: 1;
+                height: 200px;
+            }
+            .flex-container__inner-container {
+                flex: 2;
+            }
+            .flex-container__division4 {
+                flex: 1;
+                height: 200px;
 
-                width: 100%;
-                height: 25%;
-            }
-            .thirddivision {
-                background-color: green;
-                width: 100%;
-                height: 25%;
-            }
-            .fourthdivision {
-                background-color: red;
-                width: 100%;
-                height: 25%;
             }
         }
     </style>
 </head>
 
 <body>
-    <div class="firstdivision"></div>
-    <div class="seconddivision"></div>
-    <div class="thirddivision"></div>
-    <div class="fourthdivision"></div>
+    <div class="flex-container">
+        <div class="flex-container__division1"></div>
+        <div class="flex-container__inner-container">
+            <div class="inner-container__division2"></div>
+            <div class="inner-container__division3"></div>
+        </div>
+        <div class="flex-container__division4"></div>
+    </div>
 </body>
 
 </html>

@@ -1,5 +1,38 @@
+/* * {
+    border: 1px solid black;
+} */
+
+* {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
 header {
     text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+footer {
+    position: fixed;
+    bottom: 40px;
+    height: 20px;
+    width: 100%;
+}
+
+footer i {
+    font-size: 40px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+footer input {
+    font-family: 'PT Sans Narrow', sans-serif;
+    width: 90%;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 .sender {
@@ -17,15 +50,18 @@ header {
 
 .receiver .profile {
     float: right;
+    margin-right: 10px;
 }
 
 .sender .profile {
     float: left;
+    margin-left: 10px;
 }
 
 .talk-bubble {
     margin: 0 40px;
     position: relative;
+    border-radius: 25px;
     padding: 10px;
     width: 250px;
     height: auto;
@@ -40,10 +76,126 @@ header {
 }
 
 .talktext p {
-    -webkit-margin-before: 0em;
-    -webkit-margin-after: 0em;
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
 }
 
-.fa-user-astronaut {
+.profile i {
     font-size: 50px;
+}
+
+.space {
+    margin: 30px;
+    justify-content: center;
+    clear: left;
+    float: left;
+}
+
+.photo-frame {
+    width: 30%;
+    overflow: scroll;
+    margin: 5px auto;
+    justify-content: center;
+    white-space: nowrap;
+    clear: both;
+}
+
+.photo-frame img {
+    width: 100px;
+    background: transparent;
+}
+
+.blue-background {
+    background-color: aqua;
+    display: flex;
+}
+
+.white-background {
+    background-color: white;
+    display: flex;
+    width: 92%;
+}
+
+.pink-background {
+    background-color: pink;
+    display: flex;
+    width: 8%;
+}
+
+@media screen and (max-width: 760px) {
+    .white-background {
+        background-color: white;
+        display: flex;
+        width: 90%;
+    }
+
+    .pink-background {
+        background-color: pink;
+        display: flex;
+        width: 10%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .white-background {
+        width: 87%;
+    }
+
+    .pink-background {
+        width: 13%;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .talk-bubble {
+        width: 200px;
+    }
+
+    footer input {
+        width: 60%;
+    }
+
+    .white-background {
+        width: 85%;
+    }
+
+    .pink-background {
+        width: 15%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .talk-bubble {
+        width: 200px;
+    }
+
+    footer input {
+        width: 50%;
+    }
+
+    .white-background {
+        width: 80%;
+    }
+
+    .pink-background {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .talk-bubble {
+        width: 200px;
+    }
+
+    footer input {
+        width: 40%;
+    }
+
+    .white-background {
+        width: 80%;
+    }
+
+    .pink-background {
+        width: 20%;
+    }
 }

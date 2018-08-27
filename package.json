@@ -30,5 +30,8 @@
     "pre-commit": "1.2.2",
     "stylelint": "8.4.0",
     "stylelint-config-standard": "18.0.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.2.0"
   }
 }

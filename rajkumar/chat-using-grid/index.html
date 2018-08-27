@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Zilkies 19 - FE</title>
+
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="col-sm-12">
+        <div class="menu-bar row">
+            <div class="col-sm-3">
+                <span class="back-icon white">
+                    <i class="fas fa-chevron-left  fa-lg"></i>
+                </span>
+            </div>
+            <div class="col-sm-6 menu-bar__title">
+                <span class="text-center white">
+                    <p>Chat</p>
+                </span>
+            </div>
+            <div class="col-sm-3">
+                <span class="nav-icon white">
+                    <i class="fas fa-bars fa-lg"></i>
+                </span>
+            </div>
+        </div>
+
+        <div class="message float-left">
+            <div class="avatar">
+                <img src="./img/thanos.png" class="list-img" alt="">
+            </div>
+            <p class="chat-text">Life was like a box of chocolates, you never know what you're gonna get.</p>
+            <div class="date">12:45 PM</div>
+        </div>
+        <div class="message float-right">
+            <div class="avatar">
+                <img src="./img/batman.ico" class="list-img" alt="">
+            </div>
+            <p class="chat-text">Wow,It's like the studio didn't have enough money for any more X-Men.</p>
+            <div class="date">1:00 AM</div>
+        </div>
+        <div class="message float-left">
+            <div class="avatar">
+                <img src="./img/ironman-8-563957.png" class="list-img" alt="">
+            </div>
+            <p class="chat-text">NA NA NA NA NA NA NA NA NA NA I`M BATMAN!!!.</p>
+            <div class="date">1:02 AM</div>
+        </div>
+        <!-- location to be included here -->
+        <div class="location-section">
+            <div class="location-section__icon">
+                <div class="location-icon">
+                    <i class="fas fa-map-marker-alt fa-5x"></i>
+                </div>
+            </div>
+            <div class="location-button-section">
+                <button class="location-button-section__button-section__button">Yes</button>
+                <button class="location-button-section__button-section__button">No</button>
+            </div>
+        </div>
+
+        <!-- item-list to be included here -->
+        <div class="row">
+            <div class="col-sm-1 col-xs-1 left-scroll"><i class="fas fa-chevron-left"></i></div>
+            <div class="col-sm-10 col-xs-10">
+                <div class="item-list">
+                    <div class="inner-item">
+                        <img src="./img//thanos.png" class="list-img" alt="">
+                        <span class="item-name">Dewalt B23</span>
+                        <button class="location-button-section__button-section__button">Compare</button>
+                    </div>
+                    <div class="inner-item">
+                        <img src="./img/ironman-8-563957.png" class="list-img" alt="">
+                        <span class="item-name">IBM 200</span>
+                        <button class="location-button-section__button-section__button">Compare</button>
+                    </div>
+                    <div class="inner-item">
+                        <img src="./img/flash.png" class="list-img" alt="">
+                        <span class="item-name">Dewalt A12</span>
+                        <button class="location-button-section__button-section__button">Compare</button>
+                    </div>
+                    <div class="inner-item">
+                        <img src="./img/batman.ico" class="list-img" alt="">
+                        <span class="item-name">Batman</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1 col-xs-1 right-scroll"><i class="fas fa-chevron-right"></i></div>
+        </div>
+
+        <div class="empty-space__bottom"></div>
+        <!-- getting input -->
+        <div class="chat-below">
+            <div class="row chat-below__section">
+                <div class="col-sm-1 chat-below__camera-icon">
+                    <i class="fas fa-camera-retro fa-2x"></i>
+                </div>
+                <div class="col-sm-8 chat-below__message">
+                    <input type="text" class="chat-input" placeholder="Enter message to send ..">
+                </div>
+                <div class="col-sm-1 chat-below__microphone-icon">
+                    <i class="fas fa-microphone fa-2x"></i>
+                </div>
+                <div class="col-sm-2 chat-below__send-icon">
+                    <div class="send-message">
+                        <i class="fab fa-telegram-plane fa-2x white"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

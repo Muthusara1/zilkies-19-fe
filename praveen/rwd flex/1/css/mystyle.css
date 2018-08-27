@@ -1,0 +1,77 @@
+body {
+    height: 100vh;
+    background-color: silver;
+}
+
+@media only screen and (min-width: 200px) {
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .purple {
+        background-color: purple;
+        height: 30%;
+    }
+
+    .blue {
+        background-color: blue;
+        height: 30%;
+    }
+
+    .green {
+        background-color: green;
+        height: 30%;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .purple {
+        height: 30%;
+        width: 20%;
+    }
+
+    .blue {
+        height: 30%;
+        width: 80%;
+    }
+
+    .green {
+        height: 30%;
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .container {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .purple {
+        height: 30%;
+        width: 20%;
+    }
+
+    .blue {
+        height: 30%;
+        width: 60%;
+    }
+
+    .green {
+        height: 30%;
+        width: 20%;
+    }
+}

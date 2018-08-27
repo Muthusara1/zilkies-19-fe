@@ -111,14 +111,12 @@ body {
 .button {
     position: relative;
     clear: both;
-   
 }
 
 button {
     border-radius: 50px;
     height: 30px;
     width: 150px;
-    border: none;
     box-shadow: none !important;
     background-color: transparent;
     color: white;

@@ -7,13 +7,12 @@ ul {
     list-style: none;
 }
 
-.outer-nav {
+.navigation {
     background-color: black;
     color: white;
-    position: relative;
 }
 
-.inner {
+.navigation__item-one__drop {
     position: absolute;
     margin-top: 50px;
     background-color: black;
@@ -25,16 +24,12 @@ ul {
     padding-left: 0;
 }
 
-.drop {
-    display: block;
-}
-
-.dropdown {
+.navigation__item-one__dropdown {
     display: block;
     width: 150px;
     padding-left: 13px;
 }
 
-.outer-drop {
+.navigation__item-one {
     position: relative;
 }

@@ -64,10 +64,14 @@ textarea {
     height: 60px;
     margin: 12px;
     width: 90%;
-    color: white;
     background-color: rgb(38, 138, 163);
     border: 0;
     padding: 3%;
+}
+
+.details-wrapper input::placeholder,
+.details-wrapper textarea::placeholder {
+    color: rgb(22, 247, 217);
 }
 
 .details-wrapper textarea {

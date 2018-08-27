@@ -25,3 +25,11 @@
     color: white;
     padding: 10px;
 }
+
+.outer-list :hover {
+    color: blue;
+}
+
+.outer-list__child :hover {
+    color: red;
+}

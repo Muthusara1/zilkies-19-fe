@@ -18,6 +18,7 @@
     padding: 5px;
     margin: 25px;
     font-size: 25px;
+    text-overflow: ellipsis;
     overflow: hidden;
     height: 30px;
 }
@@ -28,6 +29,7 @@
     margin: 25px;
     font-size: 25px;
     overflow: scroll;
+    text-overflow: ellipsis;
     height: 30px;
 }
 

@@ -12,16 +12,16 @@
             <h1>Let's craft your product</h1>
             
             <div class="form-wrapper">
-                <form>
+                <form name="projectForm" action="#" onsubmit="return validateForm()" method="POST">
                     <div class="options-wrapper">
                         <div>
                             <fieldset>
                                 <h3>Timeframe</br></h3>
-                                <input type="radio" name="1month" id="1month">
+                                <input type="radio" name="duration" id="1month">
                                 <label for="1month">1 month</label></br>
-                                <input type="radio" name="1month" id="23months">
+                                <input type="radio" name="duration" id="23months">
                                 <label for="23months">2-3 months</label></br>
-                                <input type="radio" name="1month" id="morethan4month">
+                                <input type="radio" name="duration" id="morethan4month">
                                 <label for="morethan4month">4+ months</label></br>
                             </fieldset>
                         </div>
@@ -47,13 +47,13 @@
                             <div class="details">
                                 <input type="text" name="Name" placeholder="Name"></br>
                                 <input type="text" name="Company" placeholder="Company"></br>
-                                <input type="email" name="Email" placeholder="Email"></br>
+                                <input type="text" name="Email" placeholder="Email"></br>
                                 <input type="number" name="Budget" placeholder="Budget" min="1" step="any"></br>
                             </div>
                             
                             <div class="desc">
                             <textarea name="Description" placeholder="Tell us about your project.."></textarea>
-                            </br><input type="submit" name="Enquiry" value="Send enquiry">
+                            </br><input type="submit" name="submit" value="Send enquiry" >
                             </div>
                         </fieldset>
                     </div>
@@ -61,5 +61,67 @@
                 
             </div>
         </div>
+        <script>
+            function validateForm() {
+                var radios = document.getElementsByName("duration");
+                var radioValid = false;
+
+                var i = 0;
+                while (!radioValid && i < radios.length) {
+                    if (radios[i].checked) 
+                        radioValid = true;
+                    i++;        
+                }
+
+                if (!radioValid) {
+                    alert("Specify your Timeframe!");
+                    return false;
+                }
+                
+                var projectTypes = document.querySelectorAll('input[type="checkbox"]');
+                var checkedOne=Array.prototype.slice.call(projectTypes).some(x=>x.checked);
+                if(!checkedOne) {
+                    alert("Specify your project type(s)");
+                    return false;
+                }
+
+                var name=document.forms["projectForm"]["Name"].value;
+                if(name.length==0){
+                    alert("Name must be filled");
+                    return false;
+                }
+                var regex =/^[a-zA-Z ]{2,30}$/;
+                if(!regex.test(name)){
+                    alert("No special characters are allowed in name");
+                    return false;
+                }
+
+                var company=document.forms["projectForm"]["Company"].value;
+                if(company.length==0){
+                    alert("Company must be filled");
+                    return false;
+                }
+
+                var email=document.forms["projectForm"]["Email"].value;
+                var regex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                if(email.length==0){
+                    alert("Email must be filled");
+                    return false;
+                }
+                
+                if(!regex.test(String(email).toLowerCase())){
+                    alert("Email ID is not valid");
+                    return false;
+                }
+
+                var budget=document.forms["projectForm"]["Budget"].value;
+                if(!budget){
+                    alert("Budget must be filled");
+                    return false;
+                }
+                setTimeout(function(){window.location.reload();},10);
+            }
+
+        </script>
     </body>
 </html>

@@ -7,6 +7,7 @@
     <body>
         <div class="close">close</div>
         <h1>Let's craft your project!</h1>
+        <form name="myform"  onsubmit="return checkAllInputs()">
         <table align="center">
             <tr>
                 <td>
@@ -28,20 +29,26 @@
                 <td>
                     <h2>Personal Details</h2>
                     <label for="name"></lablel>
-                    <input type = "text" name="name" placeholder="Name"/><br/>
+                    <input type = "text" name="name" onchange="validateName()" placeholder="Name"/><br/>
+                    <p id="name-error"></p>
                     <label for="company"></lablel>
-                    <input type = "text" name="company" placeholder="Company"/><br/>
+                    <input type = "text" name="company" onchange="validateCompany()" placeholder="Company"/><br/>
+                    <p id="company-error"></p>
                     <label for="email"></lablel>
-                    <input type = "email" name="email" placeholder="Email" required/><br/>
+                    <input type = "text" name="email" onchange="validateEmail()" placeholder="Email" required/><br/>
+                    <p id="email-error"></p>
                     <label for="budget"></lablel>
-                    <input type = "text" name="budget" placeholder="Budget" required/><br/>
+                    <input type = "text" name="budget" onchange="validateBudget()" placeholder="Budget" required/><br/>
+                    <p id="budget-error"></p>
                 </td>
                 <td>
                     <br/>
-                    <textarea rows="20" cols="40" placeholder="Tell us about ur Project"/></textarea></br>
+                    <textarea rows="20" cols="40" placeholder="Tell us about ur Project" required/></textarea></br>
                     <button type="submit" class="buttton">Send Enquiry</button>
                 </td>
             </tr>
         </table>
+    </form>
+    <script src="../js/validate.js" />
     </body>
 </html>

@@ -5,14 +5,25 @@
         <link rel="stylesheet" href="../css/chat.css">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet"> 
+        <script type="text/javascript" src="../js/chat.js"></script>
     </head>
-    <body>
+    <body onload="start()">
         <header>
             <h1>
                 Zilker Chat
             </h1>
         </header>
-        <section>
+        <section id="chat-box">
+            <div class="receiver">
+                <div class="profile">
+                    <i class="fas fa-user-astronaut"></i>
+                </div>
+                <div class="talk-bubble">
+                    <div class="talk-text">
+                        <p class="talk-text">This one adds a right triangle on the left, flush at the top by using .tri-right and .left-top to specify the location.</p>
+                    </div>
+                </div>
+            </div>
             <div class="receiver">
                 <div class="profile">
                     <i class="fas fa-user-astronaut"></i>
@@ -79,16 +90,16 @@
                         </div>
                     </div>
                 </div>
-                <div class="space">Space</div>
+                <div id="space" class="space"></div>
         </section>
         <footer>
             <div class="blue-background">
                 <div class="white-background">
                     <i class="fas fa-camera"></i>
-                    <input type="text" placeholder="Type something..."></input>
+                    <input id="input-text" type="text" placeholder="Type something..."></input>
                     <i class="fas fa-microphone"></i>
                 </div>
-                <div class="pink-background">
+                <div class="pink-background" onclick="return addMessage()">
                     <i class="fas fa-arrow-circle-right"></i>
                 </div>
             </div>

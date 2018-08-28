@@ -35,30 +35,32 @@ section {
     overflow: hidden;
 }
 
-.sender {
+.receiver {
     clear: both;
     float: left;
     display: block;
     margin: 15px 0;
 }
 
-.receiver {
+.sender {
     clear: both;
     float: right;
     display: block;
+    margin: 10px;
 }
 
-.receiver .profile {
+.sender .profile {
     float: right;
     margin-right: 10px;
 }
 
-.sender .profile {
+.receiver .profile {
     float: left;
     margin-left: 10px;
 }
 
 .talk-bubble {
+    word-wrap: break-word;
     margin: 0 40px;
     position: relative;
     border-radius: 25px;
@@ -85,9 +87,9 @@ section {
 }
 
 .space {
-    margin: 30px;
+    margin: 50px;
     justify-content: center;
-    clear: left;
+    clear: both;
     float: left;
 }
 

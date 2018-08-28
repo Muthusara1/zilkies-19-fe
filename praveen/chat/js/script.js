@@ -3,13 +3,11 @@ retrieveMessages();
 function retrieveMessages() {
     var divToInsert = document.getElementById("message-window__regular-message");
     divToInsert.innerHTML = "";
-    fetch('http://localhost:3000/messages', {
-        method: 'get'
-    })
-    .then(function(response) {
+    fetch("http://localhost:3000/messages", {
+        method: "get"
+    }).then(function(response) {
         return response.json();
-    })
-    .then(function(response) {
+    }).then(function(response) {
         for (var key in response) {
             var messageObject = response[key];
 
@@ -48,42 +46,39 @@ function retrieveMessages() {
             // var messageContainer = '<div class="message-container">' + textMessage + profilePicture + '</div>';
             // divToInsert.innerHTML += messageContainer;
         }
-    })
-    .catch(function(err) {
-        console.log("Error!");
+    }).catch(function(err) {
+        alert(err);
     });
 }
 
 function storeMessage() {
     var today = new Date();
-    var time = today.toTimeString().split(' ')[0];
-    var hours = time.split(':')[0];
-    var minutes = time.split(':')[1];
-    time = hours + ':' + minutes;
+    var time = today.toTimeString().split(" ")[0];
+    var hours = time.split(":")[0];
+    var minutes = time.split(":")[1];
+    time = hours + ":" + minutes;
     if (hours > 12) {
-        time += ' PM';
+        time += " PM";
     } else {
-        time += ' AM';
+        time += " AM";
     }
     var message = document.getElementById("type-here").value;
     document.getElementById("type-here").value = "";
     var messageJson = {
         "text": message,
         "time": time
-    }
+    };
     fetch("http://localhost:3000/messages", {
         method: "post",
         headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
+            "Accept": "application/json",
+            "Content-Type": "application/json"
         },
     
         body: JSON.stringify(messageJson)
-    })
-    .then( (response) => {
+    }).then( (response) => {
         retrieveMessages();
-    })
-    .catch(function(err) {
-        console.log("Error in storeMessage()!");
+    }).catch(function(err) {
+        alert(err);
     });
 }

@@ -6,8 +6,8 @@
     <title>Chat</title>
 </head>
 <body>
-    <div class="chat-body">
-        <header>CHAT</header>
+    <header>CHAT</header>
+        <div class="chat-body">
         <div class="right-user">
             <div class="message">
             <p>hello user 1 this is a longer</p><br/>
@@ -82,14 +82,15 @@
             </div>
                 <img class="user-img" src="../images/index.jpeg" />
         </div>
-       
-        <footer>
-        <div class="collection">
-        <img class="send-icon" src="../images/smiley.svg" />    
-        <input type="text" name="message" placeholder="Enter a Message">
-        <img class="send-icon" src="../images/paper-plane.svg"/>
-        </div>
-        </footer>
+       <div id="messages"></div>
     </div>
+    <footer>
+            <div class="collection">
+            <img class="send-icon" src="../images/smiley.svg" />    
+            <input type="text" id="inputText" name="message" placeholder="Enter a Message">
+            <button id= "submit-button" ><img class="send-icon" src="../images/paper-plane.svg"/></button>
+            </div>
+    </footer>
+    <script src="../js/chat.js"></script>
 </body>
 </html>

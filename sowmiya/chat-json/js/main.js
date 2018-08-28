@@ -1,45 +1,49 @@
-function post(event){
+var button=document.getElementsByClassName("text-message-box__send");
+button.onclick=function post(event) {
     event.preventDefault();
-    var content=document.getElementById("chat").value;
-    var date=new Date();
-    var time=date.toLocaleTimeString();
+    var content = document.getElementById("chat").value;
+    var date = new Date();
+    var time = date.toLocaleTimeString();
     fetch("http://localhost:3000/chat", {
-	method: 'POST', 
-	headers: new Headers({
-    "Accept":"application/json",
-    "Content-Type":"application/json" 	
-    }),
-    body: JSON.stringify({
-        "content":content,
-        "time": time
-    })
-}).then(function() { alert("added"); })
-}
+        method: "POST",
+        headers: new Headers({
+            "Accept":"application/json",
+            "Content-Type": "application/json"
+        }),
+        body: JSON.stringify({
+            "content": content,
+            "time": time
+        })
+    }).then(function () {
+        alert("added");
+    });
+};
+var load=document.getElementsByTagName("body");
 
-function addContent(){
-    fetch('http://localhost:3000/chat').then(function(response) { 
-       return response.json();
-    }).then(function(json) {
-        for(key in json){
-            var time=json[key].time;
-            var content=json[key].content;
-            var body=document.getElementsByClassName("main-content")[0];
-            var message=document.createElement("div");
-            var message_content=document.createElement("div");
-            var message_paragraph=document.createElement("div");
-            var message_time=document.createElement("div");
-            var image_div=document.createElement("div");
-            var paragraph_content=document.createElement("p");
-            var paragraph_time=document.createElement("p");
-            var image=document.createElement("img");
-            message.className="message";
-            message_content.className="message__content";
-            message_paragraph.className="message_paragraph";
-            message_time.className="message_time";
-            image_div.className="message__image";
-            paragraph_content.innerHTML=content;
-            paragraph_time.innerHTML=time;
-            image.src="../asserts/profile.jpg";
+load.onload=function addContent() {
+    fetch("http://localhost:3000/chat").then(function (response) {
+        return response.json();
+    }).then(function (json) {
+        for (var key in json) {
+            var time = json[key].time;
+            var content = json[key].content;
+            var body = document.getElementsByClassName("main-content")[0];
+            var message = document.createElement("div");
+            var message_content = document.createElement("div");
+            var message_paragraph = document.createElement("div");
+            var message_time = document.createElement("div");
+            var image_div = document.createElement("div");
+            var paragraph_content = document.createElement("p");
+            var paragraph_time = document.createElement("p");
+            var image = document.createElement("img");
+            message.className = "message";
+            message_content.className = "message__content";
+            message_paragraph.className = "message_paragraph";
+            message_time.className = "message_time";
+            image_div.className = "message__image";
+            paragraph_content.innerHTML = content;
+            paragraph_time.innerHTML = time;
+            image.src = "../assets/profile.jpg";
             image_div.appendChild(image);
             message_paragraph.appendChild(paragraph_content);
             message_time.appendChild(paragraph_time);
@@ -50,4 +54,4 @@ function addContent(){
             body.appendChild(message);
         }
     });
-}
+};

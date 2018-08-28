@@ -1,3 +1,23 @@
+/* .header {
+    background: pink;
+}
+
+.container {
+    background: darkorange;
+}
+
+.innerbox1 {
+    background: salmon;
+}
+
+.innerbox2 {
+    background: aqua;
+}
+
+.innerbox3 {
+    background: purple;
+}
+
 * {
     font-family: "Arial Black", Gadget, sans-serif;
     color: white;
@@ -5,23 +25,19 @@
     border: none;
     box-sizing: border-box;
     background-color: #3cb3ff;
+
 }
 
-.container {
-    float: left;
-    height: 500px;
+body,
+html {
+    width: 100%;
+    height: 100%;
 }
 
-.container:nth-child(1) {
-    width: 30%;
-}
-
-.container:nth-child(2) {
-    width: 35%;
-}
-
-.container:nth-child(3) {
-    width: 35%;
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .header {
@@ -32,22 +48,12 @@
     margin-bottom: 10px;
 }
 
-.innerbox1,
-.innerbox2,
-.innerbox3 {
-    padding: 20px;
-}
-
 .innerbox2 input {
     margin: 10px;
     height: 50px;
     background-color: #2fa8fa;
     padding: 10px;
     width: 100%;
-}
-
-.innerbox1 input {
-    margin: 10px;
 }
 
 .submit-button {
@@ -63,15 +69,10 @@ textarea {
     resize: none;
     width: 100%;
     height: 57%;
-    float: right;
     margin-top: 14%;
     background-color: #2fa8fa;
     margin-bottom: 15px;
     padding: 10px;
-}
-
-.innerbox3 {
-    height: 500px;
 }
 
 .banner {
@@ -104,3 +105,157 @@ h1 {
     float: right;
 }
 
+.innerbox1,
+.innerbox2,
+.innerbox3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.outer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #3cb3ff;
+    color: white;
+    font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.header {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 25px;
+    padding: 80px;
+}
+
+.container {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 75%;
+}
+
+.innerbox-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.innerbox-header i {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+.innerbox1 {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    justify-content: space-evenly;
+    height: 50%;
+}
+
+.input {
+    padding: 5px;
+}
+
+.label {
+    padding-left: 5px;
+}
+
+.personal-details {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    padding: 5px;
+}
+
+.input-field {
+    height: 50px;
+    background-color: #2fa8fa;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    color: white;
+}
+
+.text-area {
+    resize: none;
+    height: 300px;
+    width: 300px;
+    background: aqua;
+    padding: 10px;
+    background-color: #2fa8fa;
+    color: white;
+}
+
+.container-textbox {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-button {
+    border: 2px solid white;
+    padding: 10px;
+    width: 150px;
+    border-radius: 20px;
+    margin: 20px;
+    background-color: #3cb3ff;
+    color: white;
+}
+
+.submit-button-container {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.close {
+    font-size: 50px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

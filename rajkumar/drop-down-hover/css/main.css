@@ -1,0 +1,44 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+li {
+    display: inline-block;
+    padding: 20px;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+.navigation {
+    background-color: #212121;
+    color: white;
+}
+
+.navigation__item-one__drop {
+    position: absolute;
+    margin-top: 50px;
+    background-color: #212121;
+    color: white;
+    margin-right: 20px;
+    top: 0;
+    left: 0;
+    padding-left: 0;
+    display: none;
+}
+
+.navigation__item-one__dropdown {
+    display: block;
+    width: 150px;
+    padding-left: 13px;
+}
+
+.navigation__item-one {
+    position: relative;
+}
+
+.navigation__item-one:hover .navigation__item-one__drop {
+    display: block;
+}

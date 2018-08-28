@@ -5,28 +5,103 @@
     <meta name="viewport" content="width=750px, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/chat.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../lib/fontawesome-free-5.2.0-web/css/all.css">
     <title>Chat</title>
 </head>
 <body>
     <div class="outer-container">
         <div class="header">
-        <i class="fas fa-chevron-left"></i><p>CHAT</p><i class="fas fa-bars"></i>    
+            <i class="fas fa-chevron-left"></i>
+            <p class="chat-head">CHAT</p>
+            <i class="fas fa-sliders-h"></i>    
         </div>
-        <div class="chat-box">
-            <div class="message">
-
+        <div class="chat-box" id="chat-box">
+            <div class="message-container">
+                <div class="message-content">
+                <p class="message">I need access to your location to suggest stores near by.</p>
+                <p class="time">01:45PM</p>
+                </div>
+                <i class="fas fa-headset" style="color: black;"></i>
+                
             </div>
             <div class="location">
-
+                <i class="fas fa-map-marked-alt" style="color:#28b3e8;"></i>
+                <div class="location-options">
+                    <button name="yes" class="button" onclick="alert('You have agreed to share your location!');">Yes</button>
+                    <button name="no" class="button" onclick="alert('Sorry, we cant suggest places without knowing your location! :(');">No</button>
+                </div>
+            </div>
+            <div class="message-container">
+                <div class="message-content">
+                <p class="message">I need access to your location to suggest stores near by.</p>
+                <p class="time">01:45PM</p>
+                </div>
+                <i class="fas fa-headset" style="color: black;"></i>
+                
             </div>
             <div class="products">
+                <p class="product-head">PRODUCTS</p>
+                <i class="fas fa-chevron-left" style="color: black"></i>
+                <div class="product-container">
+                    <div class="product-div">
+                        <img src="mexican-chicken-burger.jpg" alt="burger">
+                        <p>Mexican Burger</p>
+                        <p>$5.10</p>
+                        <button name="compare" class="button">Compare</button>
+                    </div>
 
+                    <div class="product-div">
+                        <img src="mexican-chicken-burger.jpg" alt="burger">
+                        <p>Mexican Burger</p>
+                        <p>$5.10</p>
+                        <button name="compare" class="button">Compare</button>
+                    </div>
+
+                    <div class="product-div">
+                        <img src="mexican-chicken-burger.jpg" alt="burger">
+                        <p>Mexican Burger</p>
+                        <p>$5.10</p>
+                        <button name="compare" class="button">Compare</button>
+                    </div>
+
+                    <div class="product-div">
+                        <img src="mexican-chicken-burger.jpg" alt="burger">
+                        <p>Mexican Burger</p>
+                        <p>$5.10</p>
+                        <button name="compare" class="button">Compare</button>
+                    </div>
+                    
+                </div>
+                <i class="fa fa-angle-right" aria-hidden="true" style="color: black; font-size: 20px;"></i>
             </div>
+            <div class="message-container">
+                <div class="message-content">
+                <p class="message">I need access to your location to suggest stores near by.</p>
+                <p class="time">01:45PM</p>
+                </div>
+                <i class="fas fa-headset" style="color: black;"></i>
+                
+            </div>
+            <div class="message-container">
+                <div class="message-content">
+                <p class="message">I need access to your location to suggest stores near by.</p>
+                <p class="time">01:45PM</p>
+                </div>
+                <i class="fas fa-headset" style="color: black;"></i>
+                
+            </div>    
         </div>
         <div class="send-box">
-
+            <div class="typing-box">
+                <i class="fas fa-camera-retro" style=" color: lightgray;"></i>
+                <input class="input-message" type="text" id = "message" name="message" placeholder="Type something...">
+                <i class="fas fa-microphone-alt" style="color: lightgray;"></i>
+            </div>
+            <button class="send-button" onclick="addMessages(); return false;">
+                <i class="fas fa-paper-plane"></i>
+            </button>
         </div>
     </div>
+    <script src="../js/chat.js"></script>
 </body>
 </html>

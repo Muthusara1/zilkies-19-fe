@@ -49,14 +49,14 @@
                     </span>
                 </div>
             </div>
-            <div class="col-sm-12 chatapp-container__messages-div">
+            <div class="col-sm-12 chatapp-container__messages-div" id="messages-div">
                 <div class="messages-div__messages">
                     <div class="messages__message-pic-div">
-                        <img src="../resources/science.png" alt="profile picture" class="message-pic-div__pic">
+                        <img src="resources/science.png" alt="profile picture" class="message-pic-div__pic">
                     </div>
                     <div class="messages__message-text-div">
                         <div class="message-text-div__text">I need access to your location to suggest stores near by.</div>
-                        <div class="messages-div__time">01:45PM</div>
+                        <div class="messages-div__time">01:45</div>
                     </div>
                 </div>
                 <div class="messages-div__location-div">
@@ -70,12 +70,12 @@
                 </div>
                 <div class="messages-div__messages">
                     <div class="messages__message-pic-div">
-                        <img src="../resources/science.png" alt="profile picture" class="message-pic-div__pic">
+                        <img src="resources/science.png" alt="profile picture" class="message-pic-div__pic">
                     </div>
                     <div class="messages__message-text-div">
                         <div class="message-text-div__text">Here are some of the best selling circular saws in the shops
                             around you.</div>
-                        <div class="messages-div__time">01:46PM</div>
+                        <div class="messages-div__time">01:46</div>
                     </div>
                 </div>
                 <div class="messages__product-display">
@@ -88,7 +88,7 @@
                         </div>
                         <div class="products__product-div">
                             <div class="product-div__product">
-                                <img src="../resources/saw1.jpg" alt="Circular Saw" class="product__image">
+                                <img src="resources/saw1.jpg" alt="Circular Saw" class="product__image">
                                 <div class="product__name">
                                     DEWALT DWE575
                                 </div>
@@ -98,7 +98,7 @@
                                 <input type="button" value="Compare" class="product__compare">
                             </div>
                             <div class="product-div__product">
-                                <img src="../resources/saw2.jpg" alt="Circular Saw" class="product__image">
+                                <img src="resources/saw2.jpg" alt="Circular Saw" class="product__image">
                                 <div class="product__name">
                                     DEWALT DWE575
                                 </div>
@@ -108,7 +108,7 @@
                                 <input type="button" value="Compare" class="product__compare">
                             </div>
                             <div class="product-div__product">
-                                <img src="../resources/saw3.jpg" alt="Circular Saw" class="product__image">
+                                <img src="resources/saw3.jpg" alt="Circular Saw" class="product__image">
                                 <div class="product__name">
                                     DEWALT DWE576
                                 </div>
@@ -130,18 +130,19 @@
                         <i class="fas fa-camera"></i>
                     </div>
                     <div class="outer-div__message-text">
-                        <input type="text" name="message" placeholder="Type Something" class="message-text__message-area">
+                        <input type="text" name="message" placeholder="Type Something" class="message-text__message-area" id="message-text">
                     </div>
                     <div class="outer-div__record">
                         <i class="fas fa-microphone"></i>
                     </div>
-                    <div class="outer-div__send">
+                    <div class="outer-div__send" id="send-button">
                         <i class="fas fa-arrow-right"></i>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="store-messages.js"></script>
 </body>
 
 </html>

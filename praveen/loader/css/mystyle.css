@@ -1,0 +1,199 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(191, 235, 225);
+    overflow: hidden;
+}
+
+.red-ball-container {
+    height: 18px;
+    width: 18px;
+    animation: move 3.5s linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.green-ball-container {
+    position: relative;
+    top: 18px;
+    height: 18px;
+    width: 18px;
+    animation: move 3.5s linear 0.3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.blue-ball-container {
+    position: relative;
+    top: 36px;
+    height: 18px;
+    width: 18px;
+    animation: move 3.5s linear 0.6s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.ball {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+}
+
+.red {
+    background-color: rgb(161, 58, 58);
+    animation: bounce 0.2s cubic-bezier(0.26, 0.5, 0.41, 1.01);
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.green {
+    background-color: rgb(50, 179, 93);
+    animation: bounce 0.2s cubic-bezier(0.26, 0.5, 0.41, 1.01) 0.3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.blue {
+    background-color: rgb(81, 81, 209);
+    animation: bounce 0.2s cubic-bezier(0.26, 0.5, 0.41, 1.01) 0.6s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.heading {
+    position: absolute;
+    margin-top: 100px;
+    right: 400px;
+}
+
+#L {
+    animation: enlarge 1s linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#O {
+    animation: enlarge 1s linear 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#A {
+    animation: enlarge 1s linear 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#D {
+    animation: enlarge 1s linear 1.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#I {
+    animation: enlarge 1s linear 2s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#N {
+    animation: enlarge 1s linear 2.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#G {
+    animation: enlarge 1s linear 3s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.counter,
+.counter-2 {
+    margin-top: 10px;
+    width: 60px;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 8px;
+    font-size: 38px;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+
+.counter-2 {
+    opacity: 0;
+    animation: fade-in 1s ease-in-out;
+    animation-iteration-count: 10;
+}
+
+.counter {
+    position: relative;
+    bottom: 70px;
+    transform-origin: center bottom;
+    animation: rotate 1s ease-in-out;
+    animation-direction: normal;
+    animation-iteration-count: 10;
+}
+
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+        height: 12px;
+    }
+
+    to {
+        transform: translate3d(0, -50px, 0);
+        height: 18px;
+    }
+}
+
+@keyframes move {
+    from {
+        transform: translate3d(-70px, 0, 0);
+    }
+
+    to {
+        transform: translate3d(80px, 0, 0);
+    }
+}
+
+@keyframes enlarge {
+    from {
+        font-size: 26px;
+    }
+
+    to {
+        font-size: 40px;
+    }
+}
+
+@keyframes rotate {
+    20% {
+        transform: rotateX(0);
+    }
+
+    60% {
+        background-color: transparent;
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotateX(150deg);
+        opacity: 0;
+        background-color: black;
+    }
+}
+
+@keyframes fade-in {
+    40% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

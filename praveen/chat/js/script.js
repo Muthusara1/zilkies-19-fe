@@ -1,5 +1,5 @@
+updateScroll();
 retrieveMessages();
-
 function retrieveMessages() {
     var divToInsert = document.getElementById("message-window__regular-message");
     divToInsert.innerHTML = "";
@@ -81,4 +81,11 @@ function storeMessage() {
     }).catch(function(err) {
         alert(err);
     });
+    updateScroll();
+}
+
+function updateScroll(){
+    var element = document.getElementById("scroll-window");
+    element.scrollTo(0, element.scrollHeight);
+    alert("DONE!");
 }

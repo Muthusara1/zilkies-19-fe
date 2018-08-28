@@ -13,7 +13,7 @@
 .sidemenu {
     background-color: black;
     height: 500px;
-    width: none;
+    width: 0;
     position: absolute;
     transition: 0.5s;
     overflow-x: hidden;

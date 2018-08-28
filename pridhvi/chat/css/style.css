@@ -69,6 +69,7 @@
     color: white;
     opacity: 0.8;
     font-size: 16px;
+    transform: rotate(50deg);
 }
 
 .send-icon {
@@ -181,16 +182,17 @@ button:hover {
 .products-inner-container {
     width: 90%;
     display: flex;
+    /* background-color: aqua; */
 }
 
 .product {
-    width: 50%;
-    margin-left: 5px;
-    margin-right: 5px;
+    width: 46%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .product-image {
-    height: 60%;
+    height: 50%;
     text-align: center;
 }
 

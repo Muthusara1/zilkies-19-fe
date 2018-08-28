@@ -1,4 +1,4 @@
-span {
+.circle-1,.circle-2,.circle-3 {
     height: 300px;
     width: 300px;
     border-radius: 50%;
@@ -21,10 +21,16 @@ span {
     background-color: pink;
 }
 
-div {
-    position: relative;
-    height: 1000px;
-    width: 1000px;
-    left: 25%;
-    margin: 100px;
+.outer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh;
 }
+
+.inner-container {
+    position: relative;
+    height: 500px;
+    width: 500px;
+}
+

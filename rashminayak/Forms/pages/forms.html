@@ -13,11 +13,11 @@
 
 <body>
     <!-- <div class="banner"></div> -->
-    <!-- <i class="fas fa-times-circle close"></i> -->
+    <i class="fas fa-times-circle close"></i>
     <div class="header">
         <h1>Let's craft your product.</h1>
     </div>
-    <form name="product-form" action="#">
+    <form name="product-form" onsubmit = "form(); return false;" >
         <div class="container">
             <div class="innerbox1">
                 <div class="innerbox-header">
@@ -25,7 +25,7 @@
                     <h2>Timeframe</h2>
                 </div>
                 <div class="input">
-                    <input type="radio" name="timeframe" value="1" checked>
+                    <input type="radio" name="timeframe" value="1">
                     <label class="label">1 Month</label>
                     </br>
                 </div>
@@ -36,7 +36,7 @@
                 </div>
                 <div class="input">
                     <input type="radio" name="timeframe" value="4">
-                    <label class="label">4 Months</label>
+                    <label class="label">4+ Months</label>
                     </br>
                 </div>
             </div>
@@ -73,20 +73,23 @@
                 <i class="fas fa-user-tie"></i>
                 <h2>Personal Details</h2>
             </div>
-            <div class="personal-details"></div>
-            <input type="text" name="name" placeholder="Name" />
-            <input type="text" name="company" placeholder="Company" />
-            <input type="email" name="email" placeholder="Email" />
-            <input type="text" name="budget" placeholder="Budget" />
+            <div class="personal-details">
+            <input type="text" name="name" placeholder="Name" class="input-field" />
+            <input type="text" name="company" placeholder="Company" class="input-field" />
+            <input type="email" name="email" placeholder="Email" class="input-field" />
+            <input type="text" name="budget" placeholder="Budget" class="input-field" />
+            </div>
         </div>
         </div>
-        <div class="container">
+        <div class="container-textbox">
             <!-- <div class="innerbox3"> -->
-            <textarea name="about" placeholder="Tell us about your project.." form="product-form"></textarea>
+            <textarea name="about" placeholder="Tell us about your project.." form="product-form" class="text-area"></textarea>
+            <div class="submit-button-container">
             <input type="submit" value="Send Inquiry" class="submit-button">
             <!-- </div> -->
+            </div>
         </div>
     </form>
+    <script src="../js/forms.js"></script>
 </body>
-
 </html>

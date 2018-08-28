@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="../css/mystyle.css"/>
     <!-- <link rel="stylesheet" href="../../fontawesome-free-5.2.0-web/css/all.css"> -->
@@ -79,17 +80,21 @@
                     </div>
                 </div>
             </div>
+            <div id="message-window__regular-message">
+
+            </div>
         </div>
         <div class="screen__bottom-bar">
             <div class="bottom-bar__message-area">
                 <i class="fas fa-camera" style="margin-left: 10px;"></i>
-                <input class="message-area_input" type="text" placeholder="Type here..."></input>
+                <input id="type-here" class="message-area_input" type="text" placeholder="Type here..."/>
                 <i class="fas fa-microphone" style="margin-right: 10px;"></i>
             </div>
-            <div class="bottom-bar__send-message">
+            <div class="bottom-bar__send-message" onclick="storeMessage()">
                 <i class="fab fa-telegram-plane"></i>
             </div>
         </div>
     </div>
+    <script src="../js/script.js"></script>
 </body>
 </html>

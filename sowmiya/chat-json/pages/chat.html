@@ -7,10 +7,9 @@
     <title>chat-box</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="main.js"></script>
 </head>
 
-<body>
+<body onload="addContent()">
     <div class="outer">
         <!-- HEAD SECTIONS -->
         <header>
@@ -40,7 +39,8 @@
                     <img src="../asserts/profile.jpg" alt="user_profile" />
                 </div>
             </div>
-            <!-- LOCATION SHARING-->
+
+            <!-- LOCATION SHARING -->
             <div class="location-wrapper">
                 <div class="location-wrapper__image">
                     <img src="../asserts/placeholder.svg" alt="location-icon" class="location__image">
@@ -50,7 +50,7 @@
                     <button>NO</button>
                 </div>
             </div>
-            <!-- Message Content-->
+            <!--  Message Content-->
             <div class="message">
                 <div class="message__content">
                     <div class="message_paragraph">
@@ -62,7 +62,7 @@
                     </div>
                 </div>
                 <div class="message__image">
-                    <img src="../asserts/profile.jpg" alt="user_profile" />
+                    <img src="../assets/profile.jpg" alt="user_profile" />
                 </div>
             </div>
             <!-- Image Slider-->
@@ -102,16 +102,17 @@
                 </div>
                 <div class="text-message-box__text">
                     <form action="#">
-                        <input type="text" placeholder="Type something here.." />
+                        <input type="text" placeholder="Type something here.." id="chat" required/>
                 </div>
                 <div class="text-message-box__microphone">
                     <img src="../assets/microphone.svg" alt="camera-icon">
 
                 </div>
-                <button class="text-message-box__send">
-                    <img src="../assets/airplane.svg" alt="plane-icon">
+                <button type="button" class="text-message-box__send" onclick="post(event)">
+                    <img src="../asserts/airplane.svg" alt="plane-icon">
                 </button>
-
+                </form>
+                <script type="text/javascript" src="../js/main.js"></script>
             </div>
         </div>
 </body>

@@ -5,10 +5,12 @@
         <link rel="stylesheet" type="text/css" media="screen" href="../css/form.css" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,500,900" rel="stylesheet"> 
+        <script type="text/javascript" src="../js/form.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         
     </head>
     <body>
+        <form id="myForm">
             <div id="close-button">
                     <i class="fas fa-times-circle fa-3x white"></i>
                 </div>
@@ -32,16 +34,17 @@
                 </div>
                 <div id="personal-details"  class="white">
                     <h2>Personal Details</h2>
-                    <input type="text" placeholder="Name"></input><br>
-                    <input type="text" placeholder="Company"></input><br>
-                    <input type="text" placeholder="Email"></input><br>
-                    <input type="text" placeholder="Budget"></input><br>
+                    <input id="name" type="text" placeholder="Name"></input><br>
+                    <input id="company" type="text" placeholder="Company"></input><br>
+                    <input id="email" type="email" placeholder="Email"></input><br>
+                    <input id="budget" type="text" placeholder="Budget"></input><br>
                 </div>
                 <div id="feedback"  class="white">
                     <h2>About Project</h2>
-                    <textarea placeholder="Tell us about your project..." rows="15" cols="40"></textarea>
+                    <textarea id="feedback-text" placeholder="Tell us about your project..." rows="15" cols="40"></textarea>
                 </div>
                 <div class="dummy"></div>
-                <button class="send-enquiry white">Send Enquiry</button>
+                <input type="submit" onclick="return validate()" class="send-enquiry white"></input>
+            </form>
     </body>
 </html>

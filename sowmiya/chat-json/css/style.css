@@ -205,6 +205,7 @@ h3 {
 
 .text-message-box__camera > img,
 .text-message-box__microphone > img,
+.text-message-box__send > img,
 .image-slider__image1 > img,
 .image > img,
 .text-message-box__text input[type="text"] {

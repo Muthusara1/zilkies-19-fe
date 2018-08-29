@@ -7,12 +7,15 @@ function myfunc() {
     var budgetregex = /[0-9]+/;
     if (!nameregex.test(name)) {
         alert("INVALID NAME");
+        return false;
     }
     if (!companyregex.test(company)) {
         alert("INVALID COMPANY");
+        return false;
     }
     if (!budgetregex.test(budget)) {
         alert("INVALID BUDGET VALUE ENTER IN WHOLE VALUE (12000)");
+        return false;
     }
 
 }

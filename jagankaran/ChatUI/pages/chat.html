@@ -9,7 +9,7 @@
         crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
-
+    <script src="../js/chat.js"></script>
 </head>
 
 <body>
@@ -131,13 +131,15 @@
                     <i class="fas fa-camera"></i>
                 </div>
                 <div class="col-8 chatbox-chatarea__inputarea">
-                    <input type="text" name="message" placeholder="Type something...">
+                    <input type="text" name="message" id="message" placeholder="Type something...">
                 </div>
                 <div class="col-1 chatbox-chatarea__microphone icon_properties">
                     <i class="fas fa-microphone"></i>
                 </div>
                 <div class="col-2 chatbox-chatarea__send icon_properties">
-                    <i class="fa fa-send-o"></i>
+                    <button onclick="postdata()">
+                        <i class="fa fa-send-o"></i>
+                    </button>
                 </div>
             </div>
         </div>

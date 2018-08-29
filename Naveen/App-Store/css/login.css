@@ -1,0 +1,118 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial;
+}
+
+.outer-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100% - 50px);
+    min-width: 400px;
+    overflow: auto;
+}
+
+footer {
+    width: 100%;
+    position: absolute;
+    bottom: 12px;
+}
+
+.footer-copyrights {
+    width: 210px;
+    margin: auto;
+}
+
+.login-div {
+    width: 560px;
+    height: 640px;
+    margin: auto;
+    background: #24313C;
+}
+
+.login-div__users {
+    box-sizing: border-box;
+    width: 100%;
+    height: 120px;
+    padding-top: 18px;
+    padding-left: 14px;
+    padding-right: 14px;
+    display: flex;
+}
+
+.users__user,
+.users__tester,
+.users__admin {
+    box-sizing: border-box;
+    flex-grow: 1;
+    height: 70px;
+    text-align: center;
+    padding-top: 20px;
+    cursor: pointer;
+    background-color: #435159;
+}
+
+.user__text,
+.tester__text,
+.admin__text {
+    font-size: 22px;
+    font-weight: thin;
+    color: white;
+}
+
+.login-div__credentials {
+    width: 100%;
+    height: 240px;
+}
+
+.credentials__username,
+.credentials__password {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.username__text,
+.password__text {
+    box-sizing: border-box;
+    width: 360px;
+    height: 54px;
+    padding: 6px 16px;
+    border: 3px solid #B4B1B1;
+    background-color: transparent;
+    transition: 0.5s;
+    outline: none;
+    font-size: 17px;
+    color: white;
+}
+
+.username__text:focus,
+.password__text:focus {
+    border: 3px solid white;
+}
+
+.login-div__login {
+    width: 100%;
+    height: 80px;
+    text-align: center;
+}
+
+.login__button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    padding: 18px 52px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition: 0.5s;
+    border: 3px solid #B4B1B1;
+}
+
+.login__button:hover {
+    border: 3px solid white;
+}

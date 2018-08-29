@@ -1,5 +1,8 @@
 window.onload = postdata();
-document.getElementById("send_button").onclick = function () {
+var sendButton = document.getElementById("send_button");
+sendButton.onclick = function () {
+    // function send() {
+    alert("Makota");
     var message = document.getElementById("message").value;
     document.getElementById("message").value = "";
     var date = new Date();
@@ -17,36 +20,36 @@ document.getElementById("send_button").onclick = function () {
     };
     //alert(time)
     fetch(url, fetchdata);
-    fetch(url)
-        .then(response => response.json());
-    {
-        var conversationarea = document.getElementsByClassName("chatbox-conversationarea")[0];
+    // fetch(url)
+    //     .then(response => response.json());
 
-        var chatarea = document.createElement("div");
-        chatarea.className = "conversationarea_chat";
+    var conversationarea = document.getElementsByClassName("chatbox-conversationarea")[0];
 
-        var chatdivision = document.createElement("div");
-        chatdivision.className = "chatdivision";
+    var chatarea = document.createElement("div");
+    chatarea.className = "conversationarea_chat";
 
-        var messagenode = document.createElement("div");
-        messagenode.className = "message";
-        messagenode.innerHTML = message;
-        var timenode = document.createElement("div");
-        timenode.className = "time";
-        timenode.innerHTML = time;
-        var imagenode = document.createElement("div");
-        imagenode.className = "userimagedivision";
+    var chatdivision = document.createElement("div");
+    chatdivision.className = "chatdivision";
 
-        var image = document.createElement("img");
-        image.setAttribute("src", "https://cdn1.iconfinder.com/data/icons/freeline/32/account_friend_human_man_member_person_profile_user_users-512.png");
+    var messagenode = document.createElement("div");
+    messagenode.className = "message";
+    messagenode.innerHTML = message;
+    var timenode = document.createElement("div");
+    timenode.className = "time";
+    timenode.innerHTML = time;
+    var imagenode = document.createElement("div");
+    imagenode.className = "userimagedivision";
 
-        imagenode.appendChild(image);
-        chatdivision.appendChild(messagenode);
-        chatdivision.appendChild(timenode);
-        chatarea.appendChild(chatdivision);
-        chatarea.appendChild(imagenode);
-        conversationarea.appendChild(chatarea);
-    }
+    var image = document.createElement("img");
+    image.setAttribute("src", "https://cdn1.iconfinder.com/data/icons/freeline/32/account_friend_human_man_member_person_profile_user_users-512.png");
+
+    imagenode.appendChild(image);
+    chatdivision.appendChild(messagenode);
+    chatdivision.appendChild(timenode);
+    chatarea.appendChild(chatdivision);
+    chatarea.appendChild(imagenode);
+    conversationarea.appendChild(chatarea);
+
 };
 
 function postdata() {
@@ -85,4 +88,4 @@ function postdata() {
             }
         }
         );
-};
+}

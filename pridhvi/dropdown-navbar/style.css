@@ -10,6 +10,7 @@ nav {
     margin: auto;
     background-color: #262626;
     color: white;
+    position: relative;
 }
 
 ul {
@@ -35,11 +36,17 @@ a:hover {
     position: relative;
 }
 
+.services:hover .services-dropdown {
+    display: block;
+}
+
 .services-dropdown {
-    top: 20px;
+    top: 29px;
+    left: 0;
     position: absolute;
     color: white;
     background-color: #262626;
+    display: none;
 }
 
 .services-dropdown li {

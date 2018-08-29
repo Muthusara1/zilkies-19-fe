@@ -1,3 +1,302 @@
-.header h2{
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
 
+.container {
+    max-width: 500px;
+    margin: auto;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-sm-1 {
+    width: 8.33%;
+    float: left;
+}
+
+.col-sm-2 {
+    width: 16.66%;
+    float: left;
+}
+
+.col-sm-3 {
+    width: 25%;
+    float: left;
+}
+
+.col-sm-4 {
+    width: 33.33%;
+    float: left;
+}
+
+.col-sm-5 {
+    width: 41.66%;
+    float: left;
+}
+
+.col-sm-6 {
+    width: 50%;
+    float: left;
+}
+
+.col-sm-7 {
+    width: 58.33%;
+    float: left;
+}
+
+.col-sm-8 {
+    width: 66.66%;
+    float: left;
+}
+
+.col-sm-9 {
+    width: 75%;
+    float: left;
+}
+
+.col-sm-10 {
+    width: 83.33%;
+    float: left;
+}
+
+.col-sm-11 {
+    width: 91.66%;
+    float: left;
+}
+
+.col-sm-12 {
+    width: 100%;
+    float: left;
+}
+
+.header {
+    background-color: #4083ef;
+    margin-bottom: 3%;
+    display: flex;
+    height: 50px;
+    color: white;
+}
+
+.back-option {
+    padding: 2%;
+    font-size: 30px;
+    flex-grow: 1;
+}
+
+.chat {
+    flex-grow: 8;
+    padding: 2%;
+    text-align: center;
+}
+
+.chat-area {
+    margin-bottom: 10%;
+}
+
+#time {
+    margin-bottom: 10%;
+}
+
+.menu-option {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 30px;
+}
+
+.message-1 {
+    height: 100px;
+}
+
+.message-1__text {
+    background-color: gray;
+    border: 2px solid gray;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.display-time h5,
+.display-time-2 h5 {
+    margin-left: 30px;
+    color: gray;
+    margin-bottom: 1%;
+}
+
+.location-1 {
+    display: flex;
+    margin-bottom: 2%;
+    justify-content: center;
+}
+
+.button {
+    background-color: crimson;
+}
+
+.location {
+    text-align: center;
+}
+
+.location-circle {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid dodgerblue;
+    text-align: center;
+    padding: 40px;
+    font-size: 22px;
+    color: dodgerblue;
+}
+
+.option {
+    margin-bottom: 2%;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.option input,
+.spacing {
+    height: 60px;
+    width: 60px;
+    flex-grow: 1;
+    color: white;
+}
+
+.option .button-1 {
+    margin-left: 20%;
+    background-color: crimson;
+}
+
+.option .button-2 {
+    margin-right: 20%;
+    background-color: crimson;
+}
+
+.description-1 .button-1,
+.description-2 .button-2 {
+    margin-left: 20%;
+    background-color: crimson;
+    height: 30px;
+    width: 100px;
+    color: white;
+}
+
+h3 {
+    margin-left: 40%;
+}
+
+.products {
+    height: 300px;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+    overflow-x: scroll;
+}
+
+.left-arrow,
+.right-arrow {
+    margin-top: 120px;
+    color: gray;
+}
+
+.product-1 {
+    height: 250px;
+    width: 100px;
+    flex-grow: 1;
+}
+
+.product-2 {
+    height: 250px;
+    width: 100px;
+    flex-grow: 1;
+}
+
+.inner-product-1 {
+    border: 2px solid gray;
+    height: 220px;
+    margin: 20px 25px 25px;
+}
+
+.inner-product-2 {
+    border: 2px solid gray;
+    height: 220px;
+    margin: 20px 25px 25px;
+}
+
+.image-1,
+.image-2 {
+    margin: 10px 20px 20px;
+    height: 100px;
+}
+
+.description-2,
+.description-1 {
+    margin: 10px 20px 20px;
+    height: 70px;
+    background-color: gray;
+}
+
+button {
+    background-color: crimson;
+    color: white;
+    margin-left: 40px;
+}
+
+.footer {
+    height: 100px;
+    border: 1px solid dodgerblue;
+    background-color: dodgerblue;
+}
+
+.text {
+    margin: 10px 10px 10px 10px;
+    height: 70px;
+    display: flex;
+    background-color: white;
+}
+
+#chat-container {
+    overflow: scroll;
+    height: 800px;
+}
+
+.icon {
+    padding: 17px;
+    font-size: 30px;
+    flex-grow: 1;
+    color: gray;
+}
+
+.typing-area {
+    padding: 20px;
+    flex-grow: 8;
+    color: gray;
+}
+
+.mike {
+    padding: 17px;
+    font-size: 30px;
+    text-align: center;
+    flex-grow: 1;
+    color: gray;
+}
+
+.sent {
+    font-size: 30px;
+    text-align: center;
+    padding: 17px;
+    flex-grow: 1;
+    color: white;
+    background-color: crimson;
+}
+
+.input-box {
+    border: none;
+    outline: none;
 }

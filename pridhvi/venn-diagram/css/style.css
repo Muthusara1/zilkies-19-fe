@@ -28,15 +28,7 @@
 }
 
 .inner-container {
-    position: relative;
-    height: 400px;
-    width: 400px;
-}
-
-.container {
-    /* display: flex;
-    align-items: center;
-    justify-content: center;  */
-    height: 100vh;
-    transform: translate(50%, 50%);  
+    position: absolute;
+    left: 30%;
+    top: 15%;
 }

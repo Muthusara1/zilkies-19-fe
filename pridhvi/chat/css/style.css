@@ -6,7 +6,6 @@
 }
 
 .container {
-    max-width: 500px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -52,23 +51,22 @@
 .microphone-icon,
 .camera-icon
 {
-    font-size: 16px;
+    font-size: 18px;
     opacity: 0.5;
     width: 8%;
-    padding: 1%;
     text-align: center;
 }
 
 .text-area {
     width: 84%;
     border: none;
-    padding-left: 10px;
 }
 
 .send-icon button i {
     color: white;
     opacity: 0.8;
     font-size: 16px;
+    transform: rotate(50deg);
 }
 
 .send-icon {
@@ -151,7 +149,7 @@ button {
     border: none;
     color: white;
     padding: 2%;
-    width: 70%;
+    width: 60%;
     font-size: 10px;
 }
 
@@ -181,16 +179,17 @@ button:hover {
 .products-inner-container {
     width: 90%;
     display: flex;
+    /* background-color: aqua; */
 }
 
 .product {
-    width: 50%;
-    margin-left: 5px;
-    margin-right: 5px;
+    width: 46%;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 .product-image {
-    height: 60%;
+    height: 50%;
     text-align: center;
 }
 

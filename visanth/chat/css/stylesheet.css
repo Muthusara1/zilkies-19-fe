@@ -1,29 +1,56 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .chat-body {
-    border: 2px solid black;
+    padding-top: 50px;
+    padding-bottom: 70px;
     background-color: white;
     position: relative;
     min-height: 100%;
     overflow: scroll;
 }
 
-p {
+.inner-location {
+    border: 2px solid black;
+    padding: 2%;
+    border-radius: 50%;
+    width: 30%;
+    height: 50px;
     display: inline-block;
-    margin-bottom: 0;
+}
+
+p {
+    text-align: left;
+    display: inline-block;
+    margin: 10px;
 }
 
 header {
-    width: 100%;
     box-sizing: border-box;
-    padding: 10px;
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    z-index: 2;
+    margin-bottom: 10px;
     text-align: center;
+    top: 0;
+    left: 0;
     background-color: #00aeff;
+}
+
+.header__bottom {
+    height: 50px;
 }
 
 footer {
     box-sizing: border-box;
     background-color: #00aeff;
+    margin-top: 10px;
     padding: 10px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -35,12 +62,14 @@ footer {
     margin: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    background-color: rgba(245, 210, 210, 0.925);
-    border-radius: 20%;
+    background-color: lightgrey;
+    border-radius: 12px;
     display: inline-block;
+    position: relative;
 }
 
 .right-user {
+    padding: 10px 10px;
     text-align: right;
 }
 
@@ -75,11 +104,12 @@ input {
 }
 
 .compare-btn {
-    background-color: indianred;
+    background-color: tomato;
 }
 
 .list {
     box-sizing: border-box;
+    padding: 20px;
     margin: auto;
     width: 60%;
     overflow: scroll;
@@ -94,6 +124,9 @@ input {
     color: blueviolet;
     font-size: 10px;
     display: inline-block;
+    position: absolute;
+    top: 40px;
+    left: 10px;
 }
 
 @media only screen and (min-width: 340px) and (max-width: 519px) {
@@ -126,10 +159,4 @@ input {
     padding: 10px;
     margin: auto;
     width: 60%;
-}
-
-.inner-location {
-    width: 30%;
-    height: 50px;
-    display: inline-block;
 }

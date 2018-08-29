@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(17, 0, 255);
+    background-color: #3cb3ff;
 }
 
 .outline i {
@@ -22,29 +22,24 @@ h2 {
     height: 100px;
 }
 
+.menu-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .leftmenu {
-    width: 30%;
     height: 538px;
     color: white;
-    float: left;
-    display: relative;
-    margin-top: 1%;
 }
 
 .rightmenu {
-    width: 40%;
     height: 538px;
     color: white;
-    display: relative;
-    float: right;
 }
 
 .centermenu {
-    width: 30%;
     height: 538px;
     color: white;
-    margin-left: 30%;
-    display: relative;
 }
 
 form {
@@ -68,16 +63,17 @@ form {
 .rightmenu textarea {
     background-color: #2fa8fa;
     border: 1px solid #2fa8fa;
-    margin-top: 10%;
-    margin-left: 20%;
+    margin-top: 12%;
+    margin-right: 40%;
+    margin-bottom: 2%;
     color: white;
     font-size: 20px;
 }
 
-.rightmenu .button {
+.rightmenu button {
     border-radius: 20px;
     background-color: #2fa8fa;
     border: 1px solid #2fa8fa;
-    margin-left: 55%;
+    margin-left: 35%;
     padding: 20px;
 }

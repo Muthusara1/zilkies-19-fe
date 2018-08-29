@@ -8,12 +8,12 @@
     <title>Chat</title>
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../../../lib/fontawesome-free-5.2.0-web/css/all.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 </head>
 
-<body>
+<body onload="getChat()">
 
-    <div class="container">
+    <div class="container" id="container">
 
         <div class="topbar">
             <i class="fas fa-angle-left"></i>
@@ -21,7 +21,7 @@
             <i class="fas fa-sliders-h"></i>
         </div>
 
-        <div class="chat-box">
+        <div class="chat-box" id="chat-box">
 
             <div class="chat">
 
@@ -54,7 +54,7 @@
                 </div>
             </div>
 
-            <div class="chat">
+            <div class="chat" id="chat">
                 <div class="user-text">
                     <p>Here are some of the best selling circular saws in the shops around you.</p>
                 </div>
@@ -138,7 +138,7 @@
                     <i class="fas fa-camera"></i>
                 </div>
 
-                <input type="text" class="text-area" placeholder="Type something...">
+                <input type="text" class="text-area" id="text-area" placeholder="Type something...">
 
                 <div class="microphone-icon">
                     <i class="fas fa-microphone"></i>
@@ -146,12 +146,14 @@
             </div>
 
             <div class="send-icon">
-                <button> <i class="fas fa-fighter-jet"></i></button>
+                <button onclick="return addChat()"> <i class="fas fa-paper-plane"></i></button>
             </div>
 
         </div>
 
     </div>
+
+    <script src="../js/chat.js"></script>
 
 </body>
 

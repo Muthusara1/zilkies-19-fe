@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Zilkies 19 - FE</title>
+    <link rel="stylesheet" href="./css/grid.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:600|Open+Sans:800" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <i class="far fa-times-circle close-icon white"></i>
+    <div class="title white">
+        <h1>Let`s craft your product. </h1>
+    </div>
+    <form action="">
+        <div class="form-section">
+            <div class="white first-section col-lg-4 col-md-6 col-sm-12">
+                <div class="month-selection">
+                    <span class="sub-title">Timeframe</span>
+                    <input type="radio" name="one-month" value="one-month">
+                    <label for="one-month">1 Month</label>
+                    <br>
+                    <input type="radio" name="two-month" value="two-three-month">
+                    <label for="two-month">2-3 Month</label>
+                    <br>
+                    <input type="radio" name="four-month" value="four-month">
+                    <label for="four-month">4+ Month</label>
+                </div>
+                <div class="project-type">
+                    <span class="sub-title second-title">Project type</span>
+                    <input type="checkbox" name="Desktop"> Desktop
+                    <br>
+                    <input type="checkbox" name="Web"> Web
+                    <br>
+                    <input type="checkbox" name="Mobile"> Mobile
+                    <br>
+                    <input type="checkbox" name="Other"> Other
+                    <br>
+                </div>
+            </div>
+            <div class="white col-lg-4 col-md-6 col-sm-12">
+                <div class="personal-details-input">
+                    <span class="sub-title">Personal details</span>
+                    <input type="text" placeholder="Name" id="personal-details-input__name" class="center-input-section remove-shadow no-border">
+                    <input type="text" placeholder="Company" id="personal-details-input__company" class="center-input-section remove-shadow no-border">
+                    <input type="email" placeholder="Email" id="personal-details-input__email" class="center-input-section remove-shadow no-border">
+                    <input type="text" placeholder="Budget" id="personal-details-input__budget" class="center-input-section remove-shadow no-border">
+                </div>
+            </div>
+            <div class="white col-lg-3 col-md-12 text-area-section">
+                <textarea name="text-area" class="text-area remove-shadow no-border" placeholder="Tell us about your project ..." cols="40"
+                    rows="14" id="text-area-section__input"></textarea>
+                <button type="submit" class="submit-button white remove-shadow" onclick="validate(event)" id="submit-btn">Send Inquiry</button>
+            </div>
+        </div>
+    </form>
+    <!-- the model for validation -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close" id="close-div">&times;</span>
+                <h2>Sorry, Somethings not right !</h2>
+            </div>
+            <div class="modal-body">
+                <p id="model-body__name-result"></p>
+                <p id="model-body__company-result"></p>
+                <p id="model-body__email-result"></p>
+                <p id="model-body__budget-result"></p>
+                <p id="model-body__textarea-result"></p>
+            </div>
+        </div>
+    </div>
+    <!-- end for model -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

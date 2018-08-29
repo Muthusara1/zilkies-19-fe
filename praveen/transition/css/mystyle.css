@@ -8,7 +8,7 @@
 
 html,
 body {
-    background-color: aquamarine;
+    background-color: rgb(151, 199, 202);
     height: 100%;
 }
 
@@ -28,6 +28,31 @@ h1 {
     background-color: chocolate;
 }
 
+.heading {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 44%;
+    text-align: center;
+}
+
+.dropdown-text {
+    height: 0;
+    display: block;
+    transition-property: height;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    overflow: hidden;
+    font-size: 20px;
+    color: rgb(48, 46, 46);
+}
+
+.button {
+    font-size: 12px;
+    border: 1px solid brown;
+    padding: 4px;
+}
+
 li {
     overflow: hidden;
     margin: 10px;
@@ -37,6 +62,6 @@ li {
     width: 100px;
 }
 
-.li:hover {
-    opacity: 0;
+.heading:active .dropdown-text {
+    height: 50px;
 }

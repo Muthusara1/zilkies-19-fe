@@ -1,0 +1,102 @@
+body {
+    height: 100vh;
+}
+
+.outer {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    width: 30%;
+    height: 50%;
+    transform: scale(0.6);
+}
+
+.college {
+    animation-name: college;
+    background: url('graduation-cap.png') no-repeat;
+    background-size: 100px 100px;
+    background-position: center;
+    animation-duration: 2s;
+    animation-delay: 9s;
+}
+
+.company,
+.college {
+    width: 100px;
+    height: 100px;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    align-self: center;
+}
+
+.man {
+    width: 50px;
+    height: 100px;
+    background: url('man(1).jpg') no-repeat;
+    animation: play 6s steps(8) infinite;
+    animation-direction: reverse;
+    flex-grow: 2;
+    animation-delay: 1s;
+    align-self: center;
+}
+
+.com {
+    animation-name: company;
+    background: url('company.png') no-repeat;
+    background-size: 100px 100px;
+    background-position: center;
+    animation-duration: 2s;
+    margin-bottom: 20px;
+}
+
+@keyframes play {
+    0% {
+        background-position: 0px
+    }
+    100% {
+        background-position: -1000px;
+    }
+}
+
+@keyframes college {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0.75;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    90% {
+        opacity: 0.25;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes company {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 0.75;
+    }
+    75% {
+        opacity: 0.5;
+    }
+    90% {
+        opacity: 0.25;
+    }
+    100% {
+        opacity: 0;
+    }
+}

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=750px, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../css/chat.css">
-    <!-- <link rel="stylesheet" href="../../fontawesome-free-5.2.0-web/css/all.css"> -->
+    <link rel="stylesheet" href="../../../lib/fontawesome-free-5.2.0-web/css/all.css">
     <title>Chat</title>
 </head>
 <body>
@@ -15,7 +15,7 @@
             <p class="chat-head">CHAT</p>
             <i class="fas fa-sliders-h"></i>    
         </div>
-        <div class="chat-box">
+        <div class="chat-box" id="chat-box">
             <div class="message-container">
                 <div class="message-content">
                 <p class="message">I need access to your location to suggest stores near by.</p>
@@ -94,13 +94,14 @@
         <div class="send-box">
             <div class="typing-box">
                 <i class="fas fa-camera-retro" style=" color: lightgray;"></i>
-                <input class="input-message" type="text" name="message" placeholder="Type something...">
+                <input class="input-message" type="text" id = "message" name="message" placeholder="Type something...">
                 <i class="fas fa-microphone-alt" style="color: lightgray;"></i>
             </div>
-            <div class="send-button">
+            <button class="send-button" onclick="addMessages(); return false;">
                 <i class="fas fa-paper-plane"></i>
-            </div>
+            </button>
         </div>
     </div>
+    <script src="../js/chat.js"></script>
 </body>
 </html>

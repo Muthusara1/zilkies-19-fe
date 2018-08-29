@@ -5,6 +5,8 @@
 }
 
 .chat-body {
+    padding-top: 50px;
+    padding-bottom: 70px;
     background-color: white;
     position: relative;
     min-height: 100%;
@@ -30,6 +32,8 @@ header {
     box-sizing: border-box;
     width: 100%;
     padding: 20px;
+    position: fixed;
+    z-index: 2;
     margin-bottom: 10px;
     text-align: center;
     top: 0;
@@ -65,7 +69,7 @@ footer {
 }
 
 .right-user {
-    padding: 30px 20px;
+    padding: 10px 10px;
     text-align: right;
 }
 

@@ -6,7 +6,6 @@
 }
 
 .container {
-    max-width: 500px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -52,17 +51,15 @@
 .microphone-icon,
 .camera-icon
 {
-    font-size: 16px;
+    font-size: 18px;
     opacity: 0.5;
     width: 8%;
-    padding: 1%;
     text-align: center;
 }
 
 .text-area {
     width: 84%;
     border: none;
-    padding-left: 10px;
 }
 
 .send-icon button i {
@@ -152,7 +149,7 @@ button {
     border: none;
     color: white;
     padding: 2%;
-    width: 70%;
+    width: 60%;
     font-size: 10px;
 }
 

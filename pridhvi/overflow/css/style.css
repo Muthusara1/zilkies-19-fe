@@ -26,9 +26,13 @@
 .hidden {
     overflow: hidden;
     height: 40px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .scroll {
     overflow: scroll;
     height: 40px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

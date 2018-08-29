@@ -42,7 +42,9 @@ footer {
     display: flex;
 }
 
-.users__user, .users__tester, .users__admin {
+.users__user,
+.users__tester,
+.users__admin {
     box-sizing: border-box;
     flex-grow: 1;
     height: 70px;
@@ -52,7 +54,9 @@ footer {
     background-color: #435159;
 }
 
-.user__text, .tester__text, .admin__text {
+.user__text,
+.tester__text,
+.admin__text {
     font-size: 22px;
     font-weight: thin;
     color: white;
@@ -63,12 +67,14 @@ footer {
     height: 240px;
 }
 
-.credentials__username, .credentials__password {
+.credentials__username,
+.credentials__password {
     padding-top: 40px;
     text-align: center;
 }
 
-.username__text, .password__text {
+.username__text,
+.password__text {
     box-sizing: border-box;
     width: 360px;
     height: 54px;
@@ -81,7 +87,8 @@ footer {
     color: white;
 }
 
-.username__text:focus, .password__text:focus {
+.username__text:focus,
+.password__text:focus {
     border: 3px solid white;
 }
 

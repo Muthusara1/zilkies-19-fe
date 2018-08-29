@@ -12,7 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-} 
+}
 
 .outer-container__desktop {
     position: relative;
@@ -31,7 +31,7 @@ body {
     overflow: auto;
     top: 80px;
     left: 94px;
-} 
+}
 
 .desktop__screen {
     width: 246px;
@@ -74,7 +74,6 @@ body {
     left: 5px;
     border: 22px solid black;
     border-radius: 50%;
-    
 }
 
 .appstore-icon__icon {

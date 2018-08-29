@@ -1,10 +1,11 @@
-
 body {
-    background-color: #1589FF;  
+    background-color: #1589FF;
     font-family: Arial;
 }
 
-.timeframe-inputs, .projecttype-inputs, .project {
+.timeframe-inputs,
+.projecttype-inputs,
+.project {
     padding-top: 5px;
     padding-bottom: 5px;
     padding-right: 5px;
@@ -31,18 +32,23 @@ h2 {
     font-weight: bolder;
 }
 
-.time-frame, .project-type, .personal-details, .project  {
+.time-frame,
+.project-type,
+.personal-details,
+.project {
     vertical-align: top;
     padding-left: 40px;
     font-size: 24px;
     color: white;
 }
 
-.time-frame, .project-type {
+.time-frame,
+.project-type {
     padding-right: 150px;
 }
 
-.personal-details, .project {
+.personal-details,
+.project {
     display: inline-block;
     padding-right: 80px;
 }
@@ -87,15 +93,15 @@ h2 {
     height: 70px;
     display: block;
     position: relative;
-    left: 332px;   
+    left: 332px;
     background-color: #1275a0;
     border: 3px solid white;
 }
 
 .close-btn {
-    float: right; 
+    float: right;
     width: 100px;
-    height: 100px;  
+    height: 100px;
     font-size: 70px;
     color: white;
 }

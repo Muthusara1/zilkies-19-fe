@@ -1,6 +1,6 @@
 body {
-    width:100vw;
-    height:100vh;
+    width: 100vw;
+    height: 100vh;
     margin: 0px;
 }
 
@@ -85,10 +85,10 @@ body {
 
 @keyframes move-dots {
     0% {
-      transform: translate(0, 0);
+        transform: translate(0, 0);
     }
     100% {
-      transform: translate(19px, 0);
+        transform: translate(19px, 0);
     }
 }
 
@@ -147,9 +147,9 @@ body {
 
 @keyframes move-files {
     0% {
-      transform: translate(0, 0);
+        transform: translate(0, 0);
     }
     100% {
-      transform: translate(60px, 0);
+        transform: translate(60px, 0);
     }
 }

@@ -1,4 +1,4 @@
-function myfunc() {
+document.getElementById("send").onclick = function () {
     var name = document.getElementById("name").value;
     var nameregex = /^[a-zA-Z ]{2,30}$/;
     var company = document.getElementById("company").value;
@@ -17,5 +17,4 @@ function myfunc() {
         alert("INVALID BUDGET VALUE ENTER IN WHOLE VALUE (12000)");
         return false;
     }
-
-}
+};

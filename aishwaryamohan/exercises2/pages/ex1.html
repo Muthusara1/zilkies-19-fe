@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chat</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/ex1stylesheet.css">
+        <!-- <link rel="stylesheet" href="../asserts/fontawesome-free-5.2.0-web/css/all.css"> -->
+    </head>
+
+    <body onload="loadChat()" id="body">
+        <div class="wrapper" id="wrapper">
+            <div class="header">
+                <img src="../asserts/chevron-left-solid.svg">
+                <h3>CHAT</h3>
+                <img src="../asserts/sliders-h-solid.svg">
+            </div>
+
+            <div class="main-content"  id="main-content-wrapper">
+                <!-- <i class="fas fa-angle-left"></i> -->
+            </div>
+
+            <div class="footer">
+                <div class="type-box">
+                    <img src="../asserts/camera-solid.svg">
+                    <input type="text" id="text-box" placeholder="Type something...">
+                    <img src="../asserts/microphone-solid.svg">
+                </div>
+                <button id="send-button" onclick="getText()">
+                    <img src="../asserts/paper-plane-regular.svg">
+                </button>
+            </div>
+        </div>
+
+        <script src="../js/ex1js.js"></script>
+    </body>
+</html>

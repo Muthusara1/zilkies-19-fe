@@ -1,5 +1,4 @@
-*
-{
+* {
     width: 100%;
     height: 250px;
 }
@@ -42,17 +41,14 @@
         height: 66%;
         width: 50%;
     }
-
     .outer-container {
         justify-content: flex-end;
     }
-
     .blue-container,
     .green-container {
         width: 50%;
         height: 33%;
     }
-
     .red-container {
         height: 34%;
     }

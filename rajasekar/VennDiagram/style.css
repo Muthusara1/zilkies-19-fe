@@ -1,4 +1,6 @@
-.circle-1,.circle-2,.circle-3 {
+.circle-1,
+.circle-2,
+.circle-3 {
     height: 300px;
     width: 300px;
     border-radius: 50%;
@@ -24,7 +26,7 @@
 .outer-container {
     display: flex;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
     height: 100vh;
 }
 
@@ -33,4 +35,3 @@
     height: 500px;
     width: 500px;
 }
-

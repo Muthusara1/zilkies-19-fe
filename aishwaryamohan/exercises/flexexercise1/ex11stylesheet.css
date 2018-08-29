@@ -4,7 +4,7 @@ div {
 }
 
 .violet-box {
-    background-color: blueviolet;
+    background-color: rgb(104, 18, 184);
 }
 
 .blue-box {
@@ -23,15 +23,15 @@ div {
     }
 
     .violet-box {
-        flex: 1 0 30%;
+        flex: 30%;
     }
 
     .blue-box {
-        flex: 4 0 70%;
+        flex: 70%;
     }
 
     .green-box {
-        flex: 1 0 100%;
+        flex: 100%;
     }
 }
 

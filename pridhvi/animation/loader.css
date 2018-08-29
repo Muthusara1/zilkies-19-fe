@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(#ffd89b, #19547b);
+}
+
+.loader {
+    margin: auto;
+    top: 30%;
+    position: relative;
+    height: 150px;
+    width: 300px;
+    background: #00fdff url(background.jpg);
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: repeat-x;
+    animation: loading 10s linear infinite;
+}
+
+#car {
+    position: absolute;
+    color: #aee727;
+    font-size: 40px;
+    bottom: 0;
+    left: 40%;
+    animation: car-movement 0.5s linear infinite;
+}
+
+#car-headlight {
+    position: absolute;
+    bottom: 3px;
+    left: 53.7%;
+    width: 10px;
+    height: 5px;
+    border-right: solid 10px rgb(241, 255, 176);
+    border-bottom: solid 10px transparent;
+    border-top: solid 10px transparent;
+    animation: car-headlight-animation 1s linear infinite;
+}
+
+@keyframes car-headlight-animation {
+    0% {
+        border-right: solid 10px transparent;
+    }
+
+    100% {
+        border-right: solid 10px rgb(241, 255, 176);
+    }
+}
+
+@keyframes car-movement {
+    0% {
+        bottom: -2px;
+    }
+
+    50% {
+        bottom: 0;
+    }
+
+    100% {
+        bottom: -2px;
+    }
+}
+
+@keyframes loading {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 100% 0;
+    }
+}

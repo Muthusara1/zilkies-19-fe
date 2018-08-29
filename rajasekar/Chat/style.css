@@ -96,7 +96,11 @@
 }
 
 .chat-area {
-    height: 750px;
+    margin-bottom: 10%;
+}
+
+#time {
+    margin-bottom: 10%;
 }
 
 .menu-option {
@@ -107,7 +111,6 @@
 
 .message-1 {
     height: 100px;
-    margin-left: 5%;
 }
 
 .message-1__text {
@@ -186,10 +189,11 @@ h3 {
 }
 
 .products {
-    height: 250px;
+    height: 300px;
     margin-bottom: 40px;
     display: flex;
     justify-content: space-around;
+    overflow-x: scroll;
 }
 
 .left-arrow, .right-arrow{
@@ -252,6 +256,11 @@ button {
    
 }
 
+#chat-container {
+    overflow: scroll;
+    height: 800px;
+}
+
 .icon {
     padding: 17px;
     font-size: 30px;
@@ -284,4 +293,5 @@ button {
 
 .input-box {
     border: none;
+    outline: none;
 }

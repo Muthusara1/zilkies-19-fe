@@ -42,58 +42,86 @@
     align-items: center;
     height: 50px;
     width: 50%;
-    background-color: brown;
+    background-color: #ffe4b5;
     border: 1px solid black;
     position: relative;
 }
 
 .player-one {
+    width: 100%;
+}
+
+.dot-one {
+    width: 5%;
     background-color: white;
-    left: 0;
     height: 10%;
     margin-bottom: 5%;
-    width: 2%;
     animation-name: running-one;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-    position: absolute;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+    position: absolute;
 }
 
 @keyframes running-one {
-    from {
-        transform: translate(0%);
-        width: 3%;
+    0% {
+        left: 0;
     }
 
-    to {
-        transform: translate(100%);
-        width: 100%;
+    25% {
+        left: 25%;
+    }
+
+    50% {
+        left: 50%;
+    }
+
+    75% {
+        left: 75%;
+    }
+
+    100% {
+        left: 100%;
     }
 }
 
 .player-two {
+    width: 100%;
+}
+
+.dot-two {
+    width: 5%;
     background-color: white;
     height: 10%;
-    width: 2%;
-    margin-top: 5%;
-    animation-name: running-two;
-    animation-duration: 3s;
-    animation-direction: alternate-reverse;
-    animation-timing-function: linear;
+    margin-top: 3%;
+    animation-name: running-one;
+    animation-duration: 4s;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    position: absolute;
 }
 
 @keyframes running-two {
-    from {
-        transform: translate(0%);
-        width: 3%;
+    0% {
+        left: 0;
     }
 
-    to {
-        transform: translate(100%);
-        width: 100%;
+    25% {
+        left: 25%;
+    }
+
+    50% {
+        left: 50%;
+    }
+
+    75% {
+        left: 75%;
+    }
+
+    100% {
+        left: 100%;
     }
 }
 

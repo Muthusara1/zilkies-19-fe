@@ -20,11 +20,12 @@ body {
 
 #car {
     position: absolute;
-    color: #aee727;
     font-size: 40px;
+    color: rgb(138, 74, 74);
     bottom: 0;
     left: 40%;
     animation: car-movement 0.5s linear infinite;
+    animation: car-fill 10s linear infinite;
 }
 
 #car-headlight {
@@ -70,5 +71,15 @@ body {
 
     100% {
         background-position: 100% 0;
+    }
+}
+
+@keyframes car-fill {
+    0% {
+        color: white;
+    }
+
+    100% {
+        color: black;
     }
 }

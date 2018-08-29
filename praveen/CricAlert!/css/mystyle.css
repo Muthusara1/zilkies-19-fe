@@ -14,6 +14,11 @@ body {
     margin-top: 50px;
 }
 
+.credentials {
+    display: flex;
+    flex-direction: column;
+}
+
 .credentials__title__login,
 .credentials__title__signup {
     display: inline-block;
@@ -44,7 +49,7 @@ body {
 
 .credentials__login,
 .credentials__signup {
-    display: inline-block;
+    /* display: inline-block; */
     height: 300px;
     width: 350px;
     border: none;
@@ -54,7 +59,10 @@ body {
 }
 
 .credentials__signup {
-    display: none;
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    bottom: 138px;
 }
 
 .credentials__login form,
@@ -62,8 +70,8 @@ body {
     height: 80%;
     width: 85%;
     overflow: auto;
-    margin-top: 40px;
-    margin-left: 40px;
+    margin-top: 30px;
+    margin-left: 35px;
 }
 
 .credentials__login input,
@@ -98,19 +106,23 @@ body {
 @keyframes fade-in {
     from {
         opacity: 0;
+        visibility: visible;
     }
 
     to {
         opacity: 1;
+        visibility: visible;
     }
 }
 
 @keyframes fade-out {
     from {
         opacity: 1;
+        visibility: visible;
     }
 
     to {
         opacity: 0;
+        visibility: hidden;
     }
 }

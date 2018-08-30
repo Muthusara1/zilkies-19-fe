@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: burlywood;
+}
+
+.cup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 140px;
+    transform: translate(-50%, -40%);
+    border-top: 2px solid transparent;
+    background-color: white;
+}
+
+img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 180px;
+    transform: translate(-50%, -50%);
+}
+
+.cup::before {
+    content: '';
+    position: absolute;
+    background: #04acff;
+    width: 100%;
+    bottom: 0;
+    animation: fillwater 10s linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fillwater {
+    0% {
+        height: 0%;
+    }
+
+    100% {
+        height: 100%;
+    }
+}

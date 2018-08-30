@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.one {
+    background: rgb(17, 238, 17);
+    margin-left: -20px;
+}
+
+.two {
+    background: rgb(226, 226, 11);
+    margin-left: -50px;
+}
+
+.three {
+    background: rgb(218, 28, 161);
+    margin-top: 75px;
+    margin-left: -125px;
+}

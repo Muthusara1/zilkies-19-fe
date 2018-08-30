@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.wrapper {
+    border: 10px solid white;
+    background-color: rgb(28, 187, 226);
+    background-image: linear-gradient(to bottom right, #2dbbff, #00b0ff);
+}
+
+img {
+    height: 30px;
+    width: 30px;
+    float: right;
+}
+
+h1 {
+    padding: 2%;
+    margin-left: 4%;
+    font-size: 300%;
+}
+
+h3 {
+    margin-left: 10px;
+}
+
+fieldset {
+    border: none;
+}
+
+div {
+    padding: 5px;
+    margin: 10px;
+}
+
+.options-wrapper {
+    width: 30%;
+    float: left;
+}
+
+.options-wrapper input {
+    margin: 15px;
+}
+
+.details-wrapper {
+    display: inline-block;
+}
+
+.details,
+.desc {
+    margin: 15px;
+    float: left;
+}
+
+.details-wrapper input,
+textarea {
+    height: 60px;
+    margin: 12px;
+    width: 90%;
+    background-color: #00a7fb;
+    border: 0;
+    padding: 3%;
+}
+
+.details-wrapper input::placeholder,
+.details-wrapper textarea::placeholder {
+    color: #88d3ff;
+    font-size: 20px;
+    padding-left: 5px;
+}
+
+.details-wrapper textarea {
+    width: 400px;
+    height: 300px;
+    margin: 13px;
+}
+
+.details-wrapper [type="submit"] {
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: #2dbbff;
+    color: white;
+    width: 160px;
+    height: 40px;
+    float: right;
+}
+
+.details-wrapper h3 {
+    padding-left: 20px;
+}

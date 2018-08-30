@@ -1,0 +1,150 @@
+/* * {
+    border: 1px solid black;
+} */
+
+.container-centered {
+    position: fixed;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 20px;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.man {
+    background: url(../img/businessman.jpg) no-repeat;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height:120px;
+    margin: auto;
+    animation: man-walk 1s infinite steps(9);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.james-bond {
+    background: url(../img/james-bond.png) no-repeat;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 32px;
+    height:55px;
+    margin: auto;
+    animation: james-bond-walk 2s infinite steps(16);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.man-running {
+    background: url(../img/man-running.png) no-repeat;
+    position: fixed;
+    top: 50%;
+    left: 45%;
+    width: 110px;
+    height:170px;
+    margin: auto;
+    animation: man-running-run 1s infinite steps(8);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.loading{
+    position: relative;
+    justify-content: center;
+    top: 100px;
+}
+
+@keyframes man-walk {
+    0% {
+        background-position: 0px 0px;
+    }
+
+
+    100% {
+        background-position: -727px 0px;
+    }
+}
+
+@keyframes james-bond-walk {
+    0% {
+        background-position: 0px 0px;
+    }
+
+    100% {
+        background-position: -520px 0px;
+    }
+}
+
+@keyframes man-running-run {
+    0% {
+        background-position: 0px 0px;
+    }
+
+    100% {
+        background-position: -1024px 0px;
+    }
+}
+
+@keyframes man-running-walk {
+    0% {
+        background-position: 0px -165px;
+    }
+
+    100% {
+        background-position: -1024px -165px;
+    }
+}
+
+@keyframes james-bond-climb {
+    0% {
+        background-position: 0px -97px;
+    }
+
+    100% {
+        background-position: -520px -97px;
+    }
+}
+
+.loader {
+  border: 16px solid grey;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 200px;
+  height: 200px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "live-server --port=7777 --open=./${ZILKIE_USERNAME}",
+    "start": "live-server --port=7777 --open=./${ZILKIE_USERNAME} --ignore='./data'",
     "css-lint": "stylelint ./${ZILKIE_USERNAME}/**/*.css",
     "js-lint": "eslint ./${ZILKIE_USERNAME}/**/*.js"
   },

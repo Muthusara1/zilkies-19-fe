@@ -107,3 +107,13 @@ img {
     height: 30px;
     width: 30px;
 }
+
+span {
+    color: red;
+}
+
+#Input {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}

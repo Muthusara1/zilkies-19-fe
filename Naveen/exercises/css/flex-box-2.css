@@ -34,49 +34,37 @@
 }
 
 @media screen and (max-width: 700px) {
-
     .blue {
         width: 100%;
     }
-
     .light-blue {
         width: 50%;
     }
-
     .green {
         width: 50%;
     }
-
     .red {
         width: 100%;
     }
-
     .yellow {
         width: 100%;
     }
-
 }
 
 @media screen and (max-width: 400px) {
-
     .blue {
         width: 100%;
     }
-
     .light-blue {
         width: 100%;
     }
-
     .green {
         width: 100%;
     }
-
     .red {
         width: 100%;
     }
-
     .yellow {
         width: 100%;
     }
-
 }

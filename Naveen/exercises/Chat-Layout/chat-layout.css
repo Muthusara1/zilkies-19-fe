@@ -53,13 +53,13 @@ body {
 
 .chatapp-container__top-nav {
     box-sizing: border-box;
-    height:40px;
+    height: 40px;
     position: relative;
     background-color: #4083ef;
 }
 
 .top-nav__back {
-    box-sizing: border-box; 
+    box-sizing: border-box;
     height: 100%;
     padding-top: 12px;
     padding-left: 12px;
@@ -83,7 +83,7 @@ body {
     margin: auto;
 }
 
-.messages-div__messages {    
+.messages-div__messages {
     display: flex;
     flex-direction: row-reverse;
 }
@@ -105,7 +105,7 @@ body {
     margin: auto;
     border: 3px solid #4083ef;
     border-radius: 50%;
-} 
+}
 
 .messages-div__location-div {
     padding-top: 14px;
@@ -133,7 +133,7 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 40px;
-    padding-right:40px;
+    padding-right: 40px;
     margin-right: 60px;
     text-align: center;
     text-decoration: none;
@@ -148,7 +148,7 @@ body {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 40px;
-    padding-right:40px;
+    padding-right: 40px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -168,7 +168,9 @@ body {
     font-weight: bold;
 }
 
-.connectivity__text, .time__text, .charge__text {
+.connectivity__text,
+.time__text,
+.charge__text {
     font-size: 12px;
     font-weight: medium;
     color: white;
@@ -361,21 +363,15 @@ body {
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 20px;
-    padding-right:20px;
+    padding-right: 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
 }
 
-@media screen and (max-width: 800px) {
-    
-}
+@media screen and (max-width: 800px) {}
 
-@media screen and (max-width: 600px) {
-    
-}
+@media screen and (max-width: 600px) {}
 
-@media screen and (max-width: 400px) {
-    
-}
+@media screen and (max-width: 400px) {}

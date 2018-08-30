@@ -30,6 +30,12 @@
 
 .menu-bar {
     background-color: #4fc3f7;
+    z-index: 2;
+    position: fixed;
+}
+
+.message-section__class {
+    margin-top: 100px;
 }
 
 .message {
@@ -38,17 +44,21 @@
     margin: 10px 19px;
     position: relative;
     width: 60%;
+    display: inline-block;
 }
 
 .date {
-    position: absolute;
     color: #546e7a;
     font-size: 12px;
     margin-top: 0;
+    left: 20px;
+    top: 20px;
 }
 
 .avatar {
     border-radius: 50%;
+    width: 20%;
+    display: inline-block;
 }
 
 .chat-text {
@@ -56,6 +66,8 @@
     background-color: #e0e0e0;
     border-radius: 12px;
     padding: 9px 12px;
+    width: 70%;
+    display: inline-block;
 }
 
 .left {
@@ -78,7 +90,7 @@
 }
 
 .send-message {
-    display: inline;
+    display: inline-block;
 }
 
 .nav-bar {
@@ -136,8 +148,8 @@
     }
 
     .list-img {
-        height: 50px;
-        width: 50px;
+        height: 30px;
+        width: 30px;
     }
 }
 
@@ -174,6 +186,7 @@
     text-align: center;
     flex: 1;
     padding: 10px;
+    cursor: pointer;
 }
 
 .chat-below__camera-icon,
@@ -201,7 +214,7 @@
     height: 200px;
 }
 
-.location-button-section__button-section__button {
+.red-button {
     background-color: #e53935;
     box-shadow: none !important;
     color: white;
@@ -224,3 +237,4 @@
 .location-section__icon {
     justify-content: center;
 }
+

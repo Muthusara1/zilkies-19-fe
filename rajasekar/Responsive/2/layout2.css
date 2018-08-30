@@ -27,101 +27,87 @@
 }
 
 .section-5 {
-    width:34%;
+    width: 34%;
     height: 250px;
-    background-color:orange;
-    float:left;
+    background-color: orange;
+    float: left;
 }
 
 @media screen and (max-width:1000px) {
     .outer-section {
-    margin: 0px 40px 40px 40px;
+        margin: 0px 40px 40px 40px;
     }
-
     .section-1 {
-    width: 50%;
-    height: 250px;
-    float: left;
+        width: 50%;
+        height: 250px;
+        float: left;
     }
-
     .section-2 {
-    width: 50%;
-    height: 250px;
-    float: left;
+        width: 50%;
+        height: 250px;
+        float: left;
     }
-
     .section-3 {
-    width: 33%;
-    height: 250px;
-    float: left;
+        width: 33%;
+        height: 250px;
+        float: left;
     }
-
     .section-4 {
-    width: 33%;
-    height: 250px;
-    float: left;
+        width: 33%;
+        height: 250px;
+        float: left;
     }
-
     .section-5 {
-    widows: 34%;
-    height: 250px;
-    float: left;
+        widows: 34%;
+        height: 250px;
+        float: left;
     }
-
 }
+
 @media screen and (max-width:600px) {
     .section-1 {
         width: 100%;
         height: 300px;
     }
-
     .section-2 {
         width: 50%;
         height: 300px;
         float: left;
     }
-
     .section-3 {
         width: 50%;
         height: 300px;
         float: left;
     }
-
     .section-4 {
         width: 100%;
         height: 300px;
     }
-
-    .section-5{
-        width:100%;
-        height:300px;
+    .section-5 {
+        width: 100%;
+        height: 300px;
     }
-
 }
+
 @media screen and (max-width:300px) {
     .section-1 {
         width: 100%;
         height: 300px;
     }
-
     .section-2 {
         width: 100%;
         height: 300px;
     }
-
     .section-3 {
         width: 100%;
         height: 300px;
     }
-
     .section-4 {
         width: 100%;
         height: 300px;
     }
-
     .section-5 {
         width: 100%;
         height: 300px;
     }
-    
 }

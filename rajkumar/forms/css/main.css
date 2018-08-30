@@ -4,11 +4,11 @@ input::placeholder {
 }
 
 .title {
-    font-family: Open Sans, sans-serif;
     font-size: 30px;
     text-align: center;
     position: relative;
     display: inline;
+    font-family: Open Sans, sans-serif;
 }
 
 .close-icon {

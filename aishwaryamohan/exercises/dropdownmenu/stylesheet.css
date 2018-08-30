@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar,
+.dropdown {
+    background-color: black;
+}
+
+.navbar li {
+    list-style: none;
+    padding: 15px;
+    color: white;
+    display: inline-block;
+}
+
+#services {
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+.dropdown li {
+    display: block;
+    background-color: black;
+    min-width: 100px;
+    color: white;
+    list-style: none;
+}
+
+#services:hover .dropdown {
+    display: block;
+}

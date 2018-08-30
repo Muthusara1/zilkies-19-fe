@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'digital-clock-font';
+    src: url("../fonts/digital-7/digital-7.ttf");
+}
+
 body {
     display: flex;
     flex-direction: column;
@@ -119,7 +124,9 @@ body {
     height: 60px;
     box-sizing: border-box;
     padding: 8px;
-    font-size: 38px;
+
+    /* font-family: 'digital-clock-font'; */
+    font-size: 44px;
     border: 2px solid black;
     border-radius: 10%;
 }

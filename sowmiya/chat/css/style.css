@@ -58,7 +58,7 @@ h3 {
     padding: 2%;
 }
 
-.message_time,
+.message__time,
 .content__price {
     font-size: 15px;
     color: darkgrey;
@@ -69,7 +69,7 @@ h3 {
     width: 90%;
 }
 
-.message_paragraph {
+.message__paragraph {
     background-color: rgb(238, 235, 235);
     height: auto;
     width: 100%;
@@ -144,19 +144,22 @@ h3 {
 }
 
 .image-slider-wrapper__image-slider {
-    overflow-x: scroll;
+    overflow: auto;
     height: 100%;
     white-space: nowrap;
     display: flex;
     align-content: center;
     flex-direction: row;
+    min-width: 50%;
+
 }
 
 .image-slider__image1 {
-    width: 100%;
+    min-width: 50%;
     height: 75%;
     margin: 10px;
     border: 2px solid rgb(238, 235, 235);
+
 }
 
 .image-slider__content {
@@ -164,6 +167,7 @@ h3 {
     flex-direction: column;
     background-color: rgb(238, 235, 235);
     height: 50%;
+
 }
 
 .image-slider__content > p {
@@ -234,7 +238,7 @@ h3 {
 }
 
 .text-message-box__send > img {
-    width: 30%;
-    height: 20%;
+    width: 50%;
+    height: 50%;
 }
 

@@ -1,0 +1,11 @@
+.center-button {
+    display: table;
+    /* width: 50%; */
+    margin: 0 auto;
+}
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}

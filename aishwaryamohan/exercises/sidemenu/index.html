@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sidebar</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./stylesheet.css">
+    <link rel="stylesheet" href="/lib/fontawesome-free-5.2.0-web/css/all.css">
+</head>
+
+<body>
+    <div id="menu-bar" class="menu-bar">
+        <ul>
+            <li>Contacts</li>
+            <li>Status</li>
+            <li>Settings</li>
+        </ul>
+    </div>
+    <button onclick="showMenu()">
+        <i class="fas fa-bars"></i>
+    </button>
+
+
+    <script>
+        function showMenu() {
+            document.getElementById("menu-bar").style.width = "100px";
+        }
+    </script>
+</body>
+
+</html>

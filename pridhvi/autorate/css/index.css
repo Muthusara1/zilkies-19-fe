@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+.container
+{
+    height: 100vh;
+}
+
+.topbar {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #282e34;
+    position: fixed;
+}
+
+.logo {
+    width: 150px;
+    height: 50px;
+}
+
+.logo-container {
+    width: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container:hover {
+    cursor: pointer;
+}
+
+.login-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.login {
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.login * {
+    margin-left: 10px;
+}
+
+.login input {
+    height: 30px;
+    padding-left: 5px;
+    border: none;
+}
+
+.login input:hover {
+    box-shadow: 2px 2px 3px 3px black;
+}
+
+.login button {
+    height: 25px;
+    width: 45px;
+    background:#1AAB8A;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+}
+
+.login button:hover{
+    background:#fff;
+    color:#1AAB8A;
+  }
+
+.signup {
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 6%;
+}
+
+.signup a {
+    text-decoration: none;
+    color: black;
+}
+
+.signup a:hover {
+    color: wheat;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+.inner-container {
+    overflow-y: scroll;
+    height: -webkit-calc(100% - 70px);
+    position: absolute;
+    top: 70px;
+    width: 100%;
+}
+
+.inner-container-main {
+    height: 100%;
+    width: 100%;
+    background: url(../images/background-image-main.jpeg);
+    background-position: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.inner-container-main-options {
+    width: 100%;
+    height: 40%;
+    display: flex;
+}
+
+.inner-container-main-options-makes,
+.inner-container-main-options-types
+{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.inner-container-main-options-makes button,
+.inner-container-main-options-types button
+{
+    width: 40%;
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+}
+
+.inner-container-main-options-makes button:hover,
+.inner-container-main-options-types button:hover
+{
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.inner-container-main-options-makes button p,
+.inner-container-main-options-types button p
+{
+    font-size: 40px;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.inner-container-main-list {
+    width: 90%;
+    height: 60%;
+    margin: auto;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: wheat;
+    overflow-y: scroll;
+    padding: 15px;
+}
+
+.inner-container-main-list div {
+    list-style-type: none;
+    width: 100px;
+    height: 50px;
+}
+
+.inner-container-cars {
+    background: url(../images/background-image-car-2.jpeg);
+    background-position: 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.inner-container-cars-car-header {
+    text-align: center;
+    padding: 50px 80px;
+    background-color: #282e34;
+    color: #ddd;
+}
+
+.inner-container-cars-info {
+    height: 250px;
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    background-color: rgb(102, 102, 102, 0.7);
+    border-radius: 5px;
+}
+
+.inner-container-cars-info-car-name {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inner-container-cars-info-car-specs {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer {
+    height: 70px;
+    background-color: #333333;
+}
+
+p.copyright {
+    width: 100%;
+    color: #fff;
+    line-height: 40px;
+    font-size: 0.7em;
+    text-align: center;
+    bottom:0;
+}

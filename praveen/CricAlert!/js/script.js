@@ -5,59 +5,40 @@ function activeToggle(selection) {
     var signUpForm = document.getElementById("credentials__signup-id");
 
     if (selection == "login" && login.classList.contains("credentials__title__inactive")) {
-        signUpForm.classList.remove("fade-in");
         signUpForm.classList.add("fade-out");
-        loginForm.classList.remove("fade-out");
-        loginForm.classList.add("fade-in");
 
-        // setTimeout(function doThis() {
-        //     loginForm.style.display = "flex";
-        //     signUpForm.style.display = "none";
-        //     loginForm.classList.add("fade-in");
-        // }, 500);
+        setTimeout(function doThis() {
+            loginForm.style.display = "flex";
+            signUpForm.style.display = "none";
+            loginForm.classList.add("fade-in");
+        }, 250);
 
-        // signUp.classList.remove("fade-in");
-        // signUp.classList.add("fade-out");
-        // login.classList.remove("fade-out");
-        // login.classList.add("fade-in");
-        
         login.classList.remove("credentials__title__inactive");
         login.classList.add("credentials__title__active");
         signUp.classList.remove("credentials__title__active");
         signUp.classList.add("credentials__title__inactive");
 
-        // setTimeout(function toggleDisplay() {
-        //     signUpForm.classList.remove("fade-out");
-        //     loginForm.classList.remove("fade-in");
-        // }, 1000);
+        setTimeout(function toggleDisplay() {
+            signUpForm.classList.remove("fade-out");
+            loginForm.classList.remove("fade-in");
+        }, 500);
     } else if (selection == "signUp" && signUp.classList.contains("credentials__title__inactive")) {
-        loginForm.classList.remove("fade-in");
         loginForm.classList.add("fade-out");
-        signUpForm.classList.remove("fade-out");
-        signUpForm.classList.add("fade-in");
 
-        // setTimeout(function doThis() {
-        //     loginForm.style.display = "none";
-        //     signUpForm.style.display = "flex";
-        //     signUpForm.classList.add("fade-in");
-        // }, 500);
-
-        // login.classList.remove("fade-in");
-        // void login.offsetWidth;
-        // login.classList.add("fade-in");
-        // signUp.classList.remove("fade-in");
-        // void signUp.offsetWidth;
-        // signUp.classList.add("fade-in");
+        setTimeout(function doThis() {
+            loginForm.style.display = "none";
+            signUpForm.style.display = "flex";
+            signUpForm.classList.add("fade-in");
+        }, 250);
 
         signUp.classList.remove("credentials__title__inactive");
         signUp.classList.add("credentials__title__active");
         login.classList.remove("credentials__title__active");
         login.classList.add("credentials__title__inactive");
 
-        // setTimeout(function toggleDisplay() {
-        //     loginForm.style.display = "none";
-        //     loginForm.classList.remove("fade-out");
-        //     signUpForm.classList.remove("fade-in");
-        // }, 1000);
+        setTimeout(function toggleDisplay() {
+            loginForm.classList.remove("fade-out");
+            signUpForm.classList.remove("fade-in");
+        }, 500);
     }
 }

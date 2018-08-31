@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (min-width: 300px) {
+    .col-sm-12 {
+        width: 100%;
+    }
+
+    .col-sm-6 {
+        width: 49%;
+    }
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    color: rgb(56, 56, 56);
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+.top-bar {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 0 10px 2px;
+}
+
+.top-bar__title-bar {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%);
+}
+
+.top-bar__title-bar__hamburger {
+    height: 20px;
+    width: 23px;
+    margin-left: 13px;
+}
+
+.top-bar__title-bar__title {
+    font-family: 'Pacifico', cursive;
+    font-size: 24px;
+    font-weight: 100;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.top-bar__nav-bar {
+    height: 37px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    background-image: linear-gradient(to right, #42bb6b 0%, #32e2c2 100%);
+}
+
+.nav-highlight {
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 3px 8px;
+}
+
+.content {
+    position: relative;
+    top: 100px;
+}
+
+.content__live-matches,
+.content__upcoming-matches,
+.content__past-matches {
+    margin: 0 20px 20px 20px;
+}
+
+.content__live-matches__container,
+.content__upcoming-matches__container,
+.content__past-matches__container {
+    height: 120px;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-left: 5px;
+}
+
+.content__live-matches__container__match,
+.content__upcoming-matches__container__match,
+.content__past-matches__container__match {
+    flex: 0 0 auto;
+    height: 100px;
+    width: 180px;
+    box-shadow: 0 0 5px 1px;
+    border-radius: 10px;
+    margin: 10px 20px 10px 0;
+    background-image: linear-gradient(45deg, #fa709a -50%, #ffe066 100%);
+}
+
+.content__player-card {
+    display: inline-block;
+    height: 50px;
+    outline: 1px solid black;
+}

@@ -1,5 +1,5 @@
 .pressed-button {
-    padding: 15px 25px;
+    /* padding: 15px 25px; */
     font-size: 24px;
     text-align: center;
     cursor: pointer;
@@ -12,7 +12,7 @@
 }
 
 .pressed-button:hover {
-    background-color: #3e8e41;
+    background-color: #e9e9e9;
 }
 
 .pressed-button:active {

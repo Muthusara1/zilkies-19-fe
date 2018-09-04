@@ -31,7 +31,10 @@
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.signup-inner-container-main * {
+.signup-inner-container-main h2,
+.signup-inner-container-main input:placeholder-shown,
+.signup-inner-container-main button
+{
     font-family: 'Permanent Marker', cursive;
 }
 
@@ -59,7 +62,7 @@
     height: 25px;
     width: 80px;
     background:#1AAB8A;
-    color:#fff;
+    color:white;
     border:none;
     cursor:pointer;
     transition:500ms ease all;
@@ -67,7 +70,7 @@
 }
 
 .signup-inner-container-main form button:hover{
-    background:#fff;
+    background:white;
     color:#1AAB8A;
   }
 
@@ -84,6 +87,6 @@
     /* margin-top: 10%; */
 }
 
-.signup-inner-container-info p {
-    /* margin-top: 20%; */
+.logo-container:hover {
+    cursor: pointer;
 }

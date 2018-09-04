@@ -5,7 +5,6 @@ function activeToggle(selection) {
     var loginForm = document.getElementById("credentials__login-id");
     var signUp = document.getElementById("credentials__title__signup-id");
     var signUpForm = document.getElementById("credentials__signup-id");
-
     if (selection == "login" && login.classList.contains("credentials__title__inactive")) {
         signUpForm.classList.add("fade-out");
 
@@ -52,7 +51,6 @@ function validateSignUpForm() {
     var email = document.forms["signup-form"]["email-id"].value;
     var username = document.forms["signup-form"]["username"].value;
     var password = document.forms["signup-form"]["password"].value;
-    console.log("Inside!")
     if (!nameRegex.test(name)) {
         alert("Invalid name entered!");
         return false;
@@ -80,7 +78,7 @@ function validateLoginForm() {
         return false;
     }
     if (password == "") {
-        console.log("Hmmm...")
+
         alert("Password is required!");
         return false;
     }
@@ -110,8 +108,8 @@ function expandCard(event) {
 function expandSearch() {
     var searchIcon = document.querySelector(".footer__search");
     searchIcon.style.display = "none";
-    var searchIcon = document.querySelector(".add-item");
-    searchIcon.style.display = "none";
+    var addIcon = document.querySelector(".add-item");
+    addIcon.style.display = "none";
     var searchBar = document.querySelector(".footer__search-bar");
     searchBar.style.display = "block";
     var minimizeIcon = document.querySelector(".minimize");
@@ -121,8 +119,8 @@ function expandSearch() {
 function minimizeSearch() {
     var searchIcon = document.querySelector(".footer__search");
     searchIcon.style.display = "inline-block";
-    var searchIcon = document.querySelector(".add-item");
-    searchIcon.style.display = "inline-block";
+    var addIcon = document.querySelector(".add-item");
+    addIcon.style.display = "inline-block";
     var searchBar = document.querySelector(".footer__search-bar");
     searchBar.style.display = "none";
     var minimizeIcon = document.querySelector(".minimize");
@@ -130,6 +128,5 @@ function minimizeSearch() {
 }
 
 function sideBarClick() {
-    console.log("sideBarClick!")
-    var sideBar = document.querySelector(".side-bar").classList.toggle('active');
+    var sideBar = document.querySelector(".side-bar").classList.toggle("active");
 }

@@ -15,6 +15,16 @@
     font-size: 17px;
 }
 
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
 /* Change the color of links on hover */
 .navbar > a:hover {
     background-color: #ddd;
@@ -22,7 +32,7 @@
 }
 
 /* Style the "active" element to highlight the current page */
-.navbar  a.active {
+.navbar a.active {
     background-color: #2196f3;
     color: white;
 }
@@ -37,14 +47,10 @@
     font-size: 17px;
     background-size: 10px;
     background-color: white;
-    background-image: url('../icon/search-solid.svg');
+    background-image: url('../../assets/icon/search-solid.svg');
     background-position: 10px 10px;
     background-repeat: no-repeat;
     padding-left: 40px;
-}
-
-a:hover > .dropdown-content {
-    display: block;
 }
 
 /* Dropdown content (hidden by default) */
@@ -54,18 +60,12 @@ a:hover > .dropdown-content {
     bottom: 10px;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
-/* Links inside the dropdown */
-.dropdown-content a {
-    float: none;
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+a:hover > .dropdown-content {
     display: block;
-    text-align: left;
 }
 
 /* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */

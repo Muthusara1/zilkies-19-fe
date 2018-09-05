@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Result Management System</title>
+    <link rel="stylesheet" href="../styles/grid.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/footer.css">
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+</head>
+<body>
+    <header class="row">
+        <ul class="col-sm-12 col-md-6">
+            <ul class="nav-heading">
+                <li><a href="#">Result Management System</a></li>
+                <li class="toggle-icon-wrap"><a href="#"><i class="fa fa-bars" id="navbar-toggle-icon"></i></a></li>
+            </ul>
+            <li class="hide-link"><a href="#">Home</a></li>
+            <li class="hide-link"><a href="#">Contact</a></li>
+            <li class="hide-link" id="login-link"><a href="#">Login</a></li>
+        </ul>
+    </header>
+
+    <section>
+        <div class="homepage-image-wrap">
+            <img src="../images/result_img.jpg" alt="">
+        </div><br>
+        <div>
+            <center><h1>Result Management System</h1></center> <br>    
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p><br>
+            <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+        </div>
+    </section><br>
+
+    <footer>
+        <div class="footer-wrap">
+            <div class="col-sm-6 text-center contact-wrap">
+                <p>Contact Us</p>
+            </div>
+            <div class="col-sm-6 address-wrap">
+                <strong><p>Anna University</p></strong>
+                <p>Sarder Patel Road, Old Highways Building,</p>
+                <p>Guindy, Chennai - 600 025</p>
+            </div>
+                <p>© designed and developed by Sandeep Kumar</p>
+        </div>
+    </footer>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <form action="" method="post" class="login-form">
+                <div class="user-icon-wrap">
+                    <i class="fas fa-user-circle"></i>
+                </div>
+                <div class="row">
+                    <i class="fas fa-user input-icon"></i>
+                    <input type="text" placeholder="Registration Number" name="registrationNumber">
+                </div> 
+                <div class="row">
+                    <i class="fas fa-lock input-icon"></i>
+                    <input type="password" placeholder="Password" name="password">
+                </div>
+                <div class="row">
+                    <button type="button" class="btn"><i class="fas fa-paper-plane"></i> Login</button>
+                </div><br><b></b>
+            </form>
+        </div>
+    </div>
+
+    <script src="../js/navbar.js"></script>
+    <script src="../js/home.js"></script>
+</body>
+</html>

@@ -1,40 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 header,
 footer {
     background-color: #2980b9;
-    border: 1px solid;
 }
 
-h3 {
-    text-align: center;
-    color: white;
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
 }
 
 .container {
-    width: 500px;
-    height: auto;
     border: 1px solid;
+    margin: 0 auto;
+    height: auto;
 }
 
-.fas {
-    height: 60px;
-    width: 60px;
+img {
+    width: 100%;
+    height: 100%;
 }
 
-#message {
-    padding: 3px;
-    background-color: #95a5a6;
-    display: inline-block;
-    width: 75%;
-    border-radius: 4px;
+h3 {
+    height: 30px;
+    color: white;
 }
 
-#avatar {
-    display: inline-block;
-    width: 20%;
-    padding: 15px;
+#avatar-img {
+    margin: 0 auto;
+}
+
+.message {
+    padding: 3%;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.avatar {
+    width: 15%;
+    height: 25%;
+}
+
+.message-wrap {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    width: 85%;
+    padding: 0 4%;
     box-sizing: border-box;
 }
 
-#content {
-    padding: 5px;
+.chat-wrap {
+    display: flex;
+}
+
+.location-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.location-img-wrap {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    justify-content: space-between;
+    border: 1px solid #2980b9;
+    border-radius: 50%;
+}
+
+.btn-red {
+    background-color: #e6005c;
+    color: white;
+    border: 0;
+    padding: 1%;
+    width: 45%;
+}
+
+.btn-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    padding: 8%;
+}
+
+.fa-angle-left,
+.fa-telegram-plane {
+    color: white;
+    font-size: 4vw;
+}
+
+.fa-sliders-h {
+    color: white;
+    font-size: 2rem;
+}
+
+.fa-angle-left,
+.fa-angle-right {
+    color: black;
+    font-size: 2rem;
+}
+
+.fa-map-marker-alt {
+    color: #2980b9;
+    font-size: 60px;
+    margin: 25px auto;
+}
+
+.all-item-wrap {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+
+.item-wrap {
+    display: inline-block;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.product-wrap,
+.item-info {
+    display: flex;
+    justify-content: center;
+}
+
+.left-arrow-wrap,
+.right-arrow-wrap {
+    display: flex;
+    align-items: center;
+    padding: 5%;
+}
+
+input {
+    border: 0;
+    width: 70%;
+    padding: 3%;
+    box-sizing: border-box;
+}
+
+footer {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.fa-camera,
+.fa-microphone {
+    color: #b2bec3;
+    font-size: 4vw;
+}
+
+.media-wrap {
+    display: inline-block;
+    padding: 3%;
+    box-sizing: border-box;
+    width: 10%;
+    background-color: white;
+}
+
+.footer-inner {
+    display: flex;
+    width: 100%;
+}
+
+.send {
+    width: 10%;
+}
+
+.item-info {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+}
+
+.compare-btn-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.compare-btn {
+    background-color: #e6005c;
+    color: white;
+    border: 0;
+    padding: 2%;
 }

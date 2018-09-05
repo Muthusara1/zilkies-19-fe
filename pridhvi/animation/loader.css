@@ -21,11 +21,10 @@ body {
 #car {
     position: absolute;
     font-size: 40px;
-    color: rgb(138, 74, 74);
     bottom: 0;
     left: 40%;
+    color: rgb(177, 103, 103);
     animation: car-movement 0.5s linear infinite;
-    animation: car-fill 10s linear infinite;
 }
 
 #car-headlight {

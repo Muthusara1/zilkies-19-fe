@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/grid-common.css">
+    <link rel="stylesheet" href="../css/main-common.css">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum|Lato|Lobster|Lobster+Two|Pacifico" rel="stylesheet">
+    <title>Players</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <nav class="side-bar">
+            <ul>
+                <img class="close-bar" src="../assets/icons/icons8-close.png" alt="close" onclick="sideBarClick()">
+                <li><a href="./home.html" class="">Home</a></li>
+                <li><a href="./teams.html" class="">Teams</a></li>
+                <li><a href="./players.html" class="nav-highlight">Players</a></li>
+                <li><a href="../index.html" class="">Logout</a></li>
+            </ul>
+        </nav>
+        <header class="header">
+            <div class="header__title-bar col-sm-12">
+                <img class="header__title-bar__hamburger" src="../assets/icons/icons8-menu-15.png" alt="Menu" onclick="sideBarClick()" />
+                <h1 class="header__title-bar__title">Players</h1>
+            </div>
+            <nav class="header__nav-bar col-sm-12">
+                <a href="./home.html" class="">Home</a>
+                <a href="./teams.html" class="">Teams</a>
+                <a href="./players.html" class="nav-highlight">Players</a>
+            </nav>
+        </header>
+        <section class="content">
+            <div class="content__player-card col-sm-4" onclick="expandCard(event)"></div>
+            <div class="content__player-card col-sm-4" onclick="expandCard(event)"></div>
+            <div class="content__player-card col-sm-4" onclick="expandCard(event)"></div>
+            <div class="content__player-card col-sm-4" onclick="expandCard(event)"></div>
+            <div class="content__player-card col-sm-4" onclick="expandCard(event)"></div>
+            <div class="content__player-card col-sm-4" onclick="expandCard(event)"></div>
+        </section>
+        <div class="minimize" onclick="minimizeSearch()">
+            <img class="minimize__icon" src="../assets/icons/icons8-down.png" alt="Minimize Search">
+        </div>
+        <footer class="footer">
+            <div class="footer__search-bar"></div>
+            <div class="footer__search" onclick="expandSearch()">
+                <img class="footer__search__icon" src="../assets/icons/icons8-search-2.png" alt="Search">
+            </div>
+            <div class="add-item">
+                <img class="add-item__icon" src="../assets/icons/icons8-plus-6.png" alt="Add player" onclick="window.location='./add-player.html'">
+            </div>
+        </footer>
+    </div>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

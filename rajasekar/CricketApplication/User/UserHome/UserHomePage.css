@@ -1,0 +1,185 @@
+.header {
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__left-option {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.header__right-option {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.explorer {
+    padding-left: 30px;
+}
+
+.logo {
+    padding-left: 10px;
+}
+
+.login {
+    padding-right: 30px;
+}
+
+.signup {
+    padding-right: 10px;
+}
+
+.tournament-container__sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 100;
+    left: 20;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+    opacity: 0.8;
+}
+
+.tournament-container__sidenav a {
+    padding: 10px 6px 50px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.tournament-container__sidenav a:hover {
+    color: white;
+}
+
+.tournament-container__content {
+    margin-left: 200px;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    overflow-y: scroll;
+    height: 713px;
+}
+
+.card-1 {
+    display: flex;
+    flex-direction: column;
+    background-color: darkgray;
+    margin: 20px;
+}
+
+.card-1__image {
+    display: flex;
+}
+
+.card-1__button {
+    display: flex;
+    padding-left: 100px;
+}
+
+.tour-1 {
+    padding-left: 40px;
+}
+
+.card-border {
+    background-color: lightgrey;
+}
+
+.card-border:hover {
+    background-color: aliceblue;
+}
+
+button {
+    background-color: green;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 15px 32px;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px gray;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: gray;
+    border-radius: 10px;
+}
+
+.card-1:hover {
+    background-color: #111;
+}
+
+.tour-1 {
+    color: white;
+}
+
+.footer {
+    background-color: black;
+    opacity: 0.8;
+    margin-left: 220px;
+    padding: 50px;
+}
+
+.footer-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.location-div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    align-content: space-between;
+    color: white;
+}
+
+.facebook-div {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+
+.location {
+    flex-grow: 1;
+    font-size: 30px;
+}
+
+.phone {
+    flex-grow: 1;
+    font-size: 30px;
+}
+
+.mail {
+    flex-grow: 1;
+    font-size: 30px;
+}
+
+.facebook,
+.twitter,
+.linked-in {
+    font-size: 50px;
+    flex-grow: 1;
+}
+
+a {
+    background-color: black;
+    opacity: 0.8;
+}

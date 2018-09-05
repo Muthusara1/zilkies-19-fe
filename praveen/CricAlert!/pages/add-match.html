@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" details="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" details="ie=edge">
+    <link rel="stylesheet" href="../css/grid-common.css">
+    <link rel="stylesheet" href="../css/add-match.css">
+    <title>Create Match</title>
+</head>
+
+<body>
+    <header>
+        <img class="return-icon" src="../assets/icons/icons8-back-1.png" alt="return" onclick="window.location='./home.html'" />
+        <img class="options-icon" src="../assets/icons/icons8-dots.png" alt="options" />
+    </header>
+    <section class="details">
+        <form class="details__match-form" action="#">
+            <select name="team">
+                <option value="" selected disabled hidden>Choose Team</option>
+                <option value="csk">Chennai Super Kings</option>
+                <option value="srh">Sunrisers Hyderabad</option>
+                <option value="rcb">Royal Challengers Bangalore</option>
+            </select>
+        </form>
+    </section>
+    <footer class="confirm-details col-sm-12">
+        Save Match
+    </footer>
+    <script src="../js/add-team.js"></script>
+</body>
+
+</html>

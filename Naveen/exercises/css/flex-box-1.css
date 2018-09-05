@@ -22,34 +22,27 @@
     .outer-div {
         flex-wrap: wrap;
     }
-
     .blue {
         width: 20%;
     }
-
     .light-blue {
         width: 80%;
     }
-
     .green {
         width: 100%;
     }
-
 }
 
 @media screen and (max-width: 400px) {
     .outer-div {
         flex-wrap: wrap;
     }
-
     .blue {
         width: 100%;
     }
-
     .light-blue {
         width: 100%;
     }
-
     .green {
         width: 100%;
     }

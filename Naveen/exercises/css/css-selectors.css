@@ -1,92 +1,104 @@
 /* Add your code below each of the comments */
+
 /* --------------------- SIMPLE SELECTORS -------------------- */
+
 /* --- Exercise 1 - ELEMENT SELECTOR --- */
 
 /* Select the h1 element and change the color to red. */
-  h1 {
+
+h1 {
     color: red;
-  }
-  /* Select the h2 element and underline it */
-  h2 {
+}
+
+/* Select the h2 element and underline it */
+
+h2 {
     text-decoration: underline;
-  }
-  /* Select all the paragraph elements and change its font size to 15px */
-  p {
+}
+
+/* Select all the paragraph elements and change its font size to 15px */
+
+p {
     font-size: 15px;
-  }
-  /* Do the following changes to the text in the anchor tag.
+}
+
+/* Do the following changes to the text in the anchor tag.
   (i) Remove the underline
   (ii) Color to be changed to red */
-  a {
+
+a {
     text-decoration: none;
     color: red;
-  }
-  
-  /* --- Exercise 2 - CLASS SELECTOR --- */
-  
-  /* Create a class called box and write CSS rule to add a solid border of 1px width, blue in color.
+}
+
+/* --- Exercise 2 - CLASS SELECTOR --- */
+
+/* Create a class called box and write CSS rule to add a solid border of 1px width, blue in color.
   Add this class to the paragraphs elements in our HTML*/
-  .box {
-      border: solid 1px blue;
-  }
-  /* Add a class to our HTML and write a ruleset to highlight the thank you text by making it appear in green. */
-  .highlight {
-      background-color: green;
-  }
-  /* --- Exercise 3 - ID SELECTORS ---  */
-  /* Add an id for the header text 'Hello', and make the background color to be in yellow. */
-  #header {
-      background-color: yellow;
-  }
-  /* --- Exercise 4 - UNIVERSAL SELECTORS ---  */
-  /* Select all the elements of the page and apply the font to be in Verdana */
-  * {
-      font-family: Verdana;
-  }
-  /* ----------------------  PSEUDO CLASSES ------------------------*/ 
-  /*  --- Exercise 5 - When the text inside the anchor tag is hovered, change the font size to 15px and the color to black --- */
-  a:hover {
-      font-size: 15px;
-      color: black;
-  }
-  /* --- Exercise 6 - Select the second list item and change the color to red. ---  */
-  li:nth-child(2) {
+
+.box {
+    border: solid 1px blue;
+}
+
+/* Add a class to our HTML and write a ruleset to highlight the thank you text by making it appear in green. */
+
+.highlight {
+    background-color: green;
+}
+
+/* --- Exercise 3 - ID SELECTORS ---  */
+
+/* Add an id for the header text 'Hello', and make the background color to be in yellow. */
+
+#header {
+    background-color: yellow;
+}
+
+/* --- Exercise 4 - UNIVERSAL SELECTORS ---  */
+
+/* Select all the elements of the page and apply the font to be in Verdana */
+
+* {
+    font-family: Verdana;
+}
+
+/* ----------------------  PSEUDO CLASSES ------------------------*/
+
+/*  --- Exercise 5 - When the text inside the anchor tag is hovered, change the font size to 15px and the color to black --- */
+
+a:hover {
+    font-size: 15px;
+    color: black;
+}
+
+/* --- Exercise 6 - Select the second list item and change the color to red. ---  */
+
+li:nth-child(2) {
     color: red;
-  }
-  /* --- Exercise 7 - Select all the odd list items and change the color to blue --  */
-  li:nth-child(odd) {
+}
+
+/* --- Exercise 7 - Select all the odd list items and change the color to blue --  */
+
+li:nth-child(odd) {
     color: blue;
-  }
-  /* --- Exercise 8 - Select the last item and change the color to blue --- */
-  li:last-child {
+}
+
+/* --- Exercise 8 - Select the last item and change the color to blue --- */
+
+li:last-child {
     color: blue;
-  }
-  /*  ---------------- PSEUDO ELEMENT ----------------------- */
-  
-  /* --- Exercise 9 - Select the first list item and apply content '->' after the element --- */
-  li:first-child::after {
-      content: "->";
-  }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  body {
-  background: linear-gradient(to right, #6dd5ed, #2193b0);
-  color: black;
-  font-family: verdana;
-  }
+}
+
+/*  ---------------- PSEUDO ELEMENT ----------------------- */
+
+/* --- Exercise 9 - Select the first list item and apply content '->' after the element --- */
+
+li:first-child::after {
+    content: "->";
+}
+
+body {
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    color: black;
+    font-family: verdana;
+}

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Schedule</title>
+    <link rel="stylesheet" href="./schedule.css">
+    <script type="text/javascript" src="./scorecard.js"></script>
+</head>
+
+<body>
+    <div class="scorecard" id="scorecard-1">
+        <span onclick="displaySchedule()" class="close" title="Close Modal">&times;</span>
+        <div class="card">
+            <div class="team-1">
+                <div class="team-name">
+                    <h3>Team1</h3>
+                </div>
+                <div class="score">
+                    <h3>220-3(36)</h3>
+                </div>
+            </div>
+            <div class="team-2">
+                <div class="team-name">
+                    <h3>Team2</h3>
+                </div>
+                <div class="score">
+                    <h3>220-3(36)</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="user-container" id="schedule-1">
+        <div class="header">
+            <div class="header__left-option">
+                <div class="logo">
+                    <h2 class="logo-design">CC</h2>
+                </div>
+                <div class="explorer">
+                    <h2>Cricket Connect</h2>
+                </div>
+            </div>
+            <div class="headers__right-option">
+                <div class="login">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="signup">
+                    <h2>USER</h2>
+                </div>
+            </div>
+        </div>
+        <div class="tournament-container">
+            <div class="tournament-container__sidenav">
+                <a href="#">Edit</a>
+                <a href="#">Schedule</a>
+                <a href="#">Scorecard</a>
+            </div>
+            <div class="border">
+                <div class="team-container-dropdown">
+                    <div class="team">
+                        <select id="dropdown1">
+                            <option value="IPL">IPL</option>
+                            <option value="CPL">CPL</option>
+                        </select>
+                    </div>
+                    <div class="view">
+                        <button onclick="filterTournament()">Filter</button>
+                    </div>
+                </div>
+                <div class="teams">
+                    <div class="team-container">
+                        <div class="team">
+                            <h3>
+                                <span>
+                                    MatchNo
+                                </span>
+                            </h3>
+                        </div>
+                        <div class="view">
+                            <h3>
+                                <span>Match</span>
+                            </h3>
+                        </div>
+                        <div class="team">
+                            <h3>
+                                <span>
+                                    Score
+                                </span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="team-container">
+                        <div class="team">
+                            <h3>1</h3>
+                        </div>
+                        <div class="view">
+                            <h3>CSK vs MI</h3>
+                        </div>
+                        <div class="team">
+                            <button onclick="displayScorecard()">Scorecard</button>
+                        </div>
+                    </div>
+                    <div class="team-container">
+                        <div class="team">
+                            <h3>2</h3>
+                        </div>
+                        <div class="view">
+                            <h3>DD vs RCB</h3>
+                        </div>
+                        <div class="team">
+                            <button onclick="displayScorecard()">Scorecard</button>
+                        </div>
+                    </div>
+                    <div class="team-container">
+                        <div class="team">
+                            <h3>3</h3>
+                        </div>
+                        <div class="view">
+                            <h3>RR vs KKR</h3>
+                        </div>
+                        <div class="team">
+                            <button onclick="displayScorecard()">Scorecard</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,144 @@
+.header {
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__left-option {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.header__right-option {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+
+.explorer {
+    padding-left: 30px;
+}
+
+.logo {
+    padding-left: 10px;
+}
+
+.login {
+    padding-right: 30px;
+}
+
+.signup {
+    padding-right: 10px;
+}
+
+.tournament-container__sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 100;
+    left: 20;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.tournament-container__sidenav a {
+    padding: 10px 6px 50px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.tournament-container__sidenav a:hover {
+    color: white;
+}
+
+.login i {
+    font-size: 60px;
+}
+
+.teams {
+    margin-left: 220px;
+    height: 100vh;
+}
+
+.teams {
+    margin-top: 10px;
+    border: 5px solid gray;
+    display: flex;
+    flex-direction: column;
+}
+
+.team-container {
+    flex-grow: 1;
+}
+
+.team-container {
+    margin: 10px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.team-view {
+    flex-grow: 1;
+}
+
+.team-container-dropdown {
+    margin: 10px;
+    display: flex;
+    margin-left: 220px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.scorecard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.team-1,
+.team-2 {
+    flex-grow: 1;
+}
+
+.team-1,
+.team-2 {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.team-name,
+.score {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.scorecard {
+    display: none;
+}
+
+.close {
+    margin-left: 250px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card {
+    background-color: gray;
+    border: 1px solid black;
+    padding: 20px;
+}

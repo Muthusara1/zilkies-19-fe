@@ -1,0 +1,29 @@
+.player-card {
+    background-color: #B55522;
+    /* #D9E5D6; */
+    border-radius: 2%;
+    width: 80%;
+}
+
+.team-card_outer-container {
+    height: 80vh;
+    overflow: scroll;
+    padding: 3%;
+}
+
+.team-name {
+    color: white;
+    text-align: center;
+    padding: 10%;
+}
+/* 
+.player-card {
+    background-color: aquamarine;
+    color: #B55522;
+} */
+
+@media only screen and (max-width: 320px) {
+    .team-card_outer-container {
+        height: 60vh;
+    }
+}

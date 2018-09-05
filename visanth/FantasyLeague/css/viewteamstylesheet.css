@@ -1,0 +1,22 @@
+.icons {
+    height: auto;
+    width: 80%;
+}
+
+.players-and-role_container {
+    background-color: #B55522;
+    /* #6D590A; */
+    /* #AA9B5C; */
+}
+
+.player-image {
+    height: 60px;
+    width: 60%;
+    border-radius: 10%;
+}
+
+@media only screen and (min-width: 720px) {
+    .col-lg-spcl {
+        width: 60%;
+    }
+}

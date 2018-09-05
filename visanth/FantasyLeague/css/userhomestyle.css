@@ -1,0 +1,29 @@
+
+/* to be removed */
+
+.header {
+    height: 100px;
+}
+ 
+/* to be removed */
+
+.team-logo {
+    height: auto;
+    margin-left: 3%;
+    width: 60%;
+    height: 70px;
+    border-radius: 40%;
+}
+
+.match-card {
+    background-color: #B55522;
+    /* #D9E5D6; */
+    border-radius: 2%;
+    margin-top: 2%;
+}
+
+.team-name {
+    color: white;
+    text-align: center;
+    padding: 10%;
+}

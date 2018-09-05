@@ -5,26 +5,101 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>LeaderBoard</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="../css/indexstylesheet.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/commonstylesheet.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/toppicksstylesheet.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/leaderboardstylesheet.css" />
 </head>
 <body>
     <div class="header">
-        <div class="row">
-            <div class="col-sm-12 col-md-6 col-lg-4">
-                    <img src="" class="header-image" alt="header's image"/>
-            </div>
-            <div class="col-lg-4"></div>
-            <div class="col-sm-12 col-md-6 col-lg-4"></div>
+        <div class="topnav" id="myTopnav">
+                <a href="userhome.html">Home</a>
+                <a href="pickteam.html">Pick Team</a>
+                <a href="viewteam.html">View Team</a>
+                <a href="">Modify Team</a>
+                <a href="#" class="active">LeaderBoard</a>
+                <a href="toppicks.html">Top picks</a>
+                <a href="#">admin</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
         </div>
     </div>
     <div class="container">
-        <div class="row">
-            <div class="col-md-2 col-lg-2"></div>
-            <div class="col-sm-12 col-md-8 col-lg-8"></div>
-            <div class="col-md-2 col-lg-2"></div>
+        <div class="flex-row">
+            <div class="col-sm-12 col-md-6 col-lg-6 team-card_outer-container">
+                  <!-- start of match card1 -->
+                  <a href="#">
+                        <div class="match-card row">
+                                <div class="col-sm-2 col-md-3 col-lg-3">
+                                    <img src="../images/csklogo.png" class="team-logo" alt="team1">
+                                </div>
+                                <div class="col-sm-8 col-md-6 col-lg-6">
+                                    <h3 class="team-name">team1 vs team2</h3>
+                                </div>
+                                <div class="col-sm-2 col-md-3 col-lg-3">
+                                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/81/Sunrisers_Hyderabad.svg/1200px-Sunrisers_Hyderabad.svg.png" class="team-logo" alt="team1">
+                                </div>
+                            </div>
+                        </a>
+                   <!-- end of match card1 -->
+                   <!-- start of match card2 -->
+                   <a href="#">
+                   <div class="match-card row">
+                        <div class="col-sm-2 col-md-3 col-lg-3">
+                            <img src="../images/csklogo.png" class="team-logo" alt="team1">
+                        </div>
+                        <div class="col-sm-8 col-md-6 col-lg-6">
+                            <h3 class="team-name">team1 vs team2</h3>
+                        </div>
+                        <div class="col-sm-2 col-md-3 col-lg-3">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/8/81/Sunrisers_Hyderabad.svg/1200px-Sunrisers_Hyderabad.svg.png" class="team-logo" alt="team1">
+                        </div>
+                    </div>
+                    </a>
+                    <!-- end of match card2 -->
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6 leaderboard-outer_container">
+                <!-- LeaderBoard starting -->
+                <div class="leaderboard-heading">Leaderboard</div>
+                <div class="row">
+                    <div class="col-2">#</div>
+                    <div class="col-6">User Name</div>
+                    <div class="col-4">Points</div>
+                </div>
+               <!-- user 1 block -->
+                <div class="row">
+                        <div class="col-2">#</div>
+                        <div class="col-6">User Name</div>
+                        <div class="col-4">Points</div>
+                    </div>
+                    <!-- user 1 block end -->
+                    <!-- user 2 block -->
+                    <div class="row">
+                            <div class="col-2">1</div>
+                            <div class="col-6">Name</div>
+                            <div class="col-4">Points</div>
+                        </div>
+                    <!-- user 2 block end -->
+                <!-- LeaderBoard ending -->
+            </div>
         </div>
     </div>
-    <div class="footer"></div>
-    <script src="main.js"></script>
+    <div class="footer">
+        <!-- footer starting -->
+        <div class="row">
+                <div class="col-md-2 col-lg-2"></div>
+                <div class="col-sm-12 col-md-8 col-lg-8 footer-content">
+                    <ul class="footer-list">
+                        <li> <a href="#">About Us</a></li>
+                        <li><a href="#"> How to Play</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                    <h4>&copy; Zilker Technology,chennai</h4>
+                </div>
+                <div class="col-md-2 col-lg-2"></div>
+            </div>
+        <!-- footer ending -->
+    </div>
+    <script src="../js/navbarscript.js"></script>
 </body>
 </html>

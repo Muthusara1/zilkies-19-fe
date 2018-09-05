@@ -69,7 +69,6 @@
     margin-top: 10px;
     border: 5px solid gray;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
 }
 
@@ -88,4 +87,58 @@
 
 .team-view {
     flex-grow: 1;
+}
+
+.team-container-dropdown {
+    margin: 10px;
+    display: flex;
+    margin-left: 220px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.scorecard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.team-1,
+.team-2 {
+    flex-grow: 1;
+}
+
+.team-1,
+.team-2 {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.team-name,
+.score {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.scorecard {
+    display: none;
+}
+
+.close {
+    margin-left: 250px;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card {
+    background-color: gray;
+    border: 1px solid black;
+    padding: 20px;
 }

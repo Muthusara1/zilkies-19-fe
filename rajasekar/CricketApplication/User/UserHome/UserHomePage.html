@@ -5,14 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home</title>
+    <title>UserHome</title>
     <link rel="stylesheet" href="./UserHomePage.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
         crossorigin="anonymous">
+    <script type="text/javascript" src="UserHomePage.js"></script>
 </head>
 
 <body>
-    <div class="user-container">
+    <div class="user-container" id="home-container">
         <div class="header">
             <div class="header__left-option">
                 <div class="logo">
@@ -24,10 +25,14 @@
             </div>
             <div class="header__right-option">
                 <div class="login">
-                    <h2>Login</h2>
+                    <button onclick="displayLoginFunctionality()">
+                        <h2>Login</h2>
+                    </button>
                 </div>
                 <div class="signup">
-                    <h2>Signup</h2>
+                    <button onclick="displayRegisterFunctionality()">
+                        <h2>Signup</h2>
+                    </button>
                 </div>
             </div>
         </div>
@@ -280,17 +285,11 @@
             <div class="footer-section">
                 <div class="location-div">
                     <div class="location">
-                        <i class="fas fa-map-marker-alt"></i>
-                        Chennai
-                    </div>
+                        <i class="fas fa-map-marker-alt"></i>Chennai </div>
                     <div class="phone">
-                        <i class="fas fa-phone"></i>
-                        8764536271
-                    </div>
+                        <i class="fas fa-phone"></i>8764536271 </div>
                     <div class="mail">
-                        <i class="far fa-envelope"></i>
-                        abc@gmail.com
-                    </div>
+                        <i class="far fa-envelope"></i>abc@gmail.com </div>
                 </div>
                 <div class="facebook-div">
                     <div class="facebook">
@@ -308,6 +307,67 @@
                             <i class="fab fa-linkedin"></i>
                         </a>
                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-container" id="login-1">
+        <div class="form-card">
+            <span onclick="displayHome()" class="close" title="Close Modal">&times;
+            </span>
+            <div class="say-login">
+                <h2 class="login-text">Login</h2>
+            </div>
+            <div class="email">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="password">
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="login-button">
+                <button>Login</button>
+            </div>
+            <div class="sign-up__link">
+                <div class="plain-text">Don't have an account?
+                </div>
+                <div class="link">
+                    <a href="#">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="form-container" id="register-1">
+        <div class="form-card">
+            <span onclick="displayHome()" class="close" title="Close Modal">&times;
+            </span>
+            <div class="say-login">
+                <h2 class="login-text">SignUp</h2>
+            </div>
+            <div class="first-name">
+                <input type="text" placeholder="FirstName" name="first-name">
+            </div>
+            <div class="last-name">
+                <input type="text" placeholder="LastName" name="last-name">
+            </div>
+            <div class="password">
+                <input type="password" placeholder="Password" name="password">
+            </div>
+            <div class="age">
+                <input type="number" placeholder="Age" name="age">
+            </div>
+            <div class="mobile">
+                <input type="number" placeholder="Mobile" name="mobile">
+            </div>
+            <div class="email">
+                <input type="email" placeholder="Email" name="email">
+            </div>
+            <div class="login-button">
+                <button type="submit" onclick=" return validateform()">Register</button>
+            </div>
+            <div class="sign-up__link">
+                <div class="plain-text">Have an account? </div>
+                <div class="link">
+                    <a href="#">Login</a>
                 </div>
             </div>
         </div>

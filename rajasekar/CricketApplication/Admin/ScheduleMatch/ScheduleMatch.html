@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Teams</title>
-    <link rel="stylesheet" href="./team.css">
+    <title>ScheduleMatch</title>
+    <link rel="stylesheet" href="./ScheduleMatch.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="user-container">
+    <div class="user-container" id="home-container">
         <div class="header">
             <div class="header__left-option">
                 <div class="logo">
@@ -21,68 +23,71 @@
                 </div>
             </div>
             <div class="header__right-option">
-                <div class="login">
-                    <i class="fas fa-user"></i>
-                </div>
-                <div class="signup">
-                    <h2>USER</h2>
+                <div class="header__right-option">
+                    <div class="login">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="signup">
+                        <h2>ADMIN</h2>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="tournament-container">
             <div class="tournament-container__sidenav">
-                <a href="#">Edit</a>
-                <a href="#">Schedule</a>
-                <a href="#">Scorecard</a>
+                <a href="# ">View Request</a>
+                <a href="# ">Schedule Matches</a>
+                <a href="# ">Update Scorecard</a>
             </div>
             <div class="border">
+                <div class="team-container-dropdown">
+                    <div class="team">
+                        <select id="dropdown1">
+                            <option value="IPL">IPL</option>
+                            <option value="CPL">CPL</option>
+                        </select>
+                    </div>
+                    <div class="view">
+                        <button onclick="filterTournament()">Filter</button>
+                    </div>
+                </div>
                 <div class="teams">
                     <div class="team-container">
                         <div class="team">
-                            <h3>Team1</h3>
+                            <h3>
+                                <span>
+                                    MatchNo
+                                </span>
+                            </h3>
                         </div>
                         <div class="view">
-                            <button>View</button>
+                            <h3>
+                                <span>Match</span>
+                            </h3>
                         </div>
                     </div>
                     <div class="team-container">
                         <div class="team">
-                            <h3>Team1</h3>
+                            <h3>1</h3>
                         </div>
                         <div class="view">
-                            <button>View</button>
+                            <h3>CSK vs MI</h3>
                         </div>
                     </div>
                     <div class="team-container">
                         <div class="team">
-                            <h3>Team1</h3>
+                            <h3>2</h3>
                         </div>
                         <div class="view">
-                            <button>View</button>
+                            <h3>DD vs RCB</h3>
                         </div>
                     </div>
                     <div class="team-container">
                         <div class="team">
-                            <h3>Team1</h3>
+                            <h3>3</h3>
                         </div>
                         <div class="view">
-                            <button>View</button>
-                        </div>
-                    </div>
-                    <div class="team-container">
-                        <div class="team">
-                            <h3>Team1</h3>
-                        </div>
-                        <div class="view">
-                            <button>View</button>
-                        </div>
-                    </div>
-                    <div class="team-container">
-                        <div class="team">
-                            <h3>Team1</h3>
-                        </div>
-                        <div class="view">
-                            <button>View</button>
+                            <h3>KKR vs SRH</h3>
                         </div>
                     </div>
                 </div>

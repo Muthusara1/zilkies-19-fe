@@ -1,6 +1,8 @@
 .user-container {
     display: flex;
     flex-direction: column;
+    min-width: 450px;
+    overflow: auto;
 }
 
 .header,
@@ -275,7 +277,6 @@ select:hover {
     font-size: 40px;
     font-weight: bold;
     cursor: pointer;
-    color: white;
 }
 
 .form-container {
@@ -328,7 +329,7 @@ select:hover {
     padding: 25px;
     border-radius: 10px;
     font-size: 16px;
-    background-color: white;
+    background-color: gray;
 }
 
 .login-button button:hover {
@@ -379,4 +380,5 @@ select:hover {
 
 span {
     margin-left: 100%;
+    color: white;
 }

@@ -7,7 +7,7 @@ function validateEmail() {
         document.getElementById("validEmail").innerHTML = "Enter a valid email";
         return false;
     }
-};
+}
 
 function validateName() {
     var name = document.getElementsByName("Name")[0].value;
@@ -19,7 +19,7 @@ function validateName() {
         return false;
     }
 
-};
+}
 
 function validateInput() {
     var val = document.getElementsByName("time");
@@ -55,4 +55,4 @@ function validateInput() {
         }
     }
     return flag;
-};
+}

@@ -21,7 +21,6 @@ body {
     background: url('graduation-cap.png') no-repeat;
     background-size: 100px 100px;
     background-position: center;
-    
 }
 
 .company,
@@ -47,7 +46,6 @@ body {
     background-size: 100px 100px;
     background-position: center;
     margin-bottom: 20px;
-    
 }
 
 @keyframes play {

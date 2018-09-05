@@ -7,21 +7,22 @@
     <title>chat-box</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <script src="main.js"></script>
 </head>
 
 <body>
-    <div class="outer">
+    <div class="container">
         <!-- HEAD SECTIONS -->
         <header>
             <div class="header__back">
-                <img src="../assets/left-arrow(1).png" alt="back-button" />
+                <img src="../assets/icons8-back-24.png" alt="back-button" />
             </div>
             <div class="header__chat">
                 <h3>CHAT</h3>
             </div>
             <div class="header__back">
-                <img src="../assets/sliders.png" alt="menu" />
+                <img src="../assets/icons8-slider-24.png" alt="menu" />
             </div>
         </header>
         <!-- MESSAGE -->
@@ -66,10 +67,13 @@
                 </div>
             </div>
             <!-- Image Slider-->
-            <h3 class="product">PRODUCT</h3>
             <div class="image-slider-wrapper">
-                <img src="../assets/left-arrow-angle.svg" class="image-slider__slide-icon">
-                <div class="image-slider-wrapper__image-slider">
+                <div class="product">
+                <p style="color:gray">PRODUCT</p>
+                </div>
+                <div class="wrapper__content">
+                <img src="../assets/left-arrows.svg" class="image-slider__slide-icon">
+                <div class="content__image-slider">
                     <div class="image-slider__image1">
                         <div class="image">
                             <img src="../assets/image1.jpeg" alt="saw1" />
@@ -92,24 +96,25 @@
                             
                 </div>
                 </div>
-                <img src="../assets/right-arrow.svg" alt="right-arrow" class="image-slider__slide-icon">
-
+                <img src="../assets/right-arrow(1).svg" alt="right-arrow" class="image-slider__slide-icon">
+            </div>
+            </div>
             </div>
             <!-- Message Box-->
             <div class="text-message-box">
                 <div class="text-message-box__camera">
                     <img src="../assets/photo-camera-black-tool.svg" alt="camera-icon">
                 </div>
-                <div class="text-message-box__text">
+               <div class="text-message-box__text">
                     <form action="#">
                         <input type="text" placeholder="Type something here.." />
                 </div>
-                <div class="text-message-box__microphone">
+               <div class="text-message-box__microphone">
                     <img src="../assets/microphone.svg" alt="camera-icon">
 
                 </div>
                 <button class="text-message-box__send">
-                    <img src="../assets/airplane.svg" alt="plane-icon">
+                <div class="send__image"> <img src="../assets/airplane.svg" alt="plane-icon"></div>
                 </button>
 
             </div>

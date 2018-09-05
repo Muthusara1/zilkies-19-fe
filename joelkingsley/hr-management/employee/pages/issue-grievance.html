@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300i,700" rel="stylesheet"> 
+    <link rel="stylesheet" href="../../general/css/fonts.css">
     <link rel="stylesheet" href="../../general/css/header.css">
     <link rel="stylesheet" href="../../general/css/footer.css">
-    <link rel="stylesheet" href="../../general/css/navbar.css">
-    <link rel="stylesheet" href="../../general/css/fonts.css">
     <link rel="stylesheet" href="../../general/css/buttons.css">
-    <link rel="stylesheet" href="../../general/css/generic-login.css">
-    <title>Home | ZTech HRManagement</title>
+    <link rel="stylesheet" href="../../general/css/navbar.css">
+    <link rel="stylesheet" href="../../general/css/call.css">
+    <link rel="stylesheet" href="../../general/css/issue-grievance.css">
+    <title>Leave Tracker | ZTech HRManagement</title>
 </head>
 <body>
     <header>
@@ -23,7 +24,7 @@
         <div class="open-sans-condensed bold">
             <a href="../../general/pages/generic-login.html" class="active menu-button">Dashboard</a>
             <div class="dropdown-content dashboard-drop">
-                <a href="../pages/profile.html">Profile</a>
+                <a href="">Profile</a>
                 <a href="">Project</a>
                 <a href="">Documents</a>
             </div>
@@ -31,41 +32,37 @@
         <div class="open-sans-condensed bold">
             <a href="../../employee/pages/leave-tracker.html" class="menu-button">Leave Tracker</a>
             <div class="dropdown-content lt-drop">
-                <a href="../../employee/pages/apply-leave.html">Apply Leave</a>
-                <a href="../../employee/pages/leave-log.html">Leave Log</a>
+                <a href="">Apply Leave</a>
+                <a href="">Leave Log</a>
             </div>
         </div>
         <div class="open-sans-condensed bold">
             <a href="../../employee/pages/grievance-tracker.html" class="menu-button">Grievance Tracker</a>
             <div class="dropdown-content gt-drop">
-                <a href="../../employee/pages/issue-grievance.html">Issue Grievance</a>
-                <a href="../../employee/pages/grievance-log.html">Grievance Log</a>
+                <a href="">Issue Grievance</a>
+                <a href="">Grievance Log</a>
             </div>
         </div>
         <input type="text" placeholder="Search..." class="open-sans-condensed">
     </section>
     <section class="middle">
-        <section class="middle-form">
-            <div class="textboxes-container">
-                <div id="email">
-                    <input type="email" id="email" class="open-sans-condensed" placeholder="Email" aria-placeholder="Email">
-                </div>
-                <div id="password">
-                    <input type="password" id="password" class="open-sans-condensed" placeholder="Password" aria-placeholder="Password">
-                </div>
+        <div id="first-container" class="col-sm-12">
+            <div id="grievance-subject-div" class="col-sm-11">
+                <input type="text" id="grievance-subject" name="grievance-subject" class="open-sans-condensed bold white" placeholder="Grievance Subject">
             </div>
-            <div id="login">
+            <div id="grievance-text-div" class="col-sm-11">
+                <textarea id="grievance-text" class="open-sans-condensed bold white" placeholder="Write the grievance"></textarea>
+            </div>
+
+            <div id="leave-submit" class="col-sm-12">
                 <button class="pressed-button center-button open-sans-condensed bold">
-                    Login
+                    Submit Grievance
                 </button>
             </div>
-            <div id="forgot-password" class="open-sans-condensed italics">
-                <a href="">Forgot Password?</a>
-            </div> 
-        </section>
+        </div>
     </section>
     <footer>
-        
+            
     </footer>
 </body>
 </html>

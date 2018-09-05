@@ -62,6 +62,10 @@
     flex-wrap: wrap;
 }
 
+h1 a {
+    text-decoration: none;
+}
+
 #grievance-requests {
     box-sizing: border-box;
     height: 440px;

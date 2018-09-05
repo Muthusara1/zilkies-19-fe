@@ -14,56 +14,48 @@ header {
     background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 140%);
 }
 
-.details__photo {
-    height: 150px;
-    width: 110px;
-    margin: 20px auto 0 auto;
-}
-
-.details__photo-container {
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
-    border: 1px solid black;
-    overflow: hidden;
-}
-
-.details__photo-container img {
-    margin: 10px;
-    height: 80px;
-    width: 80px;
-}
-
-.details__add-photo {
-    height: 35px;
-    width: 35px;
-    position: relative;
-    left: 70px;
-    top: -30px;
-}
-
-.details__form {
+.details__match-form {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
-.details__form__add-players {
-    width: 250px;
-    height: 40px;
-    margin: 0 auto 40px auto;
+.details__match-form__team-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 30px 0;
 }
 
-.details__form > input {
-    height: 40px;
-    margin: 0 auto 40px auto;
-    border: none;
+.details__match-form__team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
     border-radius: 10px;
     box-sizing: border-box;
-    padding: 10px;
-    background-color: #d6d6d6;
+    padding-top: 10px;
 }
 
-.details__form__modal {
+.details__match-form__team select {
+    display: block;
+    height: 30px;
+    width: 120px;
+}
+
+.details__match-form__team-lineup {
+    padding: 20px 5px;
+    cursor: pointer;
+    border-top: 1px solid black;
+}
+
+.details__match-form__date {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.details__match-form__modal {
     display: none;
     position: fixed;
     z-index: 10;
@@ -75,7 +67,7 @@ header {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.details__form__modal__players-list {
+.details__match-form__modal__players-list {
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
@@ -84,11 +76,11 @@ header {
     height: 70%;
 }
 
-.details__form__modal__players-list__player {
+.details__match-form__modal__players-list__player {
     margin-bottom: 10px;
 }
 
-.details__form__modal__players-list__player > input {
+.details__match-form__modal__players-list__player > input {
     margin-right: 10px;
 }
 

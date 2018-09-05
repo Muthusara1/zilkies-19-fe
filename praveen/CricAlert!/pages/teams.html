@@ -34,11 +34,41 @@
             </nav>
         </header>
         <section class="content">
-            <div class="content__team-card col-sm-12" onclick="expandTeam(event)"></div>
-            <div class="content__team-card col-sm-12" onclick="expandTeam(event)"></div>
-            <div class="content__team-card col-sm-12" onclick="expandTeam(event)"></div>
-            <div class="content__team-card col-sm-12" onclick="expandTeam(event)"></div>
-            <div class="content__team-card col-sm-12" onclick="expandTeam(event)"></div>
+            <div class="content__team-card col-sm-12" onclick="expandTeam(this)" draggable="true" ondragstart="dragStart(event)" ondragend="dragStop(event)">
+                <div class="content__team-card__container-1">
+                    <img class="content__team-card__container-1__photo" draggable="false" src="../assets/icons/icons8-team.png" alt="Photo" />
+                    <h3 class="content__team-card__container-1__name">Chennai Super Kings</h3>
+                </div>
+                <div class="content__team-card__container-2"></div>
+            </div>
+            <div class="content__team-card col-sm-12" onclick="expandTeam(this)" draggable="true" ondragstart="dragStart(event)" ondragend="dragStop(event)">
+                <div class="content__team-card__container-1">
+                    <img class="content__team-card__container-1__photo" draggable="false" src="../assets/icons/icons8-team.png" alt="Photo" />
+                    <h3 class="content__team-card__container-1__name">Sunrisers Hyderabad</h3>
+                </div>
+                <div class="content__team-card__container-2"></div>
+            </div>
+            <div class="content__team-card col-sm-12" onclick="expandTeam(this)" draggable="true" ondragstart="dragStart(event)" ondragend="dragStop(event)">
+                <div class="content__team-card__container-1">
+                    <img class="content__team-card__container-1__photo" draggable="false" src="../assets/icons/icons8-team.png" alt="Photo" />
+                    <h3 class="content__team-card__container-1__name">Royal Challengers Bangalore</h3>
+                </div>
+                <div class="content__team-card__container-2"></div>
+            </div>
+            <div class="content__team-card col-sm-12" onclick="expandTeam(this)" draggable="true" ondragstart="dragStart(event)" ondragend="dragStop(event)">
+                <div class="content__team-card__container-1">
+                    <img class="content__team-card__container-1__photo" draggable="false" src="../assets/icons/icons8-team.png" alt="Photo" />
+                    <h3 class="content__team-card__container-1__name">Kolkata Knight Riders</h3>
+                </div>
+                <div class="content__team-card__container-2"></div>
+            </div>
+            <div class="content__team-card col-sm-12" onclick="expandTeam(this)" draggable="true" ondragstart="dragStart(event)" ondragend="dragStop(event)">
+                <div class="content__team-card__container-1">
+                    <img class="content__team-card__container-1__photo" draggable="false" src="../assets/icons/icons8-team.png" alt="Photo" />
+                    <h3 class="content__team-card__container-1__name">Mumbai Indians</h3>
+                </div>
+                <div class="content__team-card__container-2"></div>
+            </div>
         </section>
         <div class="minimize" onclick="minimizeSearch()">
             <img class="minimize__icon" src="../assets/icons/icons8-down.png" alt="Minimize Search">
@@ -48,12 +78,19 @@
             <div class="footer__search" onclick="expandSearch()">
                 <img class="footer__search__icon" src="../assets/icons/icons8-search-2.png" alt="Search">
             </div>
-            <div class="add-item">
-                <img class="add-item__icon" src="../assets/icons/icons8-plus-6.png" alt="Add player" onclick="window.location='./add-team.html'">
+            <div class="footer__add-item">
+                <img class="footer__add-item__icon" src="../assets/icons/icons8-plus-6.png" alt="Add player" onclick="window.location='./add-team.html'">
+            </div>
+            <div class="footer__edit" ondrop="drop(event)" ondragover="allowDrop(event, this)">
+                <img class="footer__edit__icon" src="../assets/icons/icons8-edit-1.png" alt="Edit">
+            </div>
+            <div class="footer__delete" ondrop="drop(event)" ondragover="allowDrop(event, this)">
+                <img class="footer__delete__icon" src="../assets/icons/icons8-trash-1.png" alt="Delete">
             </div>
         </footer>
     </div>
     <script src="../js/script.js"></script>
+    <script src="../js/teams.js"></script>
 </body>
 
 </html>

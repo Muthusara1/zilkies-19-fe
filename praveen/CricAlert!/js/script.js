@@ -1,5 +1,3 @@
-// document.getElementsByClassName("content__player-card").onclick = expandCard;
-
 function activeToggle(selection) {
     var login = document.getElementById("credentials__title__login-id");
     var loginForm = document.getElementById("credentials__login-id");
@@ -85,30 +83,10 @@ function validateLoginForm() {
     return true;
 }
 
-function expandCard(event) {
-    var element = event.target;
-    if (element.classList.contains("col-sm-8")) {
-        element.classList.remove("col-sm-8");
-        element.classList.add("col-sm-4");
-        element.style.height = "100px";
-    } else {
-        var nodeList = document.querySelectorAll(".content__player-card");
-        for (var i  = 0; i < nodeList.length; i++) {
-            nodeList[i].classList.remove("col-sm-8");
-            nodeList[i].classList.add("col-sm-4");
-            nodeList[i].style.height = "100px";
-        }
-        element.style.backgroundColor = "wheat";
-        element.style.height = 2 * element.clientHeight + "px";
-        element.classList.remove("col-sm-4");
-        element.classList.add("col-sm-8");    
-    }
-}
-
 function expandSearch() {
     var searchIcon = document.querySelector(".footer__search");
     searchIcon.style.display = "none";
-    var addIcon = document.querySelector(".add-item");
+    var addIcon = document.querySelector(".footer__add-item");
     addIcon.style.display = "none";
     var searchBar = document.querySelector(".footer__search-bar");
     searchBar.style.display = "block";
@@ -119,7 +97,7 @@ function expandSearch() {
 function minimizeSearch() {
     var searchIcon = document.querySelector(".footer__search");
     searchIcon.style.display = "inline-block";
-    var addIcon = document.querySelector(".add-item");
+    var addIcon = document.querySelector(".footer__add-item");
     addIcon.style.display = "inline-block";
     var searchBar = document.querySelector(".footer__search-bar");
     searchBar.style.display = "none";
@@ -129,4 +107,44 @@ function minimizeSearch() {
 
 function sideBarClick() {
     var sideBar = document.querySelector(".side-bar").classList.toggle("active");
+}
+
+function allowDrop(ev, el) {
+    ev.preventDefault();
+    el.style.height = "110px";
+    el.style.width = "110px";
+}
+
+function dragStart(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+    var search = document.getElementsByClassName("footer__search")[0];
+    var addItem = document.getElementsByClassName("add-item")[0];
+    var editItem = document.getElementsByClassName("footer__edit")[0];
+    var deleteItem = document.getElementsByClassName("footer__delete")[0];
+    editItem.style.display = "inline-block";
+    deleteItem.style.display = "inline-block";
+    search.style.display = "none";
+    addItem.style.display = "none";
+}
+
+function dragStop(ev) {
+    var search = document.getElementsByClassName("footer__search")[0];
+    var addItem = document.getElementsByClassName("add-item")[0];
+    var editItem = document.getElementsByClassName("footer__edit")[0];
+    var deleteItem = document.getElementsByClassName("footer__delete")[0];
+    
+    editItem.style.height = "100px";
+    deleteItem.style.height = "100px";
+    editItem.style.width = "100px";
+    deleteItem.style.width = "100px";
+
+    editItem.style.display = "none";
+    deleteItem.style.display = "none";
+    search.style.display = "inline-block";
+    addItem.style.display = "inline-block";
+}
+
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
 }

@@ -24,7 +24,7 @@
     box-shadow: 0 0 5px 1px;
     border-radius: 10px;
     margin: 10px 20px 10px 0;
-    background-image: linear-gradient(45deg, #fa709a -50%, #ffe066 100%);
+    background-color: #a6ebc975;
 }
 
 .content__live-matches__container__match:hover,

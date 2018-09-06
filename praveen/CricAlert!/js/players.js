@@ -3,7 +3,7 @@ function expandCard(element) {
 
     var span = document.getElementsByClassName("close")[0];
 
-    modal.style.display = "block";
+    modal.style.display = "flex";
 
     span.onclick = function () {
         modal.style.display = "none";

@@ -19,7 +19,7 @@
                 <img class="close-bar" src="../assets/icons/icons8-close.png" alt="close" onclick="sideBarClick()">
                 <li><a href="./home.html" class="">Home</a></li>
                 <li><a href="./teams.html" class="">Teams</a></li>
-                <li><a href="./players.html" class="nav-highlight">Players</a></li>
+                <li><a href="./players.html" class="nav-highlight-2">Players</a></li>
                 <li><a href="../index.html" class="">Logout</a></li>
             </ul>
         </nav>
@@ -86,12 +86,16 @@
             <img class="minimize__icon" src="../assets/icons/icons8-down.png" alt="Minimize Search">
         </div>
         <footer class="footer">
-            <div class="footer__search-bar"></div>
+            <div class="footer__search-bar">
+                <form action="#">
+                    <input type="text" placeholder="Search..."/>
+                </form>
+            </div>
             <div class="footer__search" onclick="expandSearch()">
                 <img class="footer__search__icon" src="../assets/icons/icons8-search-2.png" alt="Search">
             </div>
-            <div class="footer__add-item">
-                <img class="footer__add-item__icon" src="../assets/icons/icons8-plus-6.png" alt="Add player" onclick="window.location='./add-player.html'">
+            <div class="footer__add-item" onclick="window.location='./add-player.html'">
+                <img class="footer__add-item__icon" src="../assets/icons/icons8-plus-6.png" alt="Add player">
             </div>
             <div class="footer__edit" ondrop="drop(event)" ondragover="allowDrop(event, this)">
                 <img class="footer__edit__icon" src="../assets/icons/icons8-edit-1.png" alt="Edit">
@@ -101,7 +105,7 @@
             </div>
         </footer>
     </div>
-    <script src="../js/script.js"></script>
+    <script src="../js/main-common.js"></script>
     <script src="../js/players.js"></script>
 </body>
 

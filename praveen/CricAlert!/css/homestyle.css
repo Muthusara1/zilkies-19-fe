@@ -24,13 +24,21 @@
     box-shadow: 0 0 5px 1px;
     border-radius: 10px;
     margin: 10px 20px 10px 0;
-    background-color: #a6ebc975;
+    background-color: #fff6da;
+    transition: all 0.1s linear;
 }
 
 .content__live-matches__container__match:hover,
 .content__upcoming-matches__container__match:hover,
 .content__past-matches__container__match:hover {
     cursor: pointer;
+}
+
+.content__live-matches__container__match:active,
+.content__upcoming-matches__container__match:active,
+.content__past-matches__container__match:active {
+    box-shadow: 0 0 1px 1px;
+    background-color: #fcecbd;
 }
 
 a {

@@ -44,6 +44,10 @@
     text-decoration: none;
 }
 
+.header__nav-bar a:active {
+    color: rgb(0, 0, 0);
+}
+
 .header__title-bar {
     display: flex;
     align-items: center;
@@ -77,11 +81,15 @@
 }
 
 .nav-highlight {
-    border-radius: 6px;
     color: white;
     font-size: 16px;
     font-weight: bold;
-    padding: 3px 8px;
+}
+
+.nav-highlight-2 {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .content {
@@ -89,74 +97,6 @@
     flex-wrap: wrap;
     position: relative;
     top: 100px;
-}
-
-.content__player-card {
-    height: 150px;
-    width: 130px;
-    margin: 10px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff6da;
-    border-radius: 10px;
-    box-shadow: 3px 3px 5px #888;
-    border: 1px solid #888;
-    cursor: pointer;
-}
-
-.content__player-card-photo {
-    border: 1px solid black;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Remove this later */
-.content__player-card-photo img {
-    width: 60px;
-}
-
-.content__team-card {
-    height: 100px;
-    border-radius: 10px;
-    background-color: #fff6da;
-    box-shadow: 0 1px 4px;
-    margin: 5px 7px;
-    display: flex;
-    flex-direction: column;
-}
-
-.content__team-card__container-1 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.content__team-card__container-1__photo {
-    height: 80px;
-    width: 80px;
-}
-
-.content__team-card__container-1__name {
-    width: 200px;
-}
-
-.content__team-card__container-2 {
-    display: none;
-    margin: 15px;
-    border: 1px solid black;
-    border-radius: 5px;
-    height: 80px;
-}
-
-.expand-team {
-    height: 200px;
 }
 
 .footer {
@@ -167,13 +107,30 @@
 }
 
 .footer__search-bar {
-    display: none;
-    height: 50px;
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    height: 35px;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: wheat;
+    margin: 0 auto;
+    box-shadow: 0 0 5px 1px;
+    background-color: rgba(62, 241, 166, 0.842);
     border-radius: 50px;
+    transition: opacity 0.3s linear;
+}
+
+.footer__search-bar form {
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__search-bar input {
+    margin: 0 auto;
+    width: 90%;
+    border: none;
+    background-color: rgba(62, 241, 166, 0);
 }
 
 .footer__search,
@@ -186,7 +143,12 @@
     border-radius: 50%;
     box-shadow: 0 0 5px 1px;
     background-color: rgba(62, 241, 166, 0.842);
-    transition: all 0.1s linear;
+    transition: all 0.1s linear, opacity 0.3s linear;
+}
+
+.footer__search {
+    visibility: visible;
+    opacity: 1;
 }
 
 .footer__edit {
@@ -203,8 +165,8 @@
 .footer__edit__icon {
     width: 30px;
     position: relative;
-    left: 53px;
-    bottom: -10px;
+    left: 50px;
+    bottom: -15px;
 }
 
 .footer__add-item,
@@ -217,6 +179,12 @@
     border-radius: 50%;
     box-shadow: 0 0 5px 1px;
     background-color: rgba(62, 241, 166, 0.767);
+    transition: all 0.1s linear, opacity 0.3s linear;
+}
+
+.footer__add-item {
+    visibility: visible;
+    opacity: 1;
 }
 
 .footer__delete {
@@ -233,8 +201,8 @@
 .footer__delete__icon {
     width: 28px;
     position: relative;
-    right: -15px;
-    top: 12px;
+    right: -20px;
+    top: 15px;
 }
 
 .minimize {
@@ -242,6 +210,10 @@
     position: fixed;
     left: 10px;
     bottom: 50px;
+}
+
+.minimize:hover {
+    cursor: pointer;
 }
 
 .footer__add-item:active,

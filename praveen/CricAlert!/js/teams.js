@@ -10,7 +10,7 @@ function expandTeam(element) {
     } else {
         for (i = 0; i < nodeList.length; i++) {
             nodeList[i].classList.remove("expand-team");
-            var child = nodeList[i].querySelector(".content__team-card__container-2");
+            child = nodeList[i].querySelector(".content__team-card__container-2");
             child.style.display = "none";
         }
         element.classList.add("expand-team");

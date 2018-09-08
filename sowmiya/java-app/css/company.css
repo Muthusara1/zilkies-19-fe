@@ -1,0 +1,17 @@
+.body__company {
+    margin: 1em;
+    background-color: white;
+    border:2px solid white !important;
+    border-radius: 1em;
+    box-sizing: border-box;
+    padding:10px;
+    justify-content: space-around;
+
+}
+
+.company__description > label{
+    font-weight: 600;
+    font-size: 15px;
+    
+    
+}

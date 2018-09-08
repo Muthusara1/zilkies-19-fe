@@ -60,13 +60,14 @@
     display: flex;
     flex-direction: column;
     align-content: flex-start;
-    overflow: auto;
     min-height: 100%;
     min-width: 100%;
 }
 
 .chatbox-header {
     display: flex;
+    position: fixed;
+    top: 0;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
@@ -77,9 +78,12 @@
 }
 
 .chatbox-chatarea {
-    height: 10.5%;
+    position: fixed;
+    bottom: 0;
+    height: 10%;
     box-sizing: border-box;
     border: 12px solid #00b3e7;
+    background-color: white;
 }
 
 .chatbox-chatarea__direction {
@@ -141,10 +145,12 @@ input[type="text"] {
 }
 
 .chatbox-conversationarea {
+    margin-top: 10%;
+    margin-bottom: 10.5%;
     min-height: 80%;
     display: flex;
     flex-direction: column;
-    overflow: scroll;
+    overflow: auto;
 }
 
 .conversationarea_chat {
@@ -316,4 +322,15 @@ input[type="text"] {
     background-color: #ff2f58;
     padding: 10px;
     color: white;
+}
+
+.chatbox-chatarea__send button {
+    background-color: #ff2f58;
+    height: 100%;
+    border: none;    
+}
+
+.chatbox-chatarea__send button:hover {
+    background-color: #c2062c;
+
 }

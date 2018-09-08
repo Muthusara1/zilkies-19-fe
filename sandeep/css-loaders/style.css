@@ -1,0 +1,33 @@
+#magnifier {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    font-size: 100px;
+    animation: rot 3s infinite linear;
+}
+
+#sheet {
+    position: relative;
+}
+
+#outer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: #c0392b;
+}
+
+@keyframes rot {
+    from {
+        transform: rotate(0deg) translate(30px) rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg) translate(30px) rotate(-360deg);
+    }
+}

@@ -1,0 +1,30 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.outer {
+    border: 5px solid black;
+    margin: 100px;
+    padding: 15px;
+}
+
+.inner {
+    border: 2px solid black;
+    height: 50px;
+    padding: 10px;
+}
+
+.fits {
+    height: auto;
+}
+
+.hidden {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.scroll {
+    overflow: scroll;
+}

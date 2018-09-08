@@ -160,7 +160,8 @@
     justify-content: space-between;
 }
 
-.option input, .spacing{
+.option input,
+.spacing {
     height: 60px;
     width: 60px;
     flex-grow: 1;
@@ -168,15 +169,17 @@
 }
 
 .option .button-1 {
-     margin-left: 20%;
-     background-color: crimson;
+    margin-left: 20%;
+    background-color: crimson;
 }
 
 .option .button-2 {
     margin-right: 20%;
     background-color: crimson;
 }
-.description-1 .button-1 , .description-2 .button-2{
+
+.description-1 .button-1,
+.description-2 .button-2 {
     margin-left: 20%;
     background-color: crimson;
     height: 30px;
@@ -196,7 +199,8 @@ h3 {
     overflow-x: scroll;
 }
 
-.left-arrow, .right-arrow{
+.left-arrow,
+.right-arrow {
     margin-top: 120px;
     color: gray;
 }
@@ -225,12 +229,14 @@ h3 {
     margin: 20px 25px 25px;
 }
 
-.image-1, .image-2{
+.image-1,
+.image-2 {
     margin: 10px 20px 20px;
     height: 100px;
 }
 
-.description-2, .description-1 {
+.description-2,
+.description-1 {
     margin: 10px 20px 20px;
     height: 70px;
     background-color: gray;
@@ -253,7 +259,6 @@ button {
     height: 70px;
     display: flex;
     background-color: white;
-   
 }
 
 #chat-container {

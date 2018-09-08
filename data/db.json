@@ -1,0 +1,56 @@
+{
+  "posts": [
+    {
+      "author": "rashmi",
+      "message": "Can you suggest some of the popular restaurants around me?",
+      "time": "10:52AM",
+      "id": 1
+    },
+    {
+      "author": "rashmi",
+      "message": "Whats up?",
+      "time": "11:6AM",
+      "id": 2
+    },
+    {
+      "author": "rashmi",
+      "message": "Good mornin :)",
+      "time": "11:9AM",
+      "id": 3
+    },
+    {
+      "author": "rashmi",
+      "message": "sdfg",
+      "time": "12:25PM",
+      "id": 4
+    },
+    {
+      "author": "rashmi",
+      "message": "",
+      "time": "12:26PM",
+      "id": 5
+    },
+    {
+      "author": "rashmi",
+      "message": "sdfgsdg",
+      "time": "12:30PM",
+      "id": 6
+    },
+    {
+      "author": "rashmi",
+      "message": "fdgsdfg",
+      "time": "12:30PM",
+      "id": 7
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

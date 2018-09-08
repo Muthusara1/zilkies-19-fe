@@ -1,27 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Chat</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assests/fontawesome-free-5.2.0-web/css/all.css">
 </head>
+
 <body>
-   <div class="container">
-       <header><h3>CHAT</h3></header><br>
-       <div id="content">
-            <div id="message">
-                <p>Hi Hello!</p>
+    <div class="container">
+        <header>
+            <i class="fas fa-angle-left"></i>
+            <h3>CHAT</h3>
+            <i class="fas fa-sliders-h"></i>
+        </header>
+        <br>
+        <br>
+        <div class="chat-screen">
+            <div class="chat-wrap">
+                <div class="message-wrap">
+                    <div class="message">
+                        <p>I need access to your location to suggest stores near by.</p>
+                    </div>
+                    <div class="timestamp">
+                        <p>01:45 P.M</p>
+                    </div>
+                    <div class="location-wrap">
+                        <div class="location-img-wrap">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="btn-wrap">
+                            <button type="button" class="btn-red">Yes</button>
+                            <button type="button" class="btn-red">No</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="avatar">
+                     <img src="images/bot.png" alt="" id="avatar-img">
+                </div>
             </div>
-            <div id="avatar">
-                <img src="images/User-icon.png" alt="" class="fas">
+            <br><br>
+            <div class="chat-wrap">
+                <div class="message-wrap">
+                    <div class="message">
+                        <p>Here, are some of the best selling circular saws in the shops around you.</p>
+                    </div>
+                    <div class="timestamp">
+                        <p>01:45 P.M</p>
+                    </div>
+                    <div class="product-wrap">
+                        <div class="left-arrow-wrap">
+                            <i class="fas fa-angle-left"></i>
+                        </div>
+                        <div class="all-item-wrap">
+                            <div class="item-wrap">
+                                <div class="item-img-wrap">
+                                    <img src="images/circular_saw_1.jpg" alt="">
+                                </div>
+                                <div class="item-info">
+                                    <strong><h6>DEWALT DEWC75</h6></strong>
+                                    <p>$ 124.95</p>
+                                    <div class="compare-btn-wrap">
+                                        <button type="button" class="compare-btn">Compare</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-wrap">
+                                    <div class="item-img-wrap">
+                                        <img src="images/circular_saw_2.jpg" alt="">
+                                    </div>
+                                <div class="item-info">
+                                    <strong><h6>DEWALT DEWC75</h6></strong>
+                                    <p>$ 124.95</p>
+                                    <div class="compare-btn-wrap">
+                                        <button type="button" class="compare-btn">Compare</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-wrap">
+                                    <div class="item-img-wrap">
+                                        <img src="images/circular_saw_1.jpg" alt="">
+                                    </div>
+                                <div class="item-info">
+                                    <strong><h6>DEWALT DEWC75</h6></strong>
+                                    <p>$ 124.95</p>
+                                    <div class="compare-btn-wrap">
+                                        <button type="button" class="compare-btn">Compare</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-wrap">
+                                    <div class="item-img-wrap">
+                                        <img src="images/circular_saw_3.jpg" alt="">
+                                    </div>
+                                    <div class="item-info">
+                                        <strong><h6>DEWALT DEWC75</h6></strong>
+                                        <p>$ 124.95</p>
+                                        <div class="compare-btn-wrap">
+                                            <button type="button" class="compare-btn">Compare</button>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="right-arrow-wrap">
+                            <i class="fas fa-angle-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="avatar">
+                    <img src="images/bot.png" alt="" id="avatar-img">
+                </div>
             </div>
-            <div id="timestamp">
-                <p>01:45PM</p>
+        </div><br>
+        <footer>
+            <div class="footer-inner">
+                <span class="media-wrap"><i class="fas fa-camera"></i></span>
+                <input type="text" placeholder="Type something...">
+                <span class="media-wrap"><i class="fas fa-microphone"></i></span>
+                <button class="btn-red send"><i class="fab fa-telegram-plane"></i></button>
             </div>
-       </div>
-       <footer></footer>
-   </div>
+        </footer>
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Add Match</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/commonstylesheet.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/addmatchstylesheet.css" />
+</head>
+<body>
+    <div class="header">
+        <div class="topnav" id="myTopnav">
+                <a href="#" class="active">Add Match</a>
+                <a href="endmatch.html">End Match</a>
+                <a href="addplayer.html">Add Player</a>
+                <a href="editrating.html">Edit Player Rating</a>
+                <a href="">user</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="flex-row">
+            <div class="col-sm-0 col-md-4 col-lg-4 left-image">
+                <img src="https://cdn2.iconfinder.com/data/icons/cricket-1/117/cricket-game-player-playing-007-512.png" alt="1 vs 1">
+                    <!-- https://cdn2.iconfinder.com/data/icons/cricket-1/117/cricket-game-player-playing-007-512.png -->
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-8">
+                    <!-- centrize the form elements -->
+                    <div class="row">
+                        <div class="col-1"></div>
+                        <div class="col-10 centerize add-match_topic">
+                            Add new Match
+                        </div>
+                        <div class="col-1"></div>
+                    </div>
+                    <!-- form details -->
+                    <form action="#" method="POST" name="add-match_form">
+                        <!-- team 1 block -->
+                        <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col-10">
+                                    <select name="team-one">
+                                        <option value="1">Team one</option>
+                                    </select>
+                                </div>
+                                <div class="col-1"></div>
+                        </div>
+                        <!-- team 2 block -->
+                        <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col-10">
+                                        <select name="team-one">
+                                                <option value="1">Team one</option>
+                                        </select>
+                                </div>
+                                <div class="col-1"></div>
+                        </div>
+                        <!-- date block -->
+                        <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col-10">
+                                    <input type="date" name="match-date" placeholder="Select the date">
+                                </div>
+                                <div class="col-1"></div>
+                        </div>
+                        <!-- time block -->
+                        <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col-10">
+                                    <input type="time" name="start-time" class="start-time" placeholder="Enter the Starting time">
+                                    To:
+                                    <input type="time" name="start-time" class="start-time" placeholder="Enter the Starting time">
+                                </div>
+                                <div class="col-1"></div>
+                        </div>
+                        <!-- submit button -->
+                        <div class="row">
+                                <div class="col-1"></div>
+                                <div class="col-10 centerize">
+                                    <button type="submit" class="submit-button">Submit</button>
+                                </div>
+                                <div class="col-1"></div>
+                            </div>
+                    </form>
+                    <!-- form end -->
+                    <!-- centrize block end-->
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="row">
+            <div class="col-md-2 col-lg-2"></div>
+            <div class="col-sm-12 col-md-8 col-lg-8 footer-content">
+                <ul class="footer-list">
+                    <li> <a href="#">About Us</a></li>
+                    <li><a href="#"> How to Play</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+                <h4>&copy; Zilker Technology,chennai</h4>
+            </div>
+            <div class="col-md-2 col-lg-2"></div>
+        </div>
+    </div>
+    <script src="../js/navbarscript.js"></script>
+</body>
+</html>

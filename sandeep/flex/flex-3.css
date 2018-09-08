@@ -1,0 +1,31 @@
+.div-1 {
+    height: 200px;
+    background-color: blueviolet;
+}
+
+.div-2 {
+    height: 200px;
+    background-color: blue;
+}
+
+.div-3 {
+    height: 200px;
+    background-color: green;
+}
+
+.div-4 {
+    height: 200px;
+    background-color: red;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 480px) {
+    .item {
+        flex-grow: 1;
+        flex-direction: column;
+    }
+}

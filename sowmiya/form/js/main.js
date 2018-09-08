@@ -1,17 +1,15 @@
-var emailField = document.getElementsByName("email");
-emailField.onfocusout =  function() {
-    var email = document.getElementsByName("email").value;
+function validateEmail() {
+    var email = document.getElementsByName("email")[0].value;
     if (/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/.test(email)) {
-        document.getElementById("validInput3").innerHTML = "";
+        document.getElementById("validEmail").innerHTML = "";
         return true;
     } else {
-        document.getElementById("validInput3").innerHTML = "Enter a valid email";
+        document.getElementById("validEmail").innerHTML = "Enter a valid email";
         return false;
     }
-};
+}
 
-var nameField = document.getElementsByName("Name");
-nameField.onfocusout = function validateName() {
+function validateName() {
     var name = document.getElementsByName("Name")[0].value;
     if (/^[a-zA-Z\\-]+$/.test(name)) {
         document.getElementById("validName").innerHTML = "";
@@ -21,9 +19,9 @@ nameField.onfocusout = function validateName() {
         return false;
     }
 
-};
-var button=document.getElementsByName("submit");
-button.onclick = function validateInput() {
+}
+
+function validateInput() {
     var val = document.getElementsByName("time");
     var flag = true;
     var nodes,count;
@@ -57,4 +55,4 @@ button.onclick = function validateInput() {
         }
     }
     return flag;
-};
+}

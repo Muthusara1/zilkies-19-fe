@@ -1,0 +1,17 @@
+/* left of form */
+.user-registration {
+    background-image: url("../assets/images/antony-xia-522579-unsplash.jpg");
+    background-size: cover;
+    padding: 20px;
+    font-size: 2em;
+    color: white;
+}
+
+/* Form CSS */
+input {
+    display: block;
+}
+
+.form-section__name {
+    display: inline;
+}

@@ -1,0 +1,14 @@
+.contractor-registration {
+    background-image: url("../assets/images/mark-asthoff-19999-unsplash.jpg");
+    background-size: cover;
+    padding: 30px;
+    font-size: 2em;
+    color: #2d4739;
+    color: white;
+    font-family: Open Sans, sans-serif;
+}
+
+.contractor-registration__splitter {
+    color: white;
+    margin: 20px;
+}

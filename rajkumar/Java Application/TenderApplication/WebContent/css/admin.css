@@ -1,0 +1,25 @@
+.new-project-container {
+    padding: 30px;
+}
+
+.display-requested-project {
+    padding: 20px;
+}
+
+.search-bar {
+    padding: 30px;
+}
+
+/* @media screen and (min-width: 350px) {
+    .display-requested-project {
+        padding: 5px;
+    }
+} */
+.user-location-projects__card-section {
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: steelblue;
+}

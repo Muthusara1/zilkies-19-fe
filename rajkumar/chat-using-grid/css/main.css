@@ -47,7 +47,7 @@
     display: inline-block;
 }
 
-.date {
+.message__date {
     color: #546e7a;
     font-size: 12px;
     margin-top: 0;
@@ -55,13 +55,13 @@
     top: 20px;
 }
 
-.avatar {
+.message__avatar {
     border-radius: 50%;
     width: 20%;
     display: inline-block;
 }
 
-.chat-text {
+.message__chat-text {
     color: grey;
     background-color: #e0e0e0;
     border-radius: 12px;
@@ -74,11 +74,11 @@
     width: 40%;
 }
 
-.float-left {
+.message-left {
     float: left;
 }
 
-.float-right {
+.message-right {
     float: right;
 }
 
@@ -147,18 +147,28 @@
         padding: 20px;
     }
 
-    .list-img {
+    .message__list-img {
         height: 30px;
         width: 30px;
     }
+
+    .inner-item__list-img {
+        height: 70px;
+        width: 70px;
+    }
 }
 
-.list-img {
+.message__list-img {
     height: 70px;
     width: 70px;
 }
 
-.item-name {
+.inner-item__list-img {
+    height: 70px;
+    width: 70px;
+}
+
+.inner-item__item-name {
     display: block;
 }
 
@@ -168,11 +178,6 @@
 
 .right-scroll {
     text-align: left;
-}
-
-.location-icon {
-    color: #03a9f4;
-    text-align: center;
 }
 
 .fa-map-marker-alt {
@@ -229,12 +234,13 @@
     align-items: center;
 }
 
-.location-button-section {
+.location-section__button {
     justify-content: center;
     padding-top: 20px;
 }
 
 .location-section__icon {
     justify-content: center;
+    color: #03a9f4;
+    text-align: center;
 }
-
